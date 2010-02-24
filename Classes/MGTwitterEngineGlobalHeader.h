@@ -14,7 +14,7 @@
 	#import <Foundation/Foundation.h>
 	#import <UIKit/UIKit.h>
 #else
-
+	#import <Cocoa/Cocoa.h>
 #endif
 
 /*

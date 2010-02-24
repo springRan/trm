@@ -12,8 +12,11 @@
 @property (nonatomic,retain) NSString *username;
 @property (nonatomic,retain) NSString *password;
 
-- (id) initWithUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg andDelegate:(id) delegateArg;
++ (Twitter *)singleton;
+
+- (id) setUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg;
 
 - (NSString *) getPublicTimeline;
+
 - (NSString *) getSearchResultsForQuery:(NSString *) query;
 @end

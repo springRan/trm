@@ -5,11 +5,21 @@
 @synthesize username;
 @synthesize password;
 
-- (id) initWithUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg andDelegate:(id) delegateArg {
+static Twitter * Twitter_Singleton = nil;
+
++ (Twitter *)singleton
+{
+    if (nil == Twitter_Singleton)
+    {
+        Twitter_Singleton = [[Twitter alloc] init];
+    }
+    return Twitter_Singleton;
+}
+
+- (id) setUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg {
 	if (self = [super init]){
 		username=usernameArg;
 		password=passwordArg;
-		delegate=delegateArg;
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
 		[twitterEngine setUsername:username password:password];
 	}
@@ -43,7 +53,10 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)connectionIdentifier
 {
-	[delegate didReceiveStatuses:statuses];
+	for (int x=0; x<statuses.count; x++) {
+		NSDictionary *tweetData = [statuses objectAtIndex:x]; 
+		NSLog(@"text %@",[tweetData valueForKey:@"text"]);
+	}
 }
 
 
@@ -66,8 +79,11 @@
 
 - (void)searchResultsReceived:(NSArray *)searchResults forRequest:(NSString *)connectionIdentifier
 {
-		//	NSLog(@"Got search results for %@:\r%@", connectionIdentifier, searchResults);
-	[delegate didReceiveStatuses:searchResults];
+	NSLog(@"Got search results for %@:\r%@", connectionIdentifier, searchResults);
+	for (int x=0; x<searchResults.count; x++) {
+		NSDictionary *tweetData = [searchResults objectAtIndex:x]; 
+		NSLog(@"text %@",[tweetData valueForKey:@"text"]);
+	}
 }
 
 
