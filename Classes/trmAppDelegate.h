@@ -1,6 +1,6 @@
 
 #import "LoginViewController.h"
-@interface trmAppDelegate : NSObject <UIApplicationDelegate> {
+@interface trmAppDelegate : NSObject <UIApplicationDelegate, MGTwitterEngineDelegate> {
     UIWindow *window;
     UINavigationController *navigationController;
 	LoginViewController *loginViewController;
