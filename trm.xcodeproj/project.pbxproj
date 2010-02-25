@@ -59,6 +59,11 @@
 		BE8EFE7F1134D8F9002A8F24 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFE7E1134D8F9002A8F24 /* User.m */; };
 		BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */; };
 		BE8EFEB31134DCEF002A8F24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */; };
+		BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECD2611363AF400CB06B1 /* TweetCell.m */; };
+		BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECECD2711363AF400CB06B1 /* TweetCell.xib */; };
+		BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECDF21136563400CB06B1 /* AsyncImageView.m */; };
+		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
+		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +169,13 @@
 		BE8EFEAF1134DCEF002A8F24 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Classes/LoginViewController.xib; sourceTree = "<group>"; };
+		BECECD2511363AF400CB06B1 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		BECECD2611363AF400CB06B1 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		BECECD2711363AF400CB06B1 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TweetCell.xib; path = Classes/TweetCell.xib; sourceTree = "<group>"; };
+		BECECDF11136563400CB06B1 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		BECECDF21136563400CB06B1 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BECECE90113664CA00CB06B1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				BE8EFC1C11339C59002A8F24 /* vendor */,
-				BE8EFC04113399AB002A8F24 /* models */,
 				BE8EFBFC11339928002A8F24 /* application */,
 			);
 			path = Classes;
@@ -225,6 +236,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BECECE90113664CA00CB06B1 /* icon.png */,
+				BECECE861136624000CB06B1 /* Default.png */,
+				BECECD2711363AF400CB06B1 /* TweetCell.xib */,
 				BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -288,12 +302,15 @@
 		BE8EFBFC11339928002A8F24 /* application */ = {
 			isa = PBXGroup;
 			children = (
+				BE8EFC04113399AB002A8F24 /* models */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* trmAppDelegate.h */,
 				1D3623250D0F684500981E51 /* trmAppDelegate.m */,
 				BE8EFEAF1134DCEF002A8F24 /* LoginViewController.h */,
 				BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */,
+				BECECD2511363AF400CB06B1 /* TweetCell.h */,
+				BECECD2611363AF400CB06B1 /* TweetCell.m */,
 			);
 			name = application;
 			sourceTree = "<group>";
@@ -316,6 +333,8 @@
 			children = (
 				BE8EFCC31134BF46002A8F24 /* MGTwitterEngine */,
 				BE8EFBC911339905002A8F24 /* sqlitepersistentobjects */,
+				BECECDF11136563400CB06B1 /* AsyncImageView.h */,
+				BECECDF21136563400CB06B1 /* AsyncImageView.m */,
 			);
 			name = vendor;
 			sourceTree = "<group>";
@@ -397,6 +416,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = tweetrad.io;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "trm" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
@@ -424,6 +446,9 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
 				BE8EFEB31134DCEF002A8F24 /* LoginViewController.xib in Resources */,
+				BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */,
+				BECECE871136624000CB06B1 /* Default.png in Resources */,
+				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +502,8 @@
 				BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */,
 				BE8EFE7F1134D8F9002A8F24 /* User.m in Sources */,
 				BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */,
+				BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */,
+				BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +561,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				PREBINDING = NO;
+				PRODUCT_NAME = tweetradio;
 				SDKROOT = iphoneos3.1.2;
 			};
 			name = Debug;

@@ -41,10 +41,14 @@
  }
  */
 
+- (void)statusesReceived {
+  NSLog(@"statuses received");
+  [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
 		// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
 		// Release any cached data, images, etc that aren't in use.
 }
 
@@ -63,26 +67,51 @@
 
 	// Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+  int tweetCount = [[[Twitter singleton] tweets] count];
+  return tweetCount;
 }
 
 
 	// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-		// Configure the cell.
-	
-    return cell;
+  static NSString *CellIdentifier = @"Cell";
+  TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+		[[NSBundle mainBundle] loadNibNamed:@"TweetCell" owner:self options:nil];
+    cell = tweetCell;
+    tweetCell = nil;
+  } else {
+    AsyncImageView* oldImage = (AsyncImageView*)
+    [cell.contentView viewWithTag:999];
+    [oldImage removeFromSuperview];
+  }
+
+	// Configure the cell.
+  NSDictionary *tweet = [[[Twitter singleton] tweets] objectAtIndex:(int)indexPath.row];
+  cell.textLabel.text = [tweet objectForKey:@"text"];
+  NSDictionary *user = [tweet objectForKey:@"user"];
+  cell.userNameLabel.text = [user objectForKey:@"name"];
+
+  NSString *path = [user objectForKey:@"profile_image_url"];
+  NSURL *url = [NSURL URLWithString:path];
+
+  CGRect frame;
+	frame.size.width=48; frame.size.height=48;
+	frame.origin.x=10; frame.origin.y=10;
+	AsyncImageView* asyncImage = [[[AsyncImageView alloc]
+                                 initWithFrame:frame] autorelease];
+	asyncImage.tag = 999;
+	[asyncImage loadImageFromURL:url];
+  
+	[cell.contentView addSubview:asyncImage];
+  
+  
+  return cell;
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 80;
+}
 
 /*
  // Override to support row selection in the table view.

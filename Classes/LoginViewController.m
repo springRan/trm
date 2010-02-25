@@ -32,8 +32,7 @@
 */
 - (IBAction)userDidPressLoginButton:(id)sender {
   [[Twitter singleton] setUsername:login.text andPassword:password.text];
-  [[Twitter singleton] getSearchResultsForQuery:@"will_bailey"];
-  [self.navigationController dismissModalViewControllerAnimated:YES];
+  [[UIApplication sharedApplication].delegate userDidEnterCredentials];
 }
 
 - (void)didReceiveMemoryWarning {

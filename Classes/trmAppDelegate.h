@@ -1,14 +1,16 @@
 
 #import "LoginViewController.h"
-@interface trmAppDelegate : NSObject <UIApplicationDelegate, MGTwitterEngineDelegate> {
+@interface trmAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     UINavigationController *navigationController;
-	LoginViewController *loginViewController;
+  	LoginViewController *loginViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, retain) IBOutlet LoginViewController *loginViewController;
+
+- (void)userDidEnterCredentials;
 
 @end
 
