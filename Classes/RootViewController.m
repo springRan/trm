@@ -42,7 +42,8 @@
  */
 
 - (void)statusesReceived {
-  NSLog(@"statuses received");
+  id *appDelegate = [[UIApplication sharedApplication] delegate];
+  [appDelegate setLoadingOverlayVisibility:NO];
   [self.tableView reloadData];
 }
 
@@ -113,16 +114,13 @@
 	return 80;
 }
 
-/*
- // Override to support row selection in the table view.
- - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+// Override to support row selection in the table view.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  NSDictionary *tweet = [[[Twitter singleton] tweets] objectAtIndex:(int)indexPath.row];
+  [[[UIApplication sharedApplication] delegate] speakString:[tweet objectForKey:@"text"]];
+}
  
- // Navigation logic may go here -- for example, create and push another view controller.
- // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
- // [self.navigationController pushViewController:anotherViewController animated:YES];
- // [anotherViewController release];
- }
- */
 
 
 /*

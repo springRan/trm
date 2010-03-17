@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import "MGTwitterEngine.h"
-#import "tweet.h"
 
 @interface Twitter : NSObject {
 	NSString *username;
@@ -15,11 +14,13 @@
 @property (nonatomic,retain) NSString *password;
 @property (nonatomic,retain) NSMutableArray *tweets;
 @property (nonatomic,retain) id *delegate;
+@property (nonatomic,retain) id *twitterEngine;
 
 
 
 + (Twitter *)singleton;
-- (void) setUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg;
+- (void) setUserNameAndPassword;
+- (BOOL) userNameAndPasswordSet;
 
 - (NSString *) getFollowedTimeline;
 - (NSString *) getPublicTimeline;

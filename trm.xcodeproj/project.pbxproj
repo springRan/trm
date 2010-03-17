@@ -15,24 +15,15 @@
 		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		BE8EFBEC11339921002A8F24 /* NSData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBCD11339921002A8F24 /* NSData-SQLitePersistence.m */; };
-		BE8EFBED11339921002A8F24 /* NSDate-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBCF11339921002A8F24 /* NSDate-SQLitePersistence.m */; };
-		BE8EFBEE11339921002A8F24 /* NSMutableArray-MultipleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBD111339921002A8F24 /* NSMutableArray-MultipleSort.m */; };
-		BE8EFBEF11339921002A8F24 /* NSMutableData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBD311339921002A8F24 /* NSMutableData-SQLitePersistence.m */; };
-		BE8EFBF011339921002A8F24 /* NSNumber-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBD511339921002A8F24 /* NSNumber-SQLitePersistence.m */; };
-		BE8EFBF111339921002A8F24 /* NSObject-ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBD711339921002A8F24 /* NSObject-ClassName.m */; };
-		BE8EFBF211339921002A8F24 /* NSObject-MissingKV.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBD911339921002A8F24 /* NSObject-MissingKV.m */; };
-		BE8EFBF311339921002A8F24 /* NSObject-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBDB11339921002A8F24 /* NSObject-SQLitePersistence.m */; };
-		BE8EFBF411339921002A8F24 /* NSString-NumberStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBDD11339921002A8F24 /* NSString-NumberStuff.m */; };
-		BE8EFBF511339921002A8F24 /* NSString-SQLiteColumnName.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBDF11339921002A8F24 /* NSString-SQLiteColumnName.m */; };
-		BE8EFBF611339921002A8F24 /* NSString-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBE111339921002A8F24 /* NSString-SQLitePersistence.m */; };
-		BE8EFBF711339921002A8F24 /* NSString-UppercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBE311339921002A8F24 /* NSString-UppercaseFirst.m */; };
-		BE8EFBF811339921002A8F24 /* SQLiteInstanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBE511339921002A8F24 /* SQLiteInstanceManager.m */; };
-		BE8EFBF911339921002A8F24 /* SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBE711339921002A8F24 /* SQLitePersistentObject.m */; };
-		BE8EFBFA11339921002A8F24 /* UIColor-SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBE911339921002A8F24 /* UIColor-SQLitePersistentObject.m */; };
-		BE8EFBFB11339921002A8F24 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFBEB11339921002A8F24 /* UIImage-SQLitePersistence.m */; };
+		BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */ = {isa = PBXBuildFile; fileRef = BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */; };
+		BE10A1D8114F291C00ACA4C6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A1D7114F291C00ACA4C6 /* libstdc++.dylib */; };
+		BE10A24B114F2BC000ACA4C6 /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A24A114F2BC000ACA4C6 /* libBabTTS.a */; };
+		BE10A29C115066E500ACA4C6 /* Acapela For iPhone HQM USEnglish Heather in Resources */ = {isa = PBXBuildFile; fileRef = BE10A288115066E500ACA4C6 /* Acapela For iPhone HQM USEnglish Heather */; };
+		BE10A33C11507AC900ACA4C6 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE10A33B11507AC900ACA4C6 /* Three20.bundle */; };
+		BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A36611507AE600ACA4C6 /* QuartzCore.framework */; };
+		BE10A3C711507F1F00ACA4C6 /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A3C611507F1F00ACA4C6 /* libMobilityStatic.a */; };
+		BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE20CDD911379B16007BF519 /* AudioToolbox.framework */; };
 		BE8EFC0111339984002A8F24 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFC0011339984002A8F24 /* libsqlite3.dylib */; };
-		BE8EFC07113399BD002A8F24 /* tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFC06113399BD002A8F24 /* tweet.m */; };
 		BE8EFC6011339D67002A8F24 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFC5F11339D67002A8F24 /* Twitter.m */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
 		BE8EFD8F1134C21D002A8F24 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD641134C21D002A8F24 /* MGTwitterEngine.m */; };
@@ -56,15 +47,64 @@
 		BE8EFDA11134C21D002A8F24 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8C1134C21D002A8F24 /* NSData+Base64.m */; };
 		BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */; };
 		BE8EFE351134D5C5002A8F24 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */; };
-		BE8EFE7F1134D8F9002A8F24 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFE7E1134D8F9002A8F24 /* User.m */; };
 		BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */; };
 		BE8EFEB31134DCEF002A8F24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */; };
+		BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */; };
+		BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */; };
+		BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */; };
+		BE9DC810113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */; };
+		BE9DC811113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */; };
+		BE9DC812113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */; };
+		BE9DC813113762430081178C /* InAppSettingsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC801113762430081178C /* InAppSettingsTableCell.m */; };
+		BE9DC814113762430081178C /* InAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC803113762430081178C /* InAppSettings.m */; };
+		BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */; };
+		BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC808113762430081178C /* InAppSettingsReader.m */; };
+		BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */; };
+		BE9DC818113762430081178C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80B113762430081178C /* LICENSE */; };
+		BE9DC819113762430081178C /* README in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80C113762430081178C /* README */; };
+		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
 		BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECD2611363AF400CB06B1 /* TweetCell.m */; };
 		BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECECD2711363AF400CB06B1 /* TweetCell.xib */; };
 		BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECDF21136563400CB06B1 /* AsyncImageView.m */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
 		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE10A39F11507D4900ACA4C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2 /* libThree20.a */;
+			remoteInfo = Three20;
+		};
+		BE10A3A111507D4900ACA4C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* UnitTests.octest */;
+			remoteInfo = UnitTests;
+		};
+		BE10A3A711507E0300ACA4C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			remoteInfo = Three20;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE20CDA911379671007BF519 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,41 +120,19 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* trm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "trm-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		BE8EFBCC11339921002A8F24 /* NSData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBCD11339921002A8F24 /* NSData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBCE11339921002A8F24 /* NSDate-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBCF11339921002A8F24 /* NSDate-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBD011339921002A8F24 /* NSMutableArray-MultipleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-MultipleSort.h"; sourceTree = "<group>"; };
-		BE8EFBD111339921002A8F24 /* NSMutableArray-MultipleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray-MultipleSort.m"; sourceTree = "<group>"; };
-		BE8EFBD211339921002A8F24 /* NSMutableData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBD311339921002A8F24 /* NSMutableData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBD411339921002A8F24 /* NSNumber-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBD511339921002A8F24 /* NSNumber-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBD611339921002A8F24 /* NSObject-ClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-ClassName.h"; sourceTree = "<group>"; };
-		BE8EFBD711339921002A8F24 /* NSObject-ClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-ClassName.m"; sourceTree = "<group>"; };
-		BE8EFBD811339921002A8F24 /* NSObject-MissingKV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-MissingKV.h"; sourceTree = "<group>"; };
-		BE8EFBD911339921002A8F24 /* NSObject-MissingKV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-MissingKV.m"; sourceTree = "<group>"; };
-		BE8EFBDA11339921002A8F24 /* NSObject-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBDB11339921002A8F24 /* NSObject-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBDC11339921002A8F24 /* NSString-NumberStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-NumberStuff.h"; sourceTree = "<group>"; };
-		BE8EFBDD11339921002A8F24 /* NSString-NumberStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-NumberStuff.m"; sourceTree = "<group>"; };
-		BE8EFBDE11339921002A8F24 /* NSString-SQLiteColumnName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SQLiteColumnName.h"; sourceTree = "<group>"; };
-		BE8EFBDF11339921002A8F24 /* NSString-SQLiteColumnName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-SQLiteColumnName.m"; sourceTree = "<group>"; };
-		BE8EFBE011339921002A8F24 /* NSString-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBE111339921002A8F24 /* NSString-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-SQLitePersistence.m"; sourceTree = "<group>"; };
-		BE8EFBE211339921002A8F24 /* NSString-UppercaseFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-UppercaseFirst.h"; sourceTree = "<group>"; };
-		BE8EFBE311339921002A8F24 /* NSString-UppercaseFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-UppercaseFirst.m"; sourceTree = "<group>"; };
-		BE8EFBE411339921002A8F24 /* SQLiteInstanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteInstanceManager.h; sourceTree = "<group>"; };
-		BE8EFBE511339921002A8F24 /* SQLiteInstanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteInstanceManager.m; sourceTree = "<group>"; };
-		BE8EFBE611339921002A8F24 /* SQLitePersistentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLitePersistentObject.h; sourceTree = "<group>"; };
-		BE8EFBE711339921002A8F24 /* SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLitePersistentObject.m; sourceTree = "<group>"; };
-		BE8EFBE811339921002A8F24 /* UIColor-SQLitePersistentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-SQLitePersistentObject.h"; sourceTree = "<group>"; };
-		BE8EFBE911339921002A8F24 /* UIColor-SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-SQLitePersistentObject.m"; sourceTree = "<group>"; };
-		BE8EFBEA11339921002A8F24 /* UIImage-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-SQLitePersistence.h"; sourceTree = "<group>"; };
-		BE8EFBEB11339921002A8F24 /* UIImage-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-SQLitePersistence.m"; sourceTree = "<group>"; };
+		BE10A1C8114F28C400ACA4C6 /* babdevlopper.lic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = babdevlopper.lic.h; sourceTree = "<group>"; };
+		BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = babdevlopper.lic.password; sourceTree = "<group>"; };
+		BE10A1D7114F291C00ACA4C6 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/arm-apple-darwin9/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
+		BE10A24A114F2BC000ACA4C6 /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBabTTS.a; path = /Users/will/workspace/acapela/libBabTTS.a; sourceTree = "<absolute>"; };
+		BE10A288115066E500ACA4C6 /* Acapela For iPhone HQM USEnglish Heather */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM USEnglish Heather"; path = "../acapela/Sdk-HQ-TTS-iPhone/Acapela for iPhone Voices/Acapela For iPhone HQM USEnglish Heather"; sourceTree = SOURCE_ROOT; };
+		BE10A33B11507AC900ACA4C6 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		BE10A36611507AE600ACA4C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BE10A3C611507F1F00ACA4C6 /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobilityStatic.a; path = /Users/will/workspace/acapela/libMobilityStatic.a; sourceTree = "<absolute>"; };
+		BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaSpeech.h; sourceTree = "<group>"; };
+		BE20CDD911379B16007BF519 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BE20CF621137AC4C007BF519 /* AcapelaLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaLicense.h; sourceTree = "<group>"; };
 		BE8EFC0011339984002A8F24 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		BE8EFC05113399BD002A8F24 /* tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tweet.h; sourceTree = "<group>"; };
-		BE8EFC06113399BD002A8F24 /* tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tweet.m; sourceTree = "<group>"; };
 		BE8EFC5E11339D67002A8F24 /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
 		BE8EFC5F11339D67002A8F24 /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
 		BE8EFD061134BFF6002A8F24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -164,11 +182,35 @@
 		BE8EFD8D1134C21D002A8F24 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLIPhone.a; path = "/Users/will/Downloads/libYAJLIPhone-0.2.2/libYAJLIPhone.a"; sourceTree = "<absolute>"; };
-		BE8EFE7D1134D8F9002A8F24 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		BE8EFE7E1134D8F9002A8F24 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BE8EFEAF1134DCEF002A8F24 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Classes/LoginViewController.xib; sourceTree = "<group>"; };
+		BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSChildPaneSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSChildPaneSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSMultiValueSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC7F8113762430081178C /* InAppSettingsPSSliderSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSSliderSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSSliderSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC7FA113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSTextFieldSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSTextFieldSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC7FC113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSTitleValueSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSTitleValueSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC7FE113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSToggleSwitchSpecifierCell.h; sourceTree = "<group>"; };
+		BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSToggleSwitchSpecifierCell.m; sourceTree = "<group>"; };
+		BE9DC800113762430081178C /* InAppSettingsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsTableCell.h; sourceTree = "<group>"; };
+		BE9DC801113762430081178C /* InAppSettingsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsTableCell.m; sourceTree = "<group>"; };
+		BE9DC802113762430081178C /* InAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettings.h; sourceTree = "<group>"; };
+		BE9DC803113762430081178C /* InAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettings.m; sourceTree = "<group>"; };
+		BE9DC804113762430081178C /* InAppSettingsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsConstants.h; sourceTree = "<group>"; };
+		BE9DC805113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierTable.h; sourceTree = "<group>"; };
+		BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSMultiValueSpecifierTable.m; sourceTree = "<group>"; };
+		BE9DC807113762430081178C /* InAppSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsReader.h; sourceTree = "<group>"; };
+		BE9DC808113762430081178C /* InAppSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsReader.m; sourceTree = "<group>"; };
+		BE9DC809113762430081178C /* InAppSettingsSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsSpecifier.h; sourceTree = "<group>"; };
+		BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsSpecifier.m; sourceTree = "<group>"; };
+		BE9DC80B113762430081178C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BE9DC80C113762430081178C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BECECD2511363AF400CB06B1 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
 		BECECD2611363AF400CB06B1 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		BECECD2711363AF400CB06B1 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TweetCell.xib; path = Classes/TweetCell.xib; sourceTree = "<group>"; };
@@ -189,6 +231,11 @@
 				BE8EFC0111339984002A8F24 /* libsqlite3.dylib in Frameworks */,
 				BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */,
 				BE8EFE351134D5C5002A8F24 /* libYAJLIPhone.a in Frameworks */,
+				BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */,
+				BE10A1D8114F291C00ACA4C6 /* libstdc++.dylib in Frameworks */,
+				BE10A24B114F2BC000ACA4C6 /* libBabTTS.a in Frameworks */,
+				BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */,
+				BE10A3C711507F1F00ACA4C6 /* libMobilityStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +262,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */,
+				BE10A33B11507AC900ACA4C6 /* Three20.bundle */,
+				BE10A288115066E500ACA4C6 /* Acapela For iPhone HQM USEnglish Heather */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -236,6 +286,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DC880113766BA0081178C /* Settings.bundle */,
 				BECECE90113664CA00CB06B1 /* icon.png */,
 				BECECE861136624000CB06B1 /* Default.png */,
 				BECECD2711363AF400CB06B1 /* TweetCell.xib */,
@@ -256,47 +307,22 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 				BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */,
+				BE20CDD911379B16007BF519 /* AudioToolbox.framework */,
+				BE10A1D7114F291C00ACA4C6 /* libstdc++.dylib */,
+				BE10A24A114F2BC000ACA4C6 /* libBabTTS.a */,
+				BE10A36611507AE600ACA4C6 /* QuartzCore.framework */,
+				BE10A3C611507F1F00ACA4C6 /* libMobilityStatic.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE8EFBC911339905002A8F24 /* sqlitepersistentobjects */ = {
+		BE10A39B11507D4900ACA4C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE8EFBCC11339921002A8F24 /* NSData-SQLitePersistence.h */,
-				BE8EFBCD11339921002A8F24 /* NSData-SQLitePersistence.m */,
-				BE8EFBCE11339921002A8F24 /* NSDate-SQLitePersistence.h */,
-				BE8EFBCF11339921002A8F24 /* NSDate-SQLitePersistence.m */,
-				BE8EFBD011339921002A8F24 /* NSMutableArray-MultipleSort.h */,
-				BE8EFBD111339921002A8F24 /* NSMutableArray-MultipleSort.m */,
-				BE8EFBD211339921002A8F24 /* NSMutableData-SQLitePersistence.h */,
-				BE8EFBD311339921002A8F24 /* NSMutableData-SQLitePersistence.m */,
-				BE8EFBD411339921002A8F24 /* NSNumber-SQLitePersistence.h */,
-				BE8EFBD511339921002A8F24 /* NSNumber-SQLitePersistence.m */,
-				BE8EFBD611339921002A8F24 /* NSObject-ClassName.h */,
-				BE8EFBD711339921002A8F24 /* NSObject-ClassName.m */,
-				BE8EFBD811339921002A8F24 /* NSObject-MissingKV.h */,
-				BE8EFBD911339921002A8F24 /* NSObject-MissingKV.m */,
-				BE8EFBDA11339921002A8F24 /* NSObject-SQLitePersistence.h */,
-				BE8EFBDB11339921002A8F24 /* NSObject-SQLitePersistence.m */,
-				BE8EFBDC11339921002A8F24 /* NSString-NumberStuff.h */,
-				BE8EFBDD11339921002A8F24 /* NSString-NumberStuff.m */,
-				BE8EFBDE11339921002A8F24 /* NSString-SQLiteColumnName.h */,
-				BE8EFBDF11339921002A8F24 /* NSString-SQLiteColumnName.m */,
-				BE8EFBE011339921002A8F24 /* NSString-SQLitePersistence.h */,
-				BE8EFBE111339921002A8F24 /* NSString-SQLitePersistence.m */,
-				BE8EFBE211339921002A8F24 /* NSString-UppercaseFirst.h */,
-				BE8EFBE311339921002A8F24 /* NSString-UppercaseFirst.m */,
-				BE8EFBE411339921002A8F24 /* SQLiteInstanceManager.h */,
-				BE8EFBE511339921002A8F24 /* SQLiteInstanceManager.m */,
-				BE8EFBE611339921002A8F24 /* SQLitePersistentObject.h */,
-				BE8EFBE711339921002A8F24 /* SQLitePersistentObject.m */,
-				BE8EFBE811339921002A8F24 /* UIColor-SQLitePersistentObject.h */,
-				BE8EFBE911339921002A8F24 /* UIColor-SQLitePersistentObject.m */,
-				BE8EFBEA11339921002A8F24 /* UIImage-SQLitePersistence.h */,
-				BE8EFBEB11339921002A8F24 /* UIImage-SQLitePersistence.m */,
+				BE10A3A011507D4900ACA4C6 /* libThree20.a */,
+				BE10A3A211507D4900ACA4C6 /* UnitTests.octest */,
 			);
-			name = sqlitepersistentobjects;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BE8EFBFC11339928002A8F24 /* application */ = {
@@ -318,12 +344,8 @@
 		BE8EFC04113399AB002A8F24 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				BE8EFC05113399BD002A8F24 /* tweet.h */,
-				BE8EFC06113399BD002A8F24 /* tweet.m */,
 				BE8EFC5E11339D67002A8F24 /* Twitter.h */,
 				BE8EFC5F11339D67002A8F24 /* Twitter.m */,
-				BE8EFE7D1134D8F9002A8F24 /* User.h */,
-				BE8EFE7E1134D8F9002A8F24 /* User.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -331,8 +353,9 @@
 		BE8EFC1C11339C59002A8F24 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				BE9DCACF113791ED0081178C /* Acapela */,
+				BE9DC7F1113762430081178C /* InAppSettings Framework 1.0 */,
 				BE8EFCC31134BF46002A8F24 /* MGTwitterEngine */,
-				BE8EFBC911339905002A8F24 /* sqlitepersistentobjects */,
 				BECECDF11136563400CB06B1 /* AsyncImageView.h */,
 				BECECDF21136563400CB06B1 /* AsyncImageView.m */,
 			);
@@ -391,6 +414,66 @@
 			name = MGTwitterEngine;
 			sourceTree = "<group>";
 		};
+		BE9DC7F1113762430081178C /* InAppSettings Framework 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DC7F2113762430081178C /* InAppSettings */,
+				BE9DC80B113762430081178C /* LICENSE */,
+				BE9DC80C113762430081178C /* README */,
+			);
+			name = "InAppSettings Framework 1.0";
+			path = "../../Downloads/InAppSettings Framework 1.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		BE9DC7F2113762430081178C /* InAppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DC7F3113762430081178C /* Cells */,
+				BE9DC802113762430081178C /* InAppSettings.h */,
+				BE9DC803113762430081178C /* InAppSettings.m */,
+				BE9DC804113762430081178C /* InAppSettingsConstants.h */,
+				BE9DC805113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.h */,
+				BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */,
+				BE9DC807113762430081178C /* InAppSettingsReader.h */,
+				BE9DC808113762430081178C /* InAppSettingsReader.m */,
+				BE9DC809113762430081178C /* InAppSettingsSpecifier.h */,
+				BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */,
+			);
+			path = InAppSettings;
+			sourceTree = "<group>";
+		};
+		BE9DC7F3113762430081178C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */,
+				BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */,
+				BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */,
+				BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */,
+				BE9DC7F8113762430081178C /* InAppSettingsPSSliderSpecifierCell.h */,
+				BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */,
+				BE9DC7FA113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.h */,
+				BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */,
+				BE9DC7FC113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.h */,
+				BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */,
+				BE9DC7FE113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.h */,
+				BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */,
+				BE9DC800113762430081178C /* InAppSettingsTableCell.h */,
+				BE9DC801113762430081178C /* InAppSettingsTableCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BE9DCACF113791ED0081178C /* Acapela */ = {
+			isa = PBXGroup;
+			children = (
+				BE10A1C8114F28C400ACA4C6 /* babdevlopper.lic.h */,
+				BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */,
+				BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */,
+				BE20CF621137AC4C007BF519 /* AcapelaLicense.h */,
+			);
+			name = Acapela;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,10 +484,12 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				BE20CDA911379671007BF519 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE10A3A811507E0300ACA4C6 /* PBXTargetDependency */,
 			);
 			name = trm;
 			productName = trm;
@@ -431,12 +516,35 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BE10A39B11507D4900ACA4C6 /* Products */;
+					ProjectRef = BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* trm */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BE10A3A011507D4900ACA4C6 /* libThree20.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20.a;
+			remoteRef = BE10A39F11507D4900ACA4C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE10A3A211507D4900ACA4C6 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = BE10A3A111507D4900ACA4C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -449,6 +557,12 @@
 				BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */,
 				BECECE871136624000CB06B1 /* Default.png in Resources */,
 				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
+				BE9DC818113762430081178C /* LICENSE in Resources */,
+				BE9DC819113762430081178C /* README in Resources */,
+				BE9DC881113766BA0081178C /* Settings.bundle in Resources */,
+				BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */,
+				BE10A29C115066E500ACA4C6 /* Acapela For iPhone HQM USEnglish Heather in Resources */,
+				BE10A33C11507AC900ACA4C6 /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,23 +576,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* trmAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
-				BE8EFBEC11339921002A8F24 /* NSData-SQLitePersistence.m in Sources */,
-				BE8EFBED11339921002A8F24 /* NSDate-SQLitePersistence.m in Sources */,
-				BE8EFBEE11339921002A8F24 /* NSMutableArray-MultipleSort.m in Sources */,
-				BE8EFBEF11339921002A8F24 /* NSMutableData-SQLitePersistence.m in Sources */,
-				BE8EFBF011339921002A8F24 /* NSNumber-SQLitePersistence.m in Sources */,
-				BE8EFBF111339921002A8F24 /* NSObject-ClassName.m in Sources */,
-				BE8EFBF211339921002A8F24 /* NSObject-MissingKV.m in Sources */,
-				BE8EFBF311339921002A8F24 /* NSObject-SQLitePersistence.m in Sources */,
-				BE8EFBF411339921002A8F24 /* NSString-NumberStuff.m in Sources */,
-				BE8EFBF511339921002A8F24 /* NSString-SQLiteColumnName.m in Sources */,
-				BE8EFBF611339921002A8F24 /* NSString-SQLitePersistence.m in Sources */,
-				BE8EFBF711339921002A8F24 /* NSString-UppercaseFirst.m in Sources */,
-				BE8EFBF811339921002A8F24 /* SQLiteInstanceManager.m in Sources */,
-				BE8EFBF911339921002A8F24 /* SQLitePersistentObject.m in Sources */,
-				BE8EFBFA11339921002A8F24 /* UIColor-SQLitePersistentObject.m in Sources */,
-				BE8EFBFB11339921002A8F24 /* UIImage-SQLitePersistence.m in Sources */,
-				BE8EFC07113399BD002A8F24 /* tweet.m in Sources */,
 				BE8EFC6011339D67002A8F24 /* Twitter.m in Sources */,
 				BE8EFD8F1134C21D002A8F24 /* MGTwitterEngine.m in Sources */,
 				BE8EFD901134C21D002A8F24 /* MGTwitterHTTPURLConnection.m in Sources */,
@@ -500,14 +597,32 @@
 				BE8EFDA01134C21D002A8F24 /* MGTwitterYAJLParser.m in Sources */,
 				BE8EFDA11134C21D002A8F24 /* NSData+Base64.m in Sources */,
 				BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */,
-				BE8EFE7F1134D8F9002A8F24 /* User.m in Sources */,
 				BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */,
 				BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */,
 				BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */,
+				BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */,
+				BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */,
+				BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */,
+				BE9DC810113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m in Sources */,
+				BE9DC811113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m in Sources */,
+				BE9DC812113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m in Sources */,
+				BE9DC813113762430081178C /* InAppSettingsTableCell.m in Sources */,
+				BE9DC814113762430081178C /* InAppSettings.m in Sources */,
+				BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */,
+				BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */,
+				BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE10A3A811507E0300ACA4C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = BE10A3A711507E0300ACA4C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -525,6 +640,10 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../yajl/build/yajl-1.0.8/lib\"",
 					"\"$(SRCROOT)/../../Downloads/libYAJLIPhone-0.2.2\"",
+					"\"$(SRCROOT)/../../Sdk-HQ-TTS-iPhone/iPhone_Demo_1.0.5/iPhone_Demo_1.0.5/Libraries/iPhoneSimulator\"",
+					"\"$(SYSTEM_APPS_DIR)/Acapela for iPhone/lib/iphonesimulator\"",
+					"\"$(SDKROOT)/usr/lib/gcc/arm-apple-darwin9/4.0.1\"",
+					"\"$(SRCROOT)/../acapela\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -543,6 +662,10 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../yajl/build/yajl-1.0.8/lib\"",
 					"\"$(SRCROOT)/../../Downloads/libYAJLIPhone-0.2.2\"",
+					"\"$(SRCROOT)/../../Sdk-HQ-TTS-iPhone/iPhone_Demo_1.0.5/iPhone_Demo_1.0.5/Libraries/iPhoneSimulator\"",
+					"\"$(SYSTEM_APPS_DIR)/Acapela for iPhone/lib/iphonesimulator\"",
+					"\"$(SDKROOT)/usr/lib/gcc/arm-apple-darwin9/4.0.1\"",
+					"\"$(SRCROOT)/../acapela\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -557,9 +680,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					/Users/will/workspace/three20/src,
 					"/usr/local/yajl-1.0.8/include/",
 					"${SDKROOT}/usr/include/libxml2",
 				);
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = tweetradio;
 				SDKROOT = iphoneos3.1.2;

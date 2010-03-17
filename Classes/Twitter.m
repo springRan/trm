@@ -13,29 +13,52 @@ static Twitter * Twitter_Singleton = nil;
 {
     if (nil == Twitter_Singleton)
     {
-        Twitter_Singleton = [[Twitter alloc] init];
+      Twitter_Singleton = [[Twitter alloc] init];
     }
     return Twitter_Singleton;
 }
 
-- (void) setUsername:(NSString *) usernameArg andPassword:(NSString *) passwordArg {
-  if (self = [super init]){
-    username=usernameArg;
-    password=passwordArg;
+- (id)init {
+  if (self = [super init]) {
     twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
-    [twitterEngine setUsername:username password:password];
+    [twitterEngine retain];
+  }
+  return self;
+}
+
+  // do we have the username and password
+- (BOOL) userNameAndPasswordSet {
+  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+  if ([[userDefaults stringForKey:@"login"] length] == 0 || [[userDefaults stringForKey:@"password"] length] == 0) {
+    NSLog(@"username and password are not set");
+    return NO;
+  } else {
+    NSLog(@"username and password are set");
+    return YES;
   }
 }
 
+- (void) setUserNameAndPassword {
+  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+  [self setUsername:[userDefaults stringForKey:@"login"]];
+  [self setPassword:[userDefaults stringForKey:@"password"]];
+  NSLog(@"username:%@ password:%@", username, password);
+  [twitterEngine setUsername:username password:password];
+}
+
 - (NSString *) getFollowedTimelineAndNotifyObject:(id *) object withSelector:(SEL)selector{
+  [self setUserNameAndPassword];
   NSString *strSelector = NSStringFromSelector(selector);
   NSDictionary *callbackBinding = [[NSDictionary alloc] initWithObjectsAndKeys: strSelector, @"selector", object, @"object", nil];
+  // purge tweets
+  [[self tweets] removeAllObjects];
   NSString *connectionIdentifier = [twitterEngine getFollowedTimelineSinceID:0 startingAtPage:0 count:30];
   if (!connections) {
     connections = [[NSMutableDictionary alloc] init];
   }
   [connections setValue:callbackBinding forKey:connectionIdentifier];
   return connectionIdentifier;
+//return @"";
 }
 
 - (NSString *) getPublicTimeline {
@@ -68,17 +91,9 @@ static Twitter * Twitter_Singleton = nil;
     self.tweets = [[NSMutableArray alloc] init];
   }
   for (int x=0; x<statuses.count; x++) {
-    // @synthesize tweetId;
-    // @synthesize fromUser;
-    // @synthesize toUser;
-    // @synthesize profileImageUrl;
-    // @synthesize text;
 		NSDictionary *tweet = [statuses objectAtIndex:x]; 
     [self.tweets addObject:tweet];
-		NSLog(@"%@",tweet);
 	}
-  NSLog(@"tweets is %@", self.tweets);
-  NSLog(@"processed %d tweets", self.tweets.count);
   id binding = [connections valueForKey:connectionIdentifier];
   if (binding) {
     NSLog(@"found binding");
@@ -130,6 +145,10 @@ static Twitter * Twitter_Singleton = nil;
 - (void)receivedObject:(NSDictionary *)dictionary forRequest:(NSString *)connectionIdentifier
 {
   NSLog(@"Got an object for %@: %@", connectionIdentifier, dictionary);
+}
+
+- (void) dealloc {
+  [twitterEngine release];
 }
 
 @end
