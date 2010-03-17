@@ -1,5 +1,6 @@
 #import "trmAppDelegate.h"
 #import "RootViewController.h"
+#import "Three20/Three20.h"
 
 @implementation trmAppDelegate
 
@@ -44,7 +45,7 @@
   // show the settings view
 - (IBAction)presentSettings{
   settingsController.navigationItem.hidesBackButton = YES;
-  settingsController.title = @"Tweet Radio";
+  settingsController.title = @"tweetrad.io";
   UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] 
                                  initWithTitle:@"done"
                                  style:UIBarButtonItemStyleBordered  
@@ -63,8 +64,6 @@
 
 - (void)userDidEnterCredentials {
   [self setLoadingOverlayVisibility:YES];
-  [[Twitter singleton] getFollowedTimelineAndNotifyObject:rootViewController 
-                                             withSelector:@selector(statusesReceived)];
 }
 
 - (void)refreshTweets {
@@ -78,28 +77,29 @@
   // Save data if appropriate
 }
 
+  // display a loading overlay
 - (void)setLoadingOverlayVisibility:(BOOL)visible {
-  if (visible) {
-    [window addSubview:loadingOverlay];
-    loadingOverlay.hidden=NO;
-  } else {
-    [self.loadingOverlay removeFromSuperview];
-  }
+//  if (visible) {
+//    [window addSubview:loadingOverlay];
+//    loadingOverlay.hidden=NO;
+//  } else {
+//    [self.loadingOverlay removeFromSuperview];
+//  }
 }
 
 - (void)speakString:(NSString *)string {
-  if (!acapelaLicense){
-    NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
-                                                      encoding:NSASCIIStringEncoding]; 
-    acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
-                                                  user:uid.userId 
-                                                passwd:uid.passwd];
-  
-    [acapelaLicense retain];
-    [aLicenseString release];
-    speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:acapelaLicense];
-  }
-  [speaker startSpeakingString:string];
+//  if (!acapelaLicense){
+//    NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
+//                                                      encoding:NSASCIIStringEncoding]; 
+//    acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
+//                                                  user:uid.userId 
+//                                                passwd:uid.passwd];
+//  
+//    [acapelaLicense retain];
+//    [aLicenseString release];
+//    speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:acapelaLicense];
+//  }
+//  [speaker startSpeakingString:string];
 }
 
 #pragma mark -

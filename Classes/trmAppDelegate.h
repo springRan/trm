@@ -4,10 +4,10 @@
 
 // acapela
 #include <AudioToolbox/AudioToolbox.h>
-#include "babdevlopper.lic.h" 
-#include "babdevlopper.lic.password"
-#include "AcapelaLicense.h"
-#include "AcapelaSpeech.h"
+//#include "babdevlopper.lic.h" 
+//#include "babdevlopper.lic.password"
+//#include "AcapelaLicense.h"
+//#include "AcapelaSpeech.h"
 
 @interface trmAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
@@ -16,8 +16,8 @@
     RootViewController *rootViewController;
     UIView *loadingOverlay;
     InAppSettingsViewController *settingsController;
-    AcapelaLicense *acapelaLicense;
-    AcapelaSpeech *speaker;
+//    AcapelaLicense *acapelaLicense;
+//    AcapelaSpeech *speaker;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -26,8 +26,8 @@
 @property (nonatomic, retain) IBOutlet LoginViewController *loginViewController;
 @property (nonatomic, retain) IBOutlet UIView *loadingOverlay;
 @property (nonatomic, retain) IBOutlet InAppSettingsViewController *settingsController;
-@property (readonly, retain)  IBOutlet AcapelaLicense *acapelaLicense;
-@property (readonly, retain)  IBOutlet AcapelaSpeech *speaker;
+//@property (readonly, retain)  IBOutlet AcapelaLicense *acapelaLicense;
+//@property (readonly, retain)  IBOutlet AcapelaSpeech *speaker;
 
 - (void)userDidEnterCredentials;
 - (void)setLoadingOverlayVisibility:(BOOL)visibility;
