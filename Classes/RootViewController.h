@@ -5,6 +5,6 @@
 @interface RootViewController : TTTableViewController {
   IBOutlet TweetCell *tweetCell;
 }
-@property (nonatomic, retain) IBOutlet TweetCell *tweetCell;
 - (void)statusesReceived;
+@property (nonatomic, retain) IBOutlet TweetCell *tweetCell;
 @end

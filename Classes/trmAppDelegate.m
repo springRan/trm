@@ -34,9 +34,7 @@
   [refreshButton release];
   
   // load up the app or ask for credentials
-  if ([[Twitter singleton] userNameAndPasswordSet]) {
-    [self userDidEnterCredentials];
-  } else {
+  if (![[Twitter singleton] userNameAndPasswordSet]) {
     [self presentSettings];
   }
   [window makeKeyAndVisible];
@@ -59,15 +57,9 @@
   //dismiss the settings view
 - (void)dismissSettings {
   [navigationController popViewControllerAnimated:YES];
-  [self userDidEnterCredentials];
-}
-
-- (void)userDidEnterCredentials {
-  [self setLoadingOverlayVisibility:YES];
 }
 
 - (void)refreshTweets {
-  [self speakString:@"testing"];
 //  [self setLoadingOverlayVisibility:YES];
 //  [[Twitter singleton] getFollowedTimelineAndNotifyObject:rootViewController 
 //                                             withSelector:@selector(statusesReceived)];

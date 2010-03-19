@@ -3,18 +3,6 @@
 
 @implementation RootViewDataSource
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// public
-
-
-+ (RootViewDataSource*)rootViewDataSource {
-	RootViewDataSource* dataSource =  [[[RootViewDataSource alloc] initWithItems:
-                                      [NSMutableArray arrayWithObjects: nil]] autorelease];
-	return dataSource;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
 - (void)dealloc {
 	[super dealloc];
 }
@@ -23,15 +11,15 @@
 // TTTableViewDataSource
 
 
-- (void)tableViewDidLoadModel:(UITableView*)tableView {
+- (void)tableViewDidLoadModel:(UITableView *) tableView {
+  NSLog(@"statuses received invoked");
   NSMutableArray* items = [[NSMutableArray alloc] init];
   
   for (NSDictionary* tweet in [[Twitter singleton] tweets]) {
+    NSLog(@"tweet:%@", [tweet objectForKey:@"text"]);
     TTStyledText* styledText = [TTStyledText textFromXHTML:
-                                [NSString stringWithFormat:@"%@\n<b>%@</b>",
-                                 [[tweet objectForKey:@"text"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"],
-                                 [[tweet objectForKey:@"created_at"] formatRelativeTime]]
-                                                lineBreaks:YES URLs:YES];
+                                [NSString stringWithFormat:@"%@\n",
+                                 [[tweet objectForKey:@"text"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]]];
     TTDASSERT(nil != styledText);
     [items addObject:[TTTableStyledTextItem itemWithText:styledText]];
   }
@@ -51,6 +39,10 @@
 
 - (id<TTModel>)model {
   return [Twitter singleton];
+}
+
+- (NSString*)titleForEmpty {
+  return NSLocalizedString(@"No tweets found.", @"Twitter feed no results");
 }
 
 - (void)tableView:(UITableView*)tableView prepareCell:(UITableViewCell*)cell

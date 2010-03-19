@@ -2,7 +2,7 @@
 
 @interface RootViewDataSource : TTListDataSource {
 }
-
+- (void)statusesReceived;
 + (RootViewDataSource*)rootViewDataSource;
 
 @end

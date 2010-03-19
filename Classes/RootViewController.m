@@ -17,23 +17,25 @@
   self.variableHeightRows = YES;
   self.title = @"tweetrad.io";
   [self.view addSubview:self.tableView];
-  
-  self.dataSource = [[[RootViewDataSource alloc] init] autorelease];
-  [[Twitter singleton] getFollowedTimelineAndNotifyObject:self 
-                                             withSelector:@selector(statusesReceived)];
 }  
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // TTTableViewController  
 
-- (id)createDataSource {
-  return [RootViewDataSource rootViewDataSource];
-}  
+- (void)createModel {
+  self.dataSource = [[[RootViewDataSource alloc] init] autorelease];
+  [[Twitter singleton] getFollowedTimelineAndNotifyObject:self 
+                                             withSelector:@selector(statusesReceived)];
+
+}
 
 - (void)statusesReceived {
-  id *appDelegate = [[UIApplication sharedApplication] delegate];
-  [appDelegate setLoadingOverlayVisibility:NO];
   [self.dataSource tableViewDidLoadModel:self];
+  [self reload];
+}
+
+- (id<UITableViewDelegate>)createDelegate {
+  return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -29,7 +29,6 @@
 //@property (readonly, retain)  IBOutlet AcapelaLicense *acapelaLicense;
 //@property (readonly, retain)  IBOutlet AcapelaSpeech *speaker;
 
-- (void)userDidEnterCredentials;
 - (void)setLoadingOverlayVisibility:(BOOL)visibility;
 - (IBAction)presentSettings;
 - (void)dismissSettings;
