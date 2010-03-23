@@ -1,5 +1,6 @@
 #import "Three20/Three20.h"
 #import "MGTwitterEngine.h"
+#import "TRTweet.h"
 
 @interface Twitter : TTModel{
 	NSString *username;

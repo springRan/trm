@@ -1,10 +1,9 @@
-#import "TweetCell.h"
 #import "Twitter.h"
 #import "Three20/Three20.h"
+#import "TRTweetTableDelegate.h"
 
 @interface RootViewController : TTTableViewController {
-  IBOutlet TweetCell *tweetCell;
 }
 - (void)statusesReceived;
-@property (nonatomic, retain) IBOutlet TweetCell *tweetCell;
+- (void)loadData;
 @end

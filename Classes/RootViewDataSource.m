@@ -1,5 +1,4 @@
 #import "RootViewDataSource.h"
-#import "Twitter.h"
 
 @implementation RootViewDataSource
 
@@ -7,42 +6,39 @@
 	[super dealloc];
 }
 
+
+- (Class)tableView:(UITableView*)tableView cellClassForObject:(id)object {
+  return [TRTweetTableItemCell class];
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // TTTableViewDataSource
-
 
 - (void)tableViewDidLoadModel:(UITableView *) tableView {
   NSLog(@"statuses received invoked");
   NSMutableArray* items = [[NSMutableArray alloc] init];
-  
+
   for (NSDictionary* tweet in [[Twitter singleton] tweets]) {
-    NSLog(@"tweet:%@", [tweet objectForKey:@"text"]);
-    TTStyledText* styledText = [TTStyledText textFromXHTML:
-                                [NSString stringWithFormat:@"%@\n",
-                                 [[tweet objectForKey:@"text"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]]];
-    TTDASSERT(nil != styledText);
-    [items addObject:[TTTableStyledTextItem itemWithText:styledText]];
+    NSLog(@"%@",tweet);
+    TRTweetTableItem* item = [TRTweetTableItem itemWithText:[tweet objectForKey:@"text"] 
+                                                   imageURL:[[tweet objectForKey:@"user"] objectForKey:@"profile_image_url"]];
+    [items addObject:item];
   }
   
   self.items = items;
   TT_RELEASE_SAFELY(items);
 }
 
-- (Class)tableView:(UITableView*)tableView cellClassForObject:(id) object { 
-	
-	if ([object isKindOfClass:nil]) { 
-		return nil;
-	} else { 
-		return [super tableView:tableView cellClassForObject:object]; 
-	}
-}
-
 - (id<TTModel>)model {
   return [Twitter singleton];
 }
 
-- (NSString*)titleForEmpty {
-  return NSLocalizedString(@"No tweets found.", @"Twitter feed no results");
+- (NSString*)titleForLoading:(BOOL)reloading {
+  if (reloading) {
+    return NSLocalizedString(@"Updating Twitter feed...", @"Twitter feed updating text");
+  } else {
+    return NSLocalizedString(@"Loading Twitter feed...", @"Twitter feed loading text");
+  }
 }
 
 - (void)tableView:(UITableView*)tableView prepareCell:(UITableViewCell*)cell

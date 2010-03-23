@@ -1,12 +1,10 @@
-#import "trmAppDelegate.h"
-#import "RootViewController.h"
 #import "Three20/Three20.h"
+#import "trmAppDelegate.h"
 
 @implementation trmAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize loginViewController;
 @synthesize loadingOverlay;
 @synthesize settingsController;
 @synthesize rootViewController;
@@ -15,6 +13,10 @@
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+  // setup three20 global stylesheet
+  [TTStyleSheet setGlobalStyleSheet:[[[TRDefaultStyleSheet alloc]   
+                                      init] autorelease]];
+  // setup in app settings
   [InAppSettings registerDefaults];
   [window addSubview:[navigationController view]];
   
@@ -26,13 +28,6 @@
   rootViewController.navigationItem.leftBarButtonItem = settingsButton;
   [settingsButton release];
 
-  UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] 
-                                     initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
-                                     target:self 
-                                     action:@selector(refreshTweets)];
-  rootViewController.navigationItem.rightBarButtonItem = refreshButton;
-  [refreshButton release];
-  
   // load up the app or ask for credentials
   if (![[Twitter singleton] userNameAndPasswordSet]) {
     [self presentSettings];
@@ -57,12 +52,7 @@
   //dismiss the settings view
 - (void)dismissSettings {
   [navigationController popViewControllerAnimated:YES];
-}
-
-- (void)refreshTweets {
-//  [self setLoadingOverlayVisibility:YES];
-//  [[Twitter singleton] getFollowedTimelineAndNotifyObject:rootViewController 
-//                                             withSelector:@selector(statusesReceived)];
+  [rootViewController loadData];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -80,18 +70,18 @@
 }
 
 - (void)speakString:(NSString *)string {
-//  if (!acapelaLicense){
-//    NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
-//                                                      encoding:NSASCIIStringEncoding]; 
-//    acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
-//                                                  user:uid.userId 
-//                                                passwd:uid.passwd];
-//  
-//    [acapelaLicense retain];
-//    [aLicenseString release];
-//    speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:acapelaLicense];
-//  }
-//  [speaker startSpeakingString:string];
+  if (!acapelaLicense){
+    NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
+                                                      encoding:NSASCIIStringEncoding]; 
+    acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
+                                                    user:uid.userId 
+                                                  passwd:uid.passwd];
+  
+    [acapelaLicense retain];
+    [aLicenseString release];
+    speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:acapelaLicense];
+  }
+  [speaker startSpeakingString:string];
 }
 
 #pragma mark -

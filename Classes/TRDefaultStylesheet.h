@@ -3,10 +3,4 @@
 
 @interface TRDefaultStyleSheet : TTDefaultStyleSheet
 
-@property(nonatomic,readonly) UIColor* myHeadingColor;
-@property(nonatomic,readonly) UIColor* mySubtextColor;
-@property(nonatomic,readonly) UIFont* myHeadingFont;
-@property(nonatomic,readonly) UIFont* mySubtextFont;
-
-
 @end

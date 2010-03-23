@@ -84,40 +84,29 @@ static Twitter * Twitter_Singleton = nil;
         [error userInfo]);
 }
 
-
+  ////////////////////
+  // STATUSES RECEIVED
+  // setup the dataset here
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)connectionIdentifier
 {
   if (!self.tweets) {
     self.tweets = [[NSMutableArray alloc] init];
   }
   for (int x=0; x<statuses.count; x++) {
-		NSDictionary *tweet = [statuses objectAtIndex:x]; 
-    [self.tweets addObject:tweet];
+//		NSMutableDictionary *tweet = [[NSMutableDictionary alloc] init];
+//    [tweet addEntriesFromDictionary:[statuses objectAtIndex:x]];
+//    [self.tweets addObject:tweet];
+    [self.tweets addObject:[statuses objectAtIndex:x]];
 	}
   id binding = [connections valueForKey:connectionIdentifier];
   if (binding) {
     NSLog(@"found binding");
     [[binding valueForKey:@"object"] performSelector:NSSelectorFromString([binding valueForKey:@"selector"])];
   }
+  [self didFinishLoad];
 }
 
 
-- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)connectionIdentifier
-{
-  NSLog(@"Got direct messages for %@:\r%@", connectionIdentifier, messages);
-}
-
-
-- (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)connectionIdentifier
-{
-  NSLog(@"Got user info for %@:\r%@", connectionIdentifier, userInfo);
-}
-
-
-- (void)miscInfoReceived:(NSArray *)miscInfo forRequest:(NSString *)connectionIdentifier
-{
-	NSLog(@"Got misc info for %@:\r%@", connectionIdentifier, miscInfo);
-}
 
 - (void)searchResultsReceived:(NSArray *)searchResults forRequest:(NSString *)connectionIdentifier
 {
@@ -127,15 +116,6 @@ static Twitter * Twitter_Singleton = nil;
 		NSLog(@"text %@",[tweetData valueForKey:@"text"]);
 	}
 }
-
-//- (void)imageReceived:(NSImage *)image forRequest:(NSString *)connectionIdentifier
-//{
-//    NSLog(@"Got an image for %@: %@", connectionIdentifier, image);
-//    
-//		// Save image to the Desktop.
-//    // NSString *path = [[NSString stringWithFormat:@"~/Desktop/%@.tiff", connectionIdentifier] stringByExpandingTildeInPath];
-//    // [[image TIFFRepresentation] writeToFile:path atomically:NO];
-//}
 
 - (void)connectionFinished:(NSString *)connectionIdentifier
 {

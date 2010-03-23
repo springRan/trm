@@ -25,6 +25,11 @@
 		BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */; };
 		BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE10A54B1150A75000ACA4C6 /* TRDefaultStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */; };
+		BE10A88111534B6B00ACA4C6 /* TRTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A88011534B6B00ACA4C6 /* TRTweet.m */; };
+		BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
+		BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */; };
+		BE10AD3211587CC500ACA4C6 /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10AD3011587CC500ACA4C6 /* libBabTTS.a */; };
+		BE10AD3311587CC500ACA4C6 /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10AD3111587CC500ACA4C6 /* libMobilityStatic.a */; };
 		BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE20CDD911379B16007BF519 /* AudioToolbox.framework */; };
 		BE8EFC0111339984002A8F24 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFC0011339984002A8F24 /* libsqlite3.dylib */; };
 		BE8EFC6011339D67002A8F24 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFC5F11339D67002A8F24 /* Twitter.m */; };
@@ -50,8 +55,6 @@
 		BE8EFDA11134C21D002A8F24 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8C1134C21D002A8F24 /* NSData+Base64.m */; };
 		BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */; };
 		BE8EFE351134D5C5002A8F24 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */; };
-		BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */; };
-		BE8EFEB31134DCEF002A8F24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */; };
 		BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */; };
 		BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */; };
 		BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */; };
@@ -66,7 +69,6 @@
 		BE9DC818113762430081178C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80B113762430081178C /* LICENSE */; };
 		BE9DC819113762430081178C /* README in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80C113762430081178C /* README */; };
 		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
-		BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECD2611363AF400CB06B1 /* TweetCell.m */; };
 		BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECECD2711363AF400CB06B1 /* TweetCell.xib */; };
 		BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECECDF21136563400CB06B1 /* AsyncImageView.m */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
@@ -138,6 +140,12 @@
 		BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableItemCell.m; sourceTree = "<group>"; };
 		BE10A5491150A75000ACA4C6 /* TRDefaultStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDefaultStylesheet.h; sourceTree = "<group>"; };
 		BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDefaultStylesheet.m; sourceTree = "<group>"; };
+		BE10A87F11534B6B00ACA4C6 /* TRTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweet.h; sourceTree = "<group>"; };
+		BE10A88011534B6B00ACA4C6 /* TRTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweet.m; sourceTree = "<group>"; };
+		BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweetTableDelegate.h; sourceTree = "<group>"; };
+		BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableDelegate.m; sourceTree = "<group>"; };
+		BE10AD3011587CC500ACA4C6 /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabTTS.a; sourceTree = SOURCE_ROOT; };
+		BE10AD3111587CC500ACA4C6 /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = SOURCE_ROOT; };
 		BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaSpeech.h; sourceTree = "<group>"; };
 		BE20CDD911379B16007BF519 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE20CF621137AC4C007BF519 /* AcapelaLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaLicense.h; sourceTree = "<group>"; };
@@ -191,9 +199,6 @@
 		BE8EFD8D1134C21D002A8F24 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLIPhone.a; path = "/Users/will/Downloads/libYAJLIPhone-0.2.2/libYAJLIPhone.a"; sourceTree = "<absolute>"; };
-		BE8EFEAF1134DCEF002A8F24 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Classes/LoginViewController.xib; sourceTree = "<group>"; };
 		BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSChildPaneSpecifierCell.h; sourceTree = "<group>"; };
 		BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSChildPaneSpecifierCell.m; sourceTree = "<group>"; };
 		BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierCell.h; sourceTree = "<group>"; };
@@ -220,8 +225,6 @@
 		BE9DC80B113762430081178C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BE9DC80C113762430081178C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		BECECD2511363AF400CB06B1 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
-		BECECD2611363AF400CB06B1 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		BECECD2711363AF400CB06B1 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TweetCell.xib; path = Classes/TweetCell.xib; sourceTree = "<group>"; };
 		BECECDF11136563400CB06B1 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		BECECDF21136563400CB06B1 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				BE10A1D8114F291C00ACA4C6 /* libstdc++.dylib in Frameworks */,
 				BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */,
 				BE10A4D511509EBF00ACA4C6 /* libThree20.a in Frameworks */,
+				BE10AD3211587CC500ACA4C6 /* libBabTTS.a in Frameworks */,
+				BE10AD3311587CC500ACA4C6 /* libMobilityStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +303,6 @@
 				BECECE90113664CA00CB06B1 /* icon.png */,
 				BECECE861136624000CB06B1 /* Default.png */,
 				BECECD2711363AF400CB06B1 /* TweetCell.xib */,
-				BE8EFEB11134DCEF002A8F24 /* LoginViewController.xib */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* trm-Info.plist */,
@@ -309,6 +313,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE10AD3011587CC500ACA4C6 /* libBabTTS.a */,
+				BE10AD3111587CC500ACA4C6 /* libMobilityStatic.a */,
 				BE8EFC0011339984002A8F24 /* libsqlite3.dylib */,
 				BE8EFD061134BFF6002A8F24 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -341,16 +347,14 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* trmAppDelegate.h */,
 				1D3623250D0F684500981E51 /* trmAppDelegate.m */,
-				BE8EFEAF1134DCEF002A8F24 /* LoginViewController.h */,
-				BE8EFEB01134DCEF002A8F24 /* LoginViewController.m */,
-				BECECD2511363AF400CB06B1 /* TweetCell.h */,
-				BECECD2611363AF400CB06B1 /* TweetCell.m */,
-				BE10A4E511509FCE00ACA4C6 /* RootViewDataSource.h */,
-				BE10A4E611509FCE00ACA4C6 /* RootViewDataSource.m */,
 				BE10A50A1150A13B00ACA4C6 /* TRTweetTableItem.h */,
 				BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */,
 				BE10A5441150A58E00ACA4C6 /* TRTweetTableItemCell.h */,
 				BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */,
+				BE10A4E511509FCE00ACA4C6 /* RootViewDataSource.h */,
+				BE10A4E611509FCE00ACA4C6 /* RootViewDataSource.m */,
+				BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */,
+				BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */,
 			);
 			name = application;
 			sourceTree = "<group>";
@@ -360,6 +364,8 @@
 			children = (
 				BE8EFC5E11339D67002A8F24 /* Twitter.h */,
 				BE8EFC5F11339D67002A8F24 /* Twitter.m */,
+				BE10A87F11534B6B00ACA4C6 /* TRTweet.h */,
+				BE10A88011534B6B00ACA4C6 /* TRTweet.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -567,7 +573,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
-				BE8EFEB31134DCEF002A8F24 /* LoginViewController.xib in Resources */,
 				BECECD2911363AF400CB06B1 /* TweetCell.xib in Resources */,
 				BECECE871136624000CB06B1 /* Default.png in Resources */,
 				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
@@ -612,8 +617,6 @@
 				BE8EFDA01134C21D002A8F24 /* MGTwitterYAJLParser.m in Sources */,
 				BE8EFDA11134C21D002A8F24 /* NSData+Base64.m in Sources */,
 				BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */,
-				BE8EFEB21134DCEF002A8F24 /* LoginViewController.m in Sources */,
-				BECECD2811363AF400CB06B1 /* TweetCell.m in Sources */,
 				BECECDF31136563400CB06B1 /* AsyncImageView.m in Sources */,
 				BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */,
 				BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */,
@@ -626,9 +629,12 @@
 				BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */,
 				BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */,
 				BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */,
+				BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */,
 				BE10A4E711509FCE00ACA4C6 /* RootViewDataSource.m in Sources */,
 				BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */,
 				BE10A54B1150A75000ACA4C6 /* TRDefaultStylesheet.m in Sources */,
+				BE10A88111534B6B00ACA4C6 /* TRTweet.m in Sources */,
+				BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +668,9 @@
 					"\"$(SYSTEM_APPS_DIR)/Acapela for iPhone/lib/iphonesimulator\"",
 					"\"$(SDKROOT)/usr/lib/gcc/arm-apple-darwin9/4.0.1\"",
 					"\"$(SRCROOT)/../acapela\"",
+					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneSimulator\"",
+					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
+					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -684,6 +693,9 @@
 					"\"$(SYSTEM_APPS_DIR)/Acapela for iPhone/lib/iphonesimulator\"",
 					"\"$(SDKROOT)/usr/lib/gcc/arm-apple-darwin9/4.0.1\"",
 					"\"$(SRCROOT)/../acapela\"",
+					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneSimulator\"",
+					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
+					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -702,10 +714,7 @@
 					"/usr/local/yajl-1.0.8/include/",
 					"${SDKROOT}/usr/include/libxml2",
 				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				PRODUCT_NAME = tweetradio;
 				SDKROOT = iphoneos3.1.2;

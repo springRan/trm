@@ -24,18 +24,20 @@
 
 - (void)createModel {
   self.dataSource = [[[RootViewDataSource alloc] init] autorelease];
-  [[Twitter singleton] getFollowedTimelineAndNotifyObject:self 
-                                             withSelector:@selector(statusesReceived)];
+  [self loadData];
+}
 
+- (void)loadData {
+  [[Twitter singleton] getFollowedTimelineAndNotifyObject:self
+                                             withSelector:@selector(statusesReceived)];
 }
 
 - (void)statusesReceived {
-  [self.dataSource tableViewDidLoadModel:self];
-  [self reload];
+  [self.dataSource tableViewDidLoadModel:_tableView];
 }
 
 - (id<UITableViewDelegate>)createDelegate {
-  return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
+  return [[[TRTweetTableDelegate alloc] initWithController:self] autorelease];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,54 +65,6 @@
   return tweetCount;
 }
 
-
-	// Customize the appearance of table view cells.
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//  static NSString *CellIdentifier = @"Cell";
-//  TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//  if (cell == nil) {
-//		[[NSBundle mainBundle] loadNibNamed:@"TweetCell" owner:self options:nil];
-//    cell = tweetCell;
-//    tweetCell = nil;
-//  } else {
-//    AsyncImageView* oldImage = (AsyncImageView*)
-//    [cell.contentView viewWithTag:999];
-//    [oldImage removeFromSuperview];
-//  }
-//
-//	// Configure the cell.
-//  NSDictionary *tweet = [[[Twitter singleton] tweets] objectAtIndex:(int)indexPath.row];
-//  cell.textLabel.text = [tweet objectForKey:@"text"];
-//  NSDictionary *user = [tweet objectForKey:@"user"];
-//  cell.userNameLabel.text = [user objectForKey:@"name"];
-//
-//  NSString *path = [user objectForKey:@"profile_image_url"];
-//  NSURL *url = [NSURL URLWithString:path];
-//
-//  CGRect frame;
-//	frame.size.width=48; frame.size.height=48;
-//	frame.origin.x=10; frame.origin.y=10;
-//	AsyncImageView* asyncImage = [[[AsyncImageView alloc]
-//                                 initWithFrame:frame] autorelease];
-//	asyncImage.tag = 999;
-//	[asyncImage loadImageFromURL:url];
-//  
-//	[cell.contentView addSubview:asyncImage];
-//  
-//  
-//  return cell;
-//}
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//	return 80;
-//}
-
-
-// Override to support row selection in the table view.
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  NSDictionary *tweet = [[[Twitter singleton] tweets] objectAtIndex:(int)indexPath.row];
-  [[[UIApplication sharedApplication] delegate] speakString:[tweet objectForKey:@"text"]];
-}
 
 - (void)dealloc {
     [super dealloc];

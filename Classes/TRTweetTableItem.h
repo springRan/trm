@@ -9,14 +9,7 @@
 #import "Three20/Three20.h"
 
 
-@interface TRTweetTableItem : TTTableCaptionItem {
-  NSString* avatar;
-  TTStyle* avatarStyle;
+@interface TRTweetTableItem : TTTableImageItem {
 }
-
-@property(nonatomic,copy) NSString* avatar;  
-@property(nonatomic,retain) TTStyle* avatarStyle;
-
-- (id)itemWithText:(NSString *)text caption:(NSString *)caption avatar:(NSString *)avatar;
 
 @end
