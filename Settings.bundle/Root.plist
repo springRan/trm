@@ -21,6 +21,8 @@
 			<string>login</string>
 			<key>DefaultValue</key>
 			<string></string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
 		</dict>
 		<dict>
 			<key>Type</key>
