@@ -33,7 +33,14 @@
 }
 
 - (void)statusesReceived {
+  NSLog(@"status received invoked on table view controller");
   [self.dataSource tableViewDidLoadModel:_tableView];
+}
+
+- (void)modelDidFinishLoad:(id)model
+{
+  NSLog(@"model did load %@", model); 
+  [super modelDidFinishLoad:model];
 }
 
 - (id<UITableViewDelegate>)createDelegate {

@@ -19,12 +19,10 @@
   NSMutableArray* items = [[NSMutableArray alloc] init];
 
   for (NSDictionary* tweet in [[Twitter singleton] tweets]) {
-    NSLog(@"%@",tweet);
     TRTweetTableItem* item = [TRTweetTableItem itemWithText:[tweet objectForKey:@"text"] 
                                                    imageURL:[[tweet objectForKey:@"user"] objectForKey:@"profile_image_url"]];
     [items addObject:item];
   }
-  
   self.items = items;
   TT_RELEASE_SAFELY(items);
 }

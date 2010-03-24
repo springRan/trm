@@ -77,6 +77,7 @@
   
     [acapelaLicense retain];
     [aLicenseString release];
+    NSLog(@"number of voices:%d", [[AcapelaSpeech availableVoices] count]);
     speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:acapelaLicense];
   }
   [speaker startSpeakingString:string];

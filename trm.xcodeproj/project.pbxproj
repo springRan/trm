@@ -12,7 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		28C286E10D94DF7D0034E888 /* TRTweetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* TRTweetTableViewController.m */; };
 		BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */ = {isa = PBXBuildFile; fileRef = BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */; };
 		BE10A1D8114F291C00ACA4C6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A1D7114F291C00ACA4C6 /* libstdc++.dylib */; };
 		BE10A33C11507AC900ACA4C6 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE10A33B11507AC900ACA4C6 /* Three20.bundle */; };
@@ -22,13 +21,9 @@
 		BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */; };
 		BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE10A54B1150A75000ACA4C6 /* TRDefaultStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */; };
-		BE10A88111534B6B00ACA4C6 /* TRTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A88011534B6B00ACA4C6 /* TRTweet.m */; };
 		BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */; };
 		BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE20CDD911379B16007BF519 /* AudioToolbox.framework */; };
-		BE7BB7291159B9EB00508431 /* Acapela For iPhone HQM USEnglish Heather in Resources */ = {isa = PBXBuildFile; fileRef = BE7BB7231159B9EB00508431 /* Acapela For iPhone HQM USEnglish Heather */; };
-		BE7BB72E1159BA4E00508431 /* sim-libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7BB72C1159BA4E00508431 /* sim-libBabTTS.a */; };
-		BE7BB72F1159BA4E00508431 /* sim-libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7BB72D1159BA4E00508431 /* sim-libMobilityStatic.a */; };
 		BE8EFC0111339984002A8F24 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFC0011339984002A8F24 /* libsqlite3.dylib */; };
 		BE8EFC6011339D67002A8F24 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFC5F11339D67002A8F24 /* Twitter.m */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
@@ -53,6 +48,9 @@
 		BE8EFDA11134C21D002A8F24 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8C1134C21D002A8F24 /* NSData+Base64.m */; };
 		BE8EFDA21134C21D002A8F24 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */; };
 		BE8EFE351134D5C5002A8F24 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */; };
+		BE9443631159E09F0073E32F /* Acapela For iPhone HQM British Graham in Resources */ = {isa = PBXBuildFile; fileRef = BE94434F1159E09F0073E32F /* Acapela For iPhone HQM British Graham */; };
+		BE944518115A3C3A0073E32F /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE944516115A3C390073E32F /* libBabTTS.a */; };
+		BE944519115A3C3A0073E32F /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE944517115A3C3A0073E32F /* libMobilityStatic.a */; };
 		BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */; };
 		BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */; };
 		BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */; };
@@ -69,6 +67,7 @@
 		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
 		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
+		BEF3426E1159CF05004B6F1A /* TRTweetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +115,6 @@
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* trm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trm_Prefix.pch; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweetTableViewController.h; sourceTree = "<group>"; };
-		28C286E00D94DF7D0034E888 /* TRTweetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* trm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "trm-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		BE10A1C8114F28C400ACA4C6 /* babdevlopper.lic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = babdevlopper.lic.h; sourceTree = "<group>"; };
@@ -133,17 +131,12 @@
 		BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableItemCell.m; sourceTree = "<group>"; };
 		BE10A5491150A75000ACA4C6 /* TRDefaultStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDefaultStylesheet.h; sourceTree = "<group>"; };
 		BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDefaultStylesheet.m; sourceTree = "<group>"; };
-		BE10A87F11534B6B00ACA4C6 /* TRTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweet.h; sourceTree = "<group>"; };
-		BE10A88011534B6B00ACA4C6 /* TRTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweet.m; sourceTree = "<group>"; };
 		BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweetTableDelegate.h; sourceTree = "<group>"; };
 		BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableDelegate.m; sourceTree = "<group>"; };
 		BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaSpeech.h; sourceTree = "<group>"; };
 		BE20CDD911379B16007BF519 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE20CF621137AC4C007BF519 /* AcapelaLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaLicense.h; sourceTree = "<group>"; };
 		BE7BB5711159B5DA00508431 /* trmRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trmRelease-Info.plist"; sourceTree = "<group>"; };
-		BE7BB7231159B9EB00508431 /* Acapela For iPhone HQM USEnglish Heather */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM USEnglish Heather"; path = "../acapela/Acapela For iPhone HQM USEnglish Heather"; sourceTree = SOURCE_ROOT; };
-		BE7BB72C1159BA4E00508431 /* sim-libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "sim-libBabTTS.a"; sourceTree = "<group>"; };
-		BE7BB72D1159BA4E00508431 /* sim-libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "sim-libMobilityStatic.a"; sourceTree = "<group>"; };
 		BE8EFC0011339984002A8F24 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		BE8EFC5E11339D67002A8F24 /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
 		BE8EFC5F11339D67002A8F24 /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
@@ -194,6 +187,9 @@
 		BE8EFD8D1134C21D002A8F24 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		BE8EFD8E1134C21D002A8F24 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLIPhone.a; path = "/Users/will/Downloads/libYAJLIPhone-0.2.2/libYAJLIPhone.a"; sourceTree = "<absolute>"; };
+		BE94434F1159E09F0073E32F /* Acapela For iPhone HQM British Graham */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM British Graham"; path = "../acapela/Acapela for iPhone Voices/Acapela For iPhone HQM British Graham"; sourceTree = SOURCE_ROOT; };
+		BE944516115A3C390073E32F /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabTTS.a; sourceTree = "<group>"; };
+		BE944517115A3C3A0073E32F /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = "<group>"; };
 		BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSChildPaneSpecifierCell.h; sourceTree = "<group>"; };
 		BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSChildPaneSpecifierCell.m; sourceTree = "<group>"; };
 		BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierCell.h; sourceTree = "<group>"; };
@@ -222,6 +218,7 @@
 		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BECECE90113664CA00CB06B1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +236,8 @@
 				BE10A1D8114F291C00ACA4C6 /* libstdc++.dylib in Frameworks */,
 				BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */,
 				BE10A4D511509EBF00ACA4C6 /* libThree20.a in Frameworks */,
-				BE7BB72E1159BA4E00508431 /* sim-libBabTTS.a in Frameworks */,
-				BE7BB72F1159BA4E00508431 /* sim-libMobilityStatic.a in Frameworks */,
+				BE944518115A3C3A0073E32F /* libBabTTS.a in Frameworks */,
+				BE944519115A3C3A0073E32F /* libMobilityStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +264,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				BE7BB7231159B9EB00508431 /* Acapela For iPhone HQM USEnglish Heather */,
+				BE94434F1159E09F0073E32F /* Acapela For iPhone HQM British Graham */,
 				BE10A39A11507D4900ACA4C6 /* Three20.xcodeproj */,
 				BE10A33B11507AC900ACA4C6 /* Three20.bundle */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -303,8 +300,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE7BB72C1159BA4E00508431 /* sim-libBabTTS.a */,
-				BE7BB72D1159BA4E00508431 /* sim-libMobilityStatic.a */,
+				BE944516115A3C390073E32F /* libBabTTS.a */,
+				BE944517115A3C3A0073E32F /* libMobilityStatic.a */,
 				BE8EFC0011339984002A8F24 /* libsqlite3.dylib */,
 				BE8EFD061134BFF6002A8F24 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -334,17 +331,17 @@
 				BE10A5491150A75000ACA4C6 /* TRDefaultStylesheet.h */,
 				BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */,
 				28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */,
-				28C286E00D94DF7D0034E888 /* TRTweetTableViewController.m */,
+				BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */,
 				1D3623240D0F684500981E51 /* TRAppDelegate.h */,
 				1D3623250D0F684500981E51 /* TRAppDelegate.m */,
 				BE10A50A1150A13B00ACA4C6 /* TRTweetTableItem.h */,
 				BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */,
 				BE10A5441150A58E00ACA4C6 /* TRTweetTableItemCell.h */,
-				BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */,
 				BE10A4E511509FCE00ACA4C6 /* TRTweetTableDataSource.h */,
 				BE10A4E611509FCE00ACA4C6 /* TRTweetTableDataSource.m */,
 				BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */,
 				BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */,
+				BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */,
 			);
 			name = application;
 			sourceTree = "<group>";
@@ -354,8 +351,6 @@
 			children = (
 				BE8EFC5E11339D67002A8F24 /* Twitter.h */,
 				BE8EFC5F11339D67002A8F24 /* Twitter.m */,
-				BE10A87F11534B6B00ACA4C6 /* TRTweet.h */,
-				BE10A88011534B6B00ACA4C6 /* TRTweet.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -567,7 +562,7 @@
 				BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */,
 				BE10A33C11507AC900ACA4C6 /* Three20.bundle in Resources */,
 				BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */,
-				BE7BB7291159B9EB00508431 /* Acapela For iPhone HQM USEnglish Heather in Resources */,
+				BE9443631159E09F0073E32F /* Acapela For iPhone HQM British Graham in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,9 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8EFC6011339D67002A8F24 /* Twitter.m in Sources */,
-				BE10A88111534B6B00ACA4C6 /* TRTweet.m in Sources */,
 				BE10A54B1150A75000ACA4C6 /* TRDefaultStylesheet.m in Sources */,
-				28C286E10D94DF7D0034E888 /* TRTweetTableViewController.m in Sources */,
 				1D3623260D0F684500981E51 /* TRAppDelegate.m in Sources */,
 				BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */,
 				BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */,
@@ -619,6 +612,7 @@
 				BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */,
 				BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */,
 				BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */,
+				BEF3426E1159CF05004B6F1A /* TRTweetTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +684,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -698,7 +694,13 @@
 					"/usr/local/yajl-1.0.8/include/",
 					"${SDKROOT}/usr/include/libxml2",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lBabTTS",
+					"-lMobilityStatic",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = tweetradio;
 				SDKROOT = iphoneos3.1.2;

@@ -93,9 +93,6 @@ static Twitter * Twitter_Singleton = nil;
     self.tweets = [[NSMutableArray alloc] init];
   }
   for (int x=0; x<statuses.count; x++) {
-//		NSMutableDictionary *tweet = [[NSMutableDictionary alloc] init];
-//    [tweet addEntriesFromDictionary:[statuses objectAtIndex:x]];
-//    [self.tweets addObject:tweet];
     [self.tweets addObject:[statuses objectAtIndex:x]];
 	}
   id binding = [connections valueForKey:connectionIdentifier];
@@ -105,8 +102,6 @@ static Twitter * Twitter_Singleton = nil;
   }
   [self didFinishLoad];
 }
-
-
 
 - (void)searchResultsReceived:(NSArray *)searchResults forRequest:(NSString *)connectionIdentifier
 {

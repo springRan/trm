@@ -7,7 +7,6 @@
 #include <AudioToolbox/AudioToolbox.h>
 #include "babdevlopper.lic.h" 
 #include "babdevlopper.lic.password"
-#include "AcapelaLicense.h"
 #include "AcapelaSpeech.h"
 
 @interface TRAppDelegate : NSObject <UIApplicationDelegate> {
