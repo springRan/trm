@@ -200,8 +200,8 @@
 	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
-		<integer>1920</integer>
-		<integer>1920</integer>
+		<integer>1470</integer>
+		<integer>1470</integer>
 	</array>
 	<key>Perspectives</key>
 	<array>
@@ -303,7 +303,7 @@
 							<real>446</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>67 153 1470 927 0 0 1920 1178 </string>
+						<string>393 236 1470 927 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BEAFD1A8115AE7DF00999AC3</string>
+										<string>BEAFD1BB115AE86A00999AC3</string>
 										<key>history</key>
 										<array>
 											<string>BECECB701136010A00CB06B1</string>
@@ -384,7 +384,7 @@
 											<string>BE94457C115A43170073E32F</string>
 											<string>BE94457D115A43170073E32F</string>
 											<string>BE94457E115A43170073E32F</string>
-											<string>BEAFD1A7115AE7DF00999AC3</string>
+											<string>BEAFD1BA115AE86500999AC3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -400,7 +400,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1002, 409}}</string>
 								<key>RubberWindowFrame</key>
-								<string>67 153 1470 927 0 0 1920 1178 </string>
+								<string>393 236 1470 927 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -479,7 +479,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {1002, 445}}</string>
 										<key>RubberWindowFrame</key>
-										<string>67 153 1470 927 0 0 1920 1178 </string>
+										<string>393 236 1470 927 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -562,12 +562,12 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {1920, 508}}</string>
+						<string>{{0, 0}, {1470, 417}}</string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>508pt</string>
+					<string>417pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -586,8 +586,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {403, 306}}</string>
-									<string>{{0, 306}, {403, 259}}</string>
+									<string>{{0, 0}, {309, 251}}</string>
+									<string>{{0, 251}, {309, 213}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -602,8 +602,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {403, 565}}</string>
-									<string>{{403, 0}, {1517, 565}}</string>
+									<string>{{0, 0}, {309, 464}}</string>
+									<string>{{309, 0}, {1161, 464}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -623,7 +623,7 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 513}, {1920, 565}}</string>
+						<string>{{0, 422}, {1470, 464}}</string>
 						<key>PBXDebugSessionStackFrameViewKey</key>
 						<dict>
 							<key>DebugVariablesTableConfiguration</key>
@@ -636,13 +636,13 @@
 								<real>80</real>
 							</array>
 							<key>Frame</key>
-							<string>{{0, 306}, {403, 259}}</string>
+							<string>{{0, 251}, {309, 213}}</string>
 						</dict>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>565pt</string>
+					<string>464pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -701,12 +701,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BEAFD1B2115AE7DF00999AC3</string>
+		<string>BEAFD1B6115AE81200999AC3</string>
 		<string>BEAFD1B3115AE7DF00999AC3</string>
 		<string>/Users/will/workspace/trm/trm.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>67 153 1470 927 0 0 1920 1178 </string>
+	<string>393 236 1470 927 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
