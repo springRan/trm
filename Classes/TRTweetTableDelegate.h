@@ -7,8 +7,6 @@
 //
 
 #import "Three20/Three20.h"
-#import "Twitter.h"
-
 
 @interface TRTweetTableDelegate : TTTableViewDragRefreshDelegate {
 

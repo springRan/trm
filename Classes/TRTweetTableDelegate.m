@@ -13,9 +13,7 @@
 
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  NSLog(@"clicked it");
-  NSDictionary *tweet = [[[Twitter singleton] tweets] objectAtIndex:(int)indexPath.row];
-  [[[UIApplication sharedApplication] delegate] speakString:[tweet objectForKey:@"text"]];
+  [[[UIApplication sharedApplication] delegate] playTweetAtIndexPath:(int)indexPath andScrollTo:NO];
 }
 
 @end

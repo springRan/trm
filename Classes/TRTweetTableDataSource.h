@@ -1,13 +1,13 @@
 #import "Three20/Three20.h"
-#import "Twitter.h"
 #import "TRTweetTableItem.h"
 #import "TRTweetTableItemCell.h"
+#import "TRTwitterModel.h"
+#import "TRTwitterTweet.h"
 
 
 
 @interface TRTweetTableDataSource : TTListDataSource {
+  TRTwitterModel* _data;
 }
-- (void)statusesReceived;
-+ (TRTweetTableDataSource*)TRTweetTableDataSource;
 
 @end

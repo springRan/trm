@@ -1,6 +1,7 @@
 #import "Three20/Three20.h"
 #import "TRTweetTableDataSource.h"
 #import "TRTweetTableViewController.h"
+#import "TRTwitterModel.h"
 
 @implementation TRTweetTableViewController
 
@@ -24,12 +25,6 @@
 
 - (void)createModel {
   self.dataSource = [[[TRTweetTableDataSource alloc] init] autorelease];
-  [self loadData];
-}
-
-- (void)loadData {
-  [[Twitter singleton] getFollowedTimelineAndNotifyObject:self
-                                             withSelector:@selector(statusesReceived)];
 }
 
 - (void)statusesReceived {
@@ -58,25 +53,8 @@
 		// e.g. self.myOutlet = nil;
 }
 
-
-#pragma mark Table view methods
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-
-	// Customize the number of rows in the table view.
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  int tweetCount = [[[Twitter singleton] tweets] count];
-  return tweetCount;
-}
-
-
 - (void)dealloc {
     [super dealloc];
 }
-
-
 @end
 

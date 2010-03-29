@@ -20,8 +20,8 @@ static const CGFloat kDefaultImageSize = 50;
 static const CGFloat kDefaultMessageImageWidth = 34;
 static const CGFloat kDefaultMessageImageHeight = 34;
 
-
 @implementation TRTweetTableItemCell
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // TTTableViewCell class public
@@ -75,6 +75,10 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	[super dealloc];
 }
 
+- (TRTwitterTweet *) tweet {
+  return [self.object tweet];
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIView
 
@@ -87,7 +91,6 @@ static const CGFloat kDefaultMessageImageHeight = 34;
     image = item.defaultImage;
   }
   
-  if (_imageView2.urlPath) {
     CGFloat iconWidth = image
     ? image.size.width
     : (item.imageURL ? kDefaultImageSize : 0);
@@ -113,16 +116,25 @@ static const CGFloat kDefaultMessageImageHeight = 34;
     
     CGFloat innerWidth = self.contentView.width - (kHPadding*2 + iconWidth + kKeySpacing);
     CGFloat innerHeight = self.contentView.height - kVPadding*2;
+    self.contentView.backgroundColor = [UIColor clearColor];
 
     CGSize textSize = [item.text sizeWithFont:TTSTYLEVAR(tableSmallFont)
                                  constrainedToSize:CGSizeMake(innerWidth, CGFLOAT_MAX)
                                      lineBreakMode:UILineBreakModeTailTruncation];
     self.textLabel.frame = CGRectMake(kHPadding + iconWidth + kKeySpacing, kVPadding,
                                       innerWidth, textSize.height);
-  } else {
-    self.textLabel.frame = CGRectInset(self.contentView.bounds, kHPadding, kVPadding);
-    _imageView2.frame = CGRectZero;
-  }
+    self.textLabel.backgroundColor = [UIColor clearColor];
+
+
+  self.backgroundView = [[[UIImageView alloc] init] autorelease];
+  ((UIImageView *)self.backgroundView).image = [UIImage imageNamed:@"ltgreygradient.png"];
+  self.backgroundView.width = self.contentView.width;
+  self.backgroundView.height = self.contentView.height;
+
+//  self.selectedBackgroundView = [[[UIImageView alloc] init] autorelease];
+//  ((UIImageView *)self.selectedBackgroundView).image = [UIImage imageNamed:@"ltyellowgradient.png"];
+//  self.selectedBackgroundView.width = self.contentView.width;
+//  self.selectedBackgroundView.height = self.contentView.height;
 }
 
 - (void)didMoveToSuperview {

@@ -1,12 +1,22 @@
 #import "TRTweetTableItem.h"
+#import "TRTwitterTweet.h"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation TRTweetTableItem
 
 @synthesize imageURL = _imageURL, defaultImage = _defaultImage, imageStyle = _imageStyle;
+@synthesize tweet = _tweet;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
+
++ (id)itemWithTweet:(TRTwitterTweet *)tweet {
+  TTTableImageItem* item = [[[self alloc] init] autorelease];
+  item.text = tweet.text;
+  item.imageURL = tweet.profileImageUrl;
+  [item setTweet:tweet];
+  return item;
+}
 
 + (id)itemWithText:(NSString*)text imageURL:(NSString*)imageURL {
   TTTableImageItem* item = [[[self alloc] init] autorelease];

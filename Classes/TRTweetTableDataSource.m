@@ -2,10 +2,17 @@
 
 @implementation TRTweetTableDataSource
 
-- (void)dealloc {
-	[super dealloc];
+- (id)init {
+  if (self = [super init]) {
+    _data = [[TRTwitterModel alloc] init];
+  }
+  return self;
 }
 
+- (void)dealloc {
+  TT_RELEASE_SAFELY(_data);
+	[super dealloc];
+}
 
 - (Class)tableView:(UITableView*)tableView cellClassForObject:(id)object {
   return [TRTweetTableItemCell class];
@@ -18,30 +25,20 @@
   NSLog(@"statuses received invoked");
   NSMutableArray* items = [[NSMutableArray alloc] init];
 
-  for (NSDictionary* tweet in [[Twitter singleton] tweets]) {
-    TRTweetTableItem* item = [TRTweetTableItem itemWithText:[tweet objectForKey:@"text"] 
-                                                   imageURL:[[tweet objectForKey:@"user"] objectForKey:@"profile_image_url"]];
+  for (TRTwitterTweet* tweet in [_data tweets]) {
+    TRTweetTableItem* item = [TRTweetTableItem itemWithTweet:tweet];
     [items addObject:item];
   }
   self.items = items;
   TT_RELEASE_SAFELY(items);
 }
 
-- (id<TTModel>)model {
-  return [Twitter singleton];
+- (id)model {
+  return _data;
 }
 
 - (NSString*)titleForLoading:(BOOL)reloading {
-  if (reloading) {
-    return NSLocalizedString(@"Updating Twitter feed...", @"Twitter feed updating text");
-  } else {
-    return NSLocalizedString(@"Loading Twitter feed...", @"Twitter feed loading text");
-  }
-}
-
-- (void)tableView:(UITableView*)tableView prepareCell:(UITableViewCell*)cell
-forRowAtIndexPath:(NSIndexPath*)indexPath {
-	cell.accessoryType = UITableViewCellAccessoryNone;
+  return NSLocalizedString(@"loading...", @"Twitter feed loading text");
 }
 
 @end
