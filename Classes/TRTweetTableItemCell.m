@@ -9,7 +9,7 @@
 		text.font = TTSTYLEVAR(font);
 	}
 	text.width = tableView.width - [tableView tableCellMargin]*2 - 60;
-	return text.height + 10 > 60 ? text.height + 10 : 60;
+	return text.height + 23 > 60 ? text.height + 23 : 60;
 }
 
 - (TRTwitterTweet *) tweet {
@@ -22,8 +22,11 @@
 		_label.contentMode = UIViewContentModeLeft;
 		[self.contentView addSubview:_label];
 		
+    _username = [[UILabel alloc] init];
+    _username.font = TTSTYLEVAR(tableTitleFont);
+    [self.contentView addSubview:_username];
+    
 		_avatar = [[TTImageView alloc] init];
-		_avatar.frame = CGRectMake(5, 5, 50, 50);
 		_avatar.style =  [TTShapeStyle styleWithShape:
                       [TTRoundedRectangleShape shapeWithRadius:8] next:
                       [TTContentStyle styleWithNext:nil]]; 
@@ -40,23 +43,21 @@
 }
 
 - (void)layoutSubviews {
-	[super layoutSubviews];
-	_label.frame = CGRectMake(60, 5, _label.width -60, _label.height);
+  [super layoutSubviews];
+  _username.frame = CGRectMake(60, 3, 120, 15);
+  _avatar.frame = CGRectMake(5, 5, 50, 50);
+  _label.frame = CGRectMake(60, 18, self.contentView.width - 60, self.contentView.height - 18);
 }
 
 - (void)setObject:(id)object {
-  if (_item != object) {
     _label.text = [TTStyledText textFromXHTML:((TRTweetTableItem *)object).tweet.text];
 
     NSString *urlPath = ((TRTweetTableItem *)object).tweet.profileImageUrl;
-    _avatar.urlPath = @"";
     _avatar.urlPath = urlPath;
-
-    NSString *userName = ((TRTweetTableItem *)object).tweet.userRealName;
-    NSLog(@"username:%@",userName);
-    _username.text = userName;
+    
+    NSLog(@"%@", ((TRTweetTableItem *)object).tweet.userRealName);
+    _username.text = ((TRTweetTableItem *)object).tweet.userRealName;
     [self setNeedsLayout];
-  }  
 }
 
 @end

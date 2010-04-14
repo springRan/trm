@@ -1,5 +1,4 @@
 #import "Three20/Three20.h"
-#import "InAppSettings.h"
 #import "TRTweetTableViewController.h"
 #import "TRDefaultStylesheet.h"
 
@@ -14,7 +13,6 @@
     UINavigationController *navigationController;
     TRTweetTableViewController *trTweetTableViewController;
     UIView *loadingOverlay;
-    InAppSettingsViewController *settingsController;
     AcapelaLicense *acapelaLicense;
     AcapelaSpeech *speaker;
     UIBarButtonItem *playButton;
@@ -29,7 +27,6 @@
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, retain) IBOutlet TRTweetTableViewController *trTweetTableViewController;
 @property (nonatomic, retain) IBOutlet UIView *loadingOverlay;
-@property (nonatomic, retain) IBOutlet InAppSettingsViewController *settingsController;
 @property (readonly, retain)  IBOutlet AcapelaLicense *acapelaLicense;
 @property (readonly, retain)  IBOutlet AcapelaSpeech *speaker;
 

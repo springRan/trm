@@ -5,6 +5,23 @@
 
 @implementation TRTweetTableViewController
 
+-(id) init {
+	if (self = [super init]) {
+		self.title = @"User Settings";
+		self.tableViewStyle = UITableViewStyleGrouped;
+    
+    UIImage *image = [UIImage imageNamed:@"gear.png"];
+		UIBarButtonItem *settings = [[UIBarButtonItem alloc] 
+                                   initWithImage:image 
+                                   style:UIBarButtonItemStyleBordered 
+                                   target:self 
+                                   action:@selector(settingsClicked)];
+		
+		self.navigationItem.rightBarButtonItem = settings;
+	}
+	return self;
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIViewController  
 
@@ -13,8 +30,6 @@
   
   self.tableView = [[[UITableView alloc] initWithFrame:self.view.bounds
                                                  style:UITableViewStylePlain] autorelease];
-  self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth
-  | UIViewAutoresizingFlexibleHeight;
   self.variableHeightRows = YES;
   self.title = @"tweetrad.io";
   [self.view addSubview:self.tableView];
@@ -55,6 +70,10 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+- (void)settingsClicked{
+  TTOpenURL(@"tt://settings");
 }
 @end
 

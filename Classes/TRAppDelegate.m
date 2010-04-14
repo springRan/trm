@@ -1,13 +1,13 @@
 #import "TRAppDelegate.h"
 #import "TRTwitterTweet.h"
 #import "TRTweetTableItemCell.h"
+#import "TRSettingsTableViewController.h"
 
 @implementation TRAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
 @synthesize loadingOverlay;
-@synthesize settingsController;
 @synthesize trTweetTableViewController;
 @synthesize playButton;
 @synthesize pauseButton;
@@ -22,17 +22,30 @@
   [TTStyleSheet setGlobalStyleSheet:[[[TRDefaultStyleSheet alloc]   
                                       init] autorelease]];
   // setup in app settings
-  [InAppSettings registerDefaults];
   window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  trTweetTableViewController = [[TRTweetTableViewController alloc] initWithStyle:UITableViewStylePlain];
-  [trTweetTableViewController tableView].separatorColor = [UIColor clearColor];
-  navigationController = [[UINavigationController alloc] initWithRootViewController:trTweetTableViewController];
-  [window addSubview:[navigationController view]];
-  
-  
-  [self setupNavigationBarButtons];
-  
+
+  //////////////////////////////////////////
+  // ROUTES
+  //////////////////////////////////////////
+  TTNavigator *_navigator = [TTNavigator navigator];
+  _navigator.persistenceMode = TTNavigatorPersistenceModeNone;
+  _navigator.window = window;
+
+  TTURLMap* map = _navigator.URLMap;
+
+  // default route
+  [map from:@"*" toViewController:[TTWebController class]];
+    
+  // user settings route
+  [map from:@"tt://settings" toModalViewController:[TRSettingsTableViewController class]];
+
+  // user settings route
+  [map from:@"tt://tweets" toSharedViewController:[TRTweetTableViewController class]];
+
+  TTOpenURL(@"tt://tweets");
+
   // load up the app or ask for credentials
+  TTOpenURL(@"tt://settings");
   [window makeKeyAndVisible];
 }
 
@@ -159,28 +172,25 @@
 #pragma mark Settings
 
 - (void)presentSettings{
-  if (!settingsController){
-    settingsController = [[InAppSettingsViewController alloc] init];
-  }
   [self ensureSpeaker];
   if ([speaker isSpeaking]) {
     [self togglePlay];
   }
-  settingsController.navigationItem.hidesBackButton = YES;
-  settingsController.title = @"tweetrad.io";
-  UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] 
-                                 initWithTitle:@"done"
-                                 style:UIBarButtonItemStyleBordered  
-                                 target:self 
-                                 action:@selector(dismissSettings)];
-  settingsController.navigationItem.rightBarButtonItem = doneButton;
-  [doneButton release];
-  [navigationController pushViewController:settingsController animated:YES];
+//  settingsController.navigationItem.hidesBackButton = YES;
+//  settingsController.title = @"tweetrad.io";
+//  UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] 
+//                                 initWithTitle:@"done"
+//                                 style:UIBarButtonItemStyleBordered  
+//                                 target:self 
+//                                 action:@selector(dismissSettings)];
+//  settingsController.navigationItem.rightBarButtonItem = doneButton;
+//  [doneButton release];
+//  [navigationController pushViewController:settingsController animated:YES];
 }
 
   //dismiss the settings view
 - (void)dismissSettings {
-  [navigationController popViewControllerAnimated:YES];
+//  [navigationController popViewControllerAnimated:YES];
 //  [trTweetTableViewController loadData];
 }
 

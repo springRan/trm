@@ -12,7 +12,8 @@
 
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//  [((TRAppDelegate *)[[UIApplication sharedApplication] delegate]) playTweetAtIndexPath:indexPath andScrollTo:NO];
+  TTAlert(@"TEST");
+  //  [((TRAppDelegate *)[[UIApplication sharedApplication] delegate]) playTweetAtIndexPath:indexPath andScrollTo:NO];
 }
 
 @end

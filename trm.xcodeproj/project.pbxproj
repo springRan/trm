@@ -25,23 +25,15 @@
 		BE41DE6A117565E5003ED448 /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DE68117565E5003ED448 /* libMobilityStatic.a */; };
 		BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DF7711756AE3003ED448 /* libThree20.a */; };
 		BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE41DF7C11756AEF003ED448 /* Three20.bundle */; };
+		BE41E07D11756C1F003ED448 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41E07C11756C1F003ED448 /* libstdc++.dylib */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
-		BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */; };
-		BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */; };
-		BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */; };
-		BE9DC810113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */; };
-		BE9DC811113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */; };
-		BE9DC812113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */; };
-		BE9DC813113762430081178C /* InAppSettingsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC801113762430081178C /* InAppSettingsTableCell.m */; };
-		BE9DC814113762430081178C /* InAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC803113762430081178C /* InAppSettings.m */; };
-		BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */; };
-		BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC808113762430081178C /* InAppSettingsReader.m */; };
-		BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */; };
-		BE9DC818113762430081178C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80B113762430081178C /* LICENSE */; };
-		BE9DC819113762430081178C /* README in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC80C113762430081178C /* README */; };
 		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
 		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
+		BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */; };
+		BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */; };
+		BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C67117575BE008E2AE2 /* TRAccount.m */; };
+		BED39E371175E6E4008E2AE2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = BED39E361175E6E4008E2AE2 /* gear.png */; };
 		BEF19226115B34E000556BB6 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19225115B34E000556BB6 /* cellbg.png */; };
 		BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19286115B3F3200556BB6 /* purplegradient.png */; };
 		BEF19293115B410700556BB6 /* greygradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19292115B410700556BB6 /* greygradient.png */; };
@@ -59,15 +51,22 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BE41DF7111756AE3003ED448 /* Three20.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2 /* libThree20.a */;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 		BE41DF7811756AE3003ED448 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE41DF7111756AE3003ED448 /* Three20.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* UnitTests.octest */;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = UnitTests;
+		};
+		BED39D7911758500008E2AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE41DF7111756AE3003ED448 /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			remoteInfo = Three20;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,38 +113,20 @@
 		BE41DE68117565E5003ED448 /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = SOURCE_ROOT; };
 		BE41DF7111756AE3003ED448 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BE41DF7C11756AEF003ED448 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		BE41E07C11756C1F003ED448 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/i686-apple-darwin9/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
 		BE7BB5711159B5DA00508431 /* trmRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trmRelease-Info.plist"; sourceTree = "<group>"; };
-		BE8EFC0011339984002A8F24 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		BE8EFD061134BFF6002A8F24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLIPhone.a; path = "/Users/will/Downloads/libYAJLIPhone-0.2.2/libYAJLIPhone.a"; sourceTree = "<absolute>"; };
-		BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSChildPaneSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSChildPaneSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSMultiValueSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC7F8113762430081178C /* InAppSettingsPSSliderSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSSliderSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSSliderSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC7FA113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSTextFieldSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSTextFieldSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC7FC113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSTitleValueSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSTitleValueSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC7FE113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSToggleSwitchSpecifierCell.h; sourceTree = "<group>"; };
-		BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSToggleSwitchSpecifierCell.m; sourceTree = "<group>"; };
-		BE9DC800113762430081178C /* InAppSettingsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsTableCell.h; sourceTree = "<group>"; };
-		BE9DC801113762430081178C /* InAppSettingsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsTableCell.m; sourceTree = "<group>"; };
-		BE9DC802113762430081178C /* InAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettings.h; sourceTree = "<group>"; };
-		BE9DC803113762430081178C /* InAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettings.m; sourceTree = "<group>"; };
-		BE9DC804113762430081178C /* InAppSettingsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsConstants.h; sourceTree = "<group>"; };
-		BE9DC805113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsPSMultiValueSpecifierTable.h; sourceTree = "<group>"; };
-		BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsPSMultiValueSpecifierTable.m; sourceTree = "<group>"; };
-		BE9DC807113762430081178C /* InAppSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsReader.h; sourceTree = "<group>"; };
-		BE9DC808113762430081178C /* InAppSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsReader.m; sourceTree = "<group>"; };
-		BE9DC809113762430081178C /* InAppSettingsSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppSettingsSpecifier.h; sourceTree = "<group>"; };
-		BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppSettingsSpecifier.m; sourceTree = "<group>"; };
-		BE9DC80B113762430081178C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		BE9DC80C113762430081178C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BECECE90113664CA00CB06B1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BED39C4511757394008E2AE2 /* TRSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingsTableViewController.h; sourceTree = "<group>"; };
+		BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableViewController.m; sourceTree = "<group>"; };
+		BED39C48117573B1008E2AE2 /* TRSettingsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingsTableDataSource.h; sourceTree = "<group>"; };
+		BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableDataSource.m; sourceTree = "<group>"; };
+		BED39C66117575BE008E2AE2 /* TRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAccount.h; sourceTree = "<group>"; };
+		BED39C67117575BE008E2AE2 /* TRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAccount.m; sourceTree = "<group>"; };
+		BED39E361175E6E4008E2AE2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		BEF19225115B34E000556BB6 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbg.png; sourceTree = "<group>"; };
 		BEF19286115B3F3200556BB6 /* purplegradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplegradient.png; sourceTree = "<group>"; };
 		BEF19292115B410700556BB6 /* greygradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greygradient.png; sourceTree = "<group>"; };
@@ -175,6 +156,7 @@
 				BE41DE69117565E5003ED448 /* libBabTTS.a in Frameworks */,
 				BE41DE6A117565E5003ED448 /* libMobilityStatic.a in Frameworks */,
 				BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */,
+				BE41E07D11756C1F003ED448 /* libstdc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +208,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BED39E361175E6E4008E2AE2 /* gear.png */,
 				BEF192A3115B42B300556BB6 /* ltyellowgradient.png */,
 				BEF19299115B419900556BB6 /* ltgreygradient.png */,
 				BEF19292115B410700556BB6 /* greygradient.png */,
@@ -244,7 +227,6 @@
 			children = (
 				BE41DE67117565E5003ED448 /* libBabTTS.a */,
 				BE41DE68117565E5003ED448 /* libMobilityStatic.a */,
-				BE8EFC0011339984002A8F24 /* libsqlite3.dylib */,
 				BE8EFD061134BFF6002A8F24 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -252,6 +234,7 @@
 				BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */,
 				BE20CDD911379B16007BF519 /* AudioToolbox.framework */,
 				BE10A36611507AE600ACA4C6 /* QuartzCore.framework */,
+				BE41E07C11756C1F003ED448 /* libstdc++.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,6 +255,7 @@
 				1D3623250D0F684500981E51 /* TRAppDelegate.m */,
 				BECFE70D116D869A0042260B /* stylesheets */,
 				BE8EFC04113399AB002A8F24 /* models */,
+				BED39C3F117572DD008E2AE2 /* SettingsTable */,
 				BECFE70E116D86B20042260B /* TweetTable */,
 			);
 			name = application;
@@ -292,59 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				BEF194F41160111900556BB6 /* RegexKitLite */,
-				BE9DC7F1113762430081178C /* InAppSettings Framework 1.0 */,
 				BE9DCACF113791ED0081178C /* Acapela */,
 			);
 			name = vendor;
-			sourceTree = "<group>";
-		};
-		BE9DC7F1113762430081178C /* InAppSettings Framework 1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				BE9DC7F2113762430081178C /* InAppSettings */,
-				BE9DC80B113762430081178C /* LICENSE */,
-				BE9DC80C113762430081178C /* README */,
-			);
-			name = "InAppSettings Framework 1.0";
-			path = "../../Downloads/InAppSettings Framework 1.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		BE9DC7F2113762430081178C /* InAppSettings */ = {
-			isa = PBXGroup;
-			children = (
-				BE9DC7F3113762430081178C /* Cells */,
-				BE9DC802113762430081178C /* InAppSettings.h */,
-				BE9DC803113762430081178C /* InAppSettings.m */,
-				BE9DC804113762430081178C /* InAppSettingsConstants.h */,
-				BE9DC805113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.h */,
-				BE9DC806113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m */,
-				BE9DC807113762430081178C /* InAppSettingsReader.h */,
-				BE9DC808113762430081178C /* InAppSettingsReader.m */,
-				BE9DC809113762430081178C /* InAppSettingsSpecifier.h */,
-				BE9DC80A113762430081178C /* InAppSettingsSpecifier.m */,
-			);
-			path = InAppSettings;
-			sourceTree = "<group>";
-		};
-		BE9DC7F3113762430081178C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				BE9DC7F4113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.h */,
-				BE9DC7F5113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m */,
-				BE9DC7F6113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.h */,
-				BE9DC7F7113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m */,
-				BE9DC7F8113762430081178C /* InAppSettingsPSSliderSpecifierCell.h */,
-				BE9DC7F9113762430081178C /* InAppSettingsPSSliderSpecifierCell.m */,
-				BE9DC7FA113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.h */,
-				BE9DC7FB113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m */,
-				BE9DC7FC113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.h */,
-				BE9DC7FD113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m */,
-				BE9DC7FE113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.h */,
-				BE9DC7FF113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m */,
-				BE9DC800113762430081178C /* InAppSettingsTableCell.h */,
-				BE9DC801113762430081178C /* InAppSettingsTableCell.m */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		BE9DCACF113791ED0081178C /* Acapela */ = {
@@ -384,6 +318,19 @@
 			name = TweetTable;
 			sourceTree = "<group>";
 		};
+		BED39C3F117572DD008E2AE2 /* SettingsTable */ = {
+			isa = PBXGroup;
+			children = (
+				BED39C4511757394008E2AE2 /* TRSettingsTableViewController.h */,
+				BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */,
+				BED39C48117573B1008E2AE2 /* TRSettingsTableDataSource.h */,
+				BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */,
+				BED39C66117575BE008E2AE2 /* TRAccount.h */,
+				BED39C67117575BE008E2AE2 /* TRAccount.m */,
+			);
+			name = SettingsTable;
+			sourceTree = "<group>";
+		};
 		BEF194F41160111900556BB6 /* RegexKitLite */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +355,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BED39D7A11758500008E2AE2 /* PBXTargetDependency */,
 			);
 			name = trm;
 			productName = trm;
@@ -471,8 +419,6 @@
 			files = (
 				BECECE871136624000CB06B1 /* Default.png in Resources */,
 				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
-				BE9DC818113762430081178C /* LICENSE in Resources */,
-				BE9DC819113762430081178C /* README in Resources */,
 				BE9DC881113766BA0081178C /* Settings.bundle in Resources */,
 				BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */,
 				BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */,
@@ -483,6 +429,7 @@
 				BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */,
 				BEF19387115E90E700556BB6 /* Acapela For iPhone HQM British Lucy in Resources */,
 				BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */,
+				BED39E371175E6E4008E2AE2 /* gear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,25 +447,25 @@
 				BE10A4E711509FCE00ACA4C6 /* TRTweetTableDataSource.m in Sources */,
 				BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				BE9DC80D113762430081178C /* InAppSettingsPSChildPaneSpecifierCell.m in Sources */,
-				BE9DC80E113762430081178C /* InAppSettingsPSMultiValueSpecifierCell.m in Sources */,
-				BE9DC80F113762430081178C /* InAppSettingsPSSliderSpecifierCell.m in Sources */,
-				BE9DC810113762430081178C /* InAppSettingsPSTextFieldSpecifierCell.m in Sources */,
-				BE9DC811113762430081178C /* InAppSettingsPSTitleValueSpecifierCell.m in Sources */,
-				BE9DC812113762430081178C /* InAppSettingsPSToggleSwitchSpecifierCell.m in Sources */,
-				BE9DC813113762430081178C /* InAppSettingsTableCell.m in Sources */,
-				BE9DC814113762430081178C /* InAppSettings.m in Sources */,
-				BE9DC815113762430081178C /* InAppSettingsPSMultiValueSpecifierTable.m in Sources */,
-				BE9DC816113762430081178C /* InAppSettingsReader.m in Sources */,
-				BE9DC817113762430081178C /* InAppSettingsSpecifier.m in Sources */,
 				BEF3426E1159CF05004B6F1A /* TRTweetTableViewController.m in Sources */,
 				BEF1938A115E911700556BB6 /* TRTwitterModel.m in Sources */,
 				BEF1938D115E919E00556BB6 /* TRTwitterTweet.m in Sources */,
 				BEF195081160119F00556BB6 /* RegexKitLite.m in Sources */,
+				BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */,
+				BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */,
+				BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED39D7A11758500008E2AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = BED39D7911758500008E2AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -543,6 +490,7 @@
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneSimulator\"",
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
 					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
+					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin9/4.0.1\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -568,6 +516,7 @@
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneSimulator\"",
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
 					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
+					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin9/4.0.1\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -587,8 +536,8 @@
 				HEADER_SEARCH_PATHS = ../three20/src;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-libMobility",
-					"-libBabTTS",
+					"-lMobilityStatic",
+					"-lBabTTS",
 					"-all_load",
 					"-ObjC",
 					"-licucore",
