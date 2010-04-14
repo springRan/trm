@@ -11,6 +11,8 @@
 @synthesize trTweetTableViewController;
 @synthesize playButton;
 @synthesize pauseButton;
+@synthesize acapelaLicense;
+@synthesize speaker;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -65,7 +67,7 @@
     trTweetTableViewController.navigationItem.rightBarButtonItem = pauseButton;
   }
 
-  TRTweetTableItemCell *tableItemCell = [[trTweetTableViewController tableView] cellForRowAtIndexPath:indexPath];
+  TRTweetTableItemCell *tableItemCell = (TRTweetTableItemCell *)[[trTweetTableViewController tableView] cellForRowAtIndexPath:indexPath];
   if (tableItemCell) {
     indexPathOfCurrentTweet = indexPath;
     TRTwitterTweet* tweet = [tableItemCell tweet];
@@ -179,7 +181,7 @@
   //dismiss the settings view
 - (void)dismissSettings {
   [navigationController popViewControllerAnimated:YES];
-  [trTweetTableViewController loadData];
+//  [trTweetTableViewController loadData];
 }
 
 #pragma mark -

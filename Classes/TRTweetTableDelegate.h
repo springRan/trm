@@ -6,7 +6,6 @@
 //  Copyright 2010 tweetrad.io. All rights reserved.
 //
 
-#import "Three20/Three20.h"
 
 @interface TRTweetTableDelegate : TTTableViewDragRefreshDelegate {
 

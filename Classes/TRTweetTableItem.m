@@ -1,93 +1,31 @@
 #import "TRTweetTableItem.h"
 #import "TRTwitterTweet.h"
-///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation TRTweetTableItem
 
-@synthesize imageURL = _imageURL, defaultImage = _defaultImage, imageStyle = _imageStyle;
 @synthesize tweet = _tweet;
+@synthesize content = _content;
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// class public
-
-+ (id)itemWithTweet:(TRTwitterTweet *)tweet {
-  TTTableImageItem* item = [[[self alloc] init] autorelease];
-  item.text = tweet.text;
-  item.imageURL = tweet.profileImageUrl;
-  [item setTweet:tweet];
-  return item;
-}
-
-+ (id)itemWithText:(NSString*)text imageURL:(NSString*)imageURL {
-  TTTableImageItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.imageURL = imageURL;
-  return item;
-}
-
-+ (id)itemWithText:(NSString*)text imageURL:(NSString*)imageURL URL:(NSString*)URL {
-  TTTableImageItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.imageURL = imageURL;
-  item.URL = URL;
-  return item;
-}
-
-+ (id)itemWithText:(NSString*)text imageURL:(NSString*)imageURL defaultImage:(UIImage*)defaultImage
-               URL:(NSString*)URL {
-  TTTableImageItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.imageURL = imageURL;
-  item.defaultImage = defaultImage;
-  item.URL = URL;
-  return item;
-}
-
-+ (id)itemWithText:(NSString*)text imageURL:(NSString*)imageURL defaultImage:(UIImage*)defaultImage
-        imageStyle:(TTStyle*)imageStyle URL:(NSString*)URL {
-  TTTableImageItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.imageURL = imageURL;
-  item.defaultImage = defaultImage;
-  item.imageStyle = imageStyle;
-  item.URL = URL;
-  return item;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// NSObject
-
-- (id)init {
-  if (self = [super init]) {
-    _defaultImage = nil;
-    _imageURL = nil;
-    _imageStyle = nil;
+- (id)initWithTweet:(TRTwitterTweet *)tweet 
+{
+  if (self = [super init]){
+    self.tweet = tweet;
   }
   return self;
+}
+
+- (TTStyledText *)content
+{
+	if (!_content) {
+		_content = [TTStyledText textFromXHTML:_tweet.text];
+		_content.font = TTSTYLEVAR(font);
+	}
+	return _content;
 }
 
 - (void)dealloc {
-  TT_RELEASE_SAFELY(_imageURL);
-  TT_RELEASE_SAFELY(_defaultImage);
-  TT_RELEASE_SAFELY(_imageStyle);
+  TT_RELEASE_SAFELY(_tweet);
   [super dealloc];
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// NSCoding
-
-- (id)initWithCoder:(NSCoder*)decoder {
-  if (self = [super initWithCoder:decoder]) {
-    self.imageURL = [decoder decodeObjectForKey:@"imageURL"];
-  }
-  return self;
-}
-
-- (void)encodeWithCoder:(NSCoder*)encoder {
-  [super encodeWithCoder:encoder];
-  if (self.imageURL) {
-    [encoder encodeObject:self.imageURL forKey:@"imageURL"];
-  }
-}
 @end

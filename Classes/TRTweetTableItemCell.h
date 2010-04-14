@@ -1,11 +1,12 @@
 #import "Three20/Three20.h"
 #import "TRTwitterTweet.h"
 
-@interface TRTweetTableItemCell : TTTableTextItemCell {
-  TTImageView* _imageView2;
+@interface TRTweetTableItemCell : TTStyledTextTableItemCell {
+  TTImageView* _avatar;
+  UILabel* _username;
+  UILabel* _timestamp;
+  TTImageView* _playingIndicator;
 }
-
-@property(nonatomic,readonly,retain) TTImageView* imageView2;
 
 - (TRTwitterTweet *)tweet;
 

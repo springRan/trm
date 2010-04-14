@@ -26,7 +26,7 @@
   NSMutableArray* items = [[NSMutableArray alloc] init];
 
   for (TRTwitterTweet* tweet in [_data tweets]) {
-    TRTweetTableItem* item = [TRTweetTableItem itemWithTweet:tweet];
+    TRTweetTableItem* item = [[TRTweetTableItem alloc] initWithTweet:tweet];
     [items addObject:item];
   }
   self.items = items;
@@ -35,6 +35,9 @@
 
 - (id)model {
   return _data;
+}
+
+- (void)tableView:tableView cell:cell willAppearAtIndexPath:indexPath {
 }
 
 - (NSString*)titleForLoading:(BOOL)reloading {
