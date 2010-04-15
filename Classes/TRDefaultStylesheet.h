@@ -4,11 +4,14 @@
 @interface TRDefaultStyleSheet : TTDefaultStyleSheet
 // styles
 -(TTStyle *)username;
+-(TTStyle *)cell;
 
 // colors
+- (UIColor *)cellbackground1;
+- (UIColor *)cellbackground2;
 - (UIColor *)darkColor;
 - (UIColor *)lightColor;
-
+- (UIColor *)darkBackground;
 // fonts
 - (UIFont*)smallItalicFont;
 - (UIFont*)smallBoldFont;

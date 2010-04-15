@@ -38,7 +38,6 @@
   TTOpenURL(@"tt://tweets");
 
   // load up the app or ask for credentials
-  TTOpenURL(@"tt://settings");
   [window makeKeyAndVisible];
 }
 

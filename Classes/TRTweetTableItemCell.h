@@ -8,7 +8,7 @@
   TTImageView* _playingIndicator;
   TTStyledTextLabel* _label;
 }
-
+@property (nonatomic, readonly) TTStyledTextLabel *label;
 - (TRTwitterTweet *)tweet;
 
 @end

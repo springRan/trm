@@ -3,7 +3,10 @@
 #import "Three20/TTShape.h"
 #import "Three20/TTURLCache.h"
 
-
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -12,6 +15,12 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // styles
+
+-(TTStyle *)cell {
+  return [TTLinearGradientFillStyle styleWithColor1:TTSTYLEVAR(cellbackground1) 
+                                            color2:TTSTYLEVAR(cellbackground2)
+                                              next:nil];
+}
 
 -(TTStyle *)avatar {
 	return [TTShapeStyle styleWithShape:
@@ -39,18 +48,38 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public colors
+
+- (UIColor*)darkBackground {
+  return UIColorFromRGB(0x222222);
+}
+
+- (UIColor*)linkTextColor {
+  return UIColorFromRGB(0x000000);
+}
+
+- (UIColor *)cellbackground1{
+  return UIColorFromRGB(0xeeeeeee);
+}
+
+- (UIColor *)cellbackground2{
+  return UIColorFromRGB(0xffffff);
+}
+
 - (UIColor *)highlightedTextColor {
   return [UIColor whiteColor];
 }
 
 - (UIColor *)darkColor {
-	return [UIColor blackColor];
+  return UIColorFromRGB(0x607734);
 }
 
 - (UIColor *)lightColor {
 	return [UIColor grayColor];
 }
 
+- (UIColor*)navigationBarTintColor {
+  return RGBCOLOR(140,63,31);
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public fonts

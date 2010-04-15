@@ -1,8 +1,9 @@
 #import "TRTweetTableItem.h"
 #import "TRTweetTableItemCell.h"
+#import "TRDefaultStylesheet.h"
 
 @implementation TRTweetTableItemCell
-
+@synthesize label = _label;
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(TRTweetTableItem *)object {
 	TTStyledText* text = [object content];
 	if (!text.font) {
@@ -18,6 +19,11 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)identifier {
 	if (self = [super initWithStyle:style reuseIdentifier:identifier]) {
+    TTView *bgView = [[TTView alloc] init];
+    bgView.style = TTSTYLE(cell);
+    self.backgroundView = bgView;
+    [bgView release];
+    
 		_label = [[TTStyledTextLabel alloc] init];
 		_label.contentMode = UIViewContentModeLeft;
 		[self.contentView addSubview:_label];

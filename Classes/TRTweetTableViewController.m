@@ -10,6 +10,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [(TRTweetTableViewController *)_controller speakRowAtIndexPath:indexPath];
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    //		UIColor *backgroundColor = RGBCOLOR(223,241,241);
+		//	cell.backgroundColor                = backgroundColor;
+		//	cell.backgroundView.backgroundColor = backgroundColor;
+		//	cell.contentView.backgroundColor    = backgroundColor;
+		[[(TRTweetTableItemCell *)cell label] setBackgroundColor:[UIColor clearColor]];
+}
 @end
 
 
@@ -65,8 +73,7 @@
 // PLAYER
 - (void)speakRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  TRTweetTableItemCell *_cell = (TRTweetTableItemCell *)[_tableView cellForRowAtIndexPath:indexPath];
-  if (_cell) {
+  if ([_tableView numberOfRowsInSection:0] - 1 > indexPath.row) {
     _lastSpokenIndexPath = indexPath;
     [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
     [self.speaker stopSpeaking];
@@ -76,9 +83,16 @@
     [self.tableView selectRowAtIndexPath:indexPath
                                 animated:YES
                           scrollPosition:UITableViewScrollPositionTop];
-    [self.speaker startSpeakingString:[_cell.tweet speakableText]];
+    id item = [((TRTweetTableDataSource *)self.dataSource).items objectAtIndex:indexPath.row];
+    if ([item isKindOfClass:[TRTweetTableItem class]]) {
+      [self.speaker startSpeakingString:[((TRTweetTableItem *)item).tweet speakableText]];
+    } else {
+    }
     NSLog(@"speaking");
+  } else {
+    // need more tweets it seems
   }
+
 }
 
 - (void)setVoice
