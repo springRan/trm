@@ -1,0 +1,15 @@
+PATH	=	""
+PHO	"NLP/enu.trx"			PHONETISATION TREE
+BNX	"NLP/enu.bnx"			BNX prepro
+DIC	"NLP/enu.dca"			DICO
+LDI     "NLP/enu.ldi"                   LOCUTIONS
+PRO	"NLP/enu.oso"			PROSODY 
+GRI     "NLP/enu_iv.gra"			POS Tagger IV words
+GRO     "NLP/enu_oov.gra"			POS Tagger OOV words
+PST	"NLP/enu.pst"			POSTPHONET
+END	""
+SLV	"laura_lf/laura_22k_lf.bvcu"	[FILE]
+SLL	"laura_lf/laura_22k_lf.bvcu.nuul216vqfp"	[FILE]
+END	""
+TXT	"laura_lf.txt"
+END	""

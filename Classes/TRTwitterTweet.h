@@ -22,5 +22,5 @@
 @property (nonatomic, copy)   NSString* userProfileUrl;
 
 - (NSString *)speakableText;
-
+- (NSString *)relativeTimestamp;
 @end

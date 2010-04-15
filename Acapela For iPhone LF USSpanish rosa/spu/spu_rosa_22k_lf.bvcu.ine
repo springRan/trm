@@ -1,0 +1,15 @@
+PATH	=	""
+PHO	"NLP/spu.trx"			PHONETISATION TREE
+BNX	"NLP/spu.bnx"			BNF Definitions in ROM
+DIC	"NLP/spu.dca"			DICO
+LDI	"NLP/spu.ldi"			DICO LOCUTION
+PRO	"NLP/spu.oso"			PROSODY 
+GRI     "NLP/spu_iv.gra"                    POS Tagger IV words
+GRO     "NLP/spu_oov.gra"                   POS Tagger OOV words
+PST     "NLP/spu.pst"		POSTPHONET
+END	""
+SLV	"rosa_lf/rosa_22k_lf.bvcu"	[FILE]
+SLL	"rosa_lf/rosa_22k_lf.bvcu.nuul216vqfp"	[FILE]
+END	""
+TXT	"rosa_lf.txt"
+END	""

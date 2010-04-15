@@ -16,7 +16,7 @@ static NSString* kTwitterSearchFeedFormat = @"http://search.twitter.com/search.a
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id) init {
   self = [super init];
-  self.searchQuery = @"dinner";
+  self.searchQuery = @"chirp";
   return self;
 }
 
@@ -63,11 +63,13 @@ static NSString* kTwitterSearchFeedFormat = @"http://search.twitter.com/search.a
   NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
   [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+  [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];  
   
   TT_RELEASE_SAFELY(_tweets);
   NSMutableArray* tweets = [[NSMutableArray alloc] initWithCapacity:[entries count]];
-  
+
   for (NSDictionary* entry in entries) {
+    NSLog(@"%@", entry);
     TRTwitterTweet* tweet = [[TRTwitterTweet alloc] init];
     
     NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"published"]

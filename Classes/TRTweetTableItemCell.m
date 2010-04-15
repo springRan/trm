@@ -22,15 +22,21 @@
 		_label.contentMode = UIViewContentModeLeft;
 		[self.contentView addSubview:_label];
 		
-    _username = [[UILabel alloc] init];
-    _username.font = TTSTYLEVAR(tableTitleFont);
-    [self.contentView addSubview:_username];
+		_username = [[TTLabel alloc] init];
+		_username.style = TTSTYLE(username);
+		_username.backgroundColor = [UIColor clearColor];
+		[self.contentView addSubview:_username];
+		
+		_timestamp = [[TTLabel alloc] init];
+		_timestamp.style = TTSTYLE(timestamp);
+		_timestamp.backgroundColor = [UIColor clearColor];
+		[self.contentView addSubview:_timestamp];
     
+		
 		_avatar = [[TTImageView alloc] init];
-		_avatar.style =  [TTShapeStyle styleWithShape:
-                      [TTRoundedRectangleShape shapeWithRadius:8] next:
-                      [TTContentStyle styleWithNext:nil]]; 
+		_avatar.style =  TTSTYLE(avatar); 
 		_avatar.backgroundColor = [UIColor clearColor];
+
 		[self.contentView addSubview:_avatar];
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 	}
@@ -45,6 +51,7 @@
 - (void)layoutSubviews {
   [super layoutSubviews];
   _username.frame = CGRectMake(60, 3, 120, 15);
+  _timestamp.frame = CGRectMake(0, 3, self.contentView.width - 10, 15);
   _avatar.frame = CGRectMake(5, 5, 50, 50);
   _label.frame = CGRectMake(60, 18, self.contentView.width - 60, self.contentView.height - 18);
 }
@@ -57,7 +64,9 @@
 
     NSString *urlPath = ((TRTweetTableItem *)object).tweet.profileImageUrl;
     _avatar.urlPath = urlPath;
-      
+    
+    _timestamp.text = [((TRTweetTableItem *)object).tweet relativeTimestamp];
+    
     _username.text = ((TRTweetTableItem *)object).tweet.userRealName;
     [self setNeedsLayout];
   }

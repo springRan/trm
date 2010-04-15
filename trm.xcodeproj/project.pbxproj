@@ -18,8 +18,6 @@
 		BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE10A54B1150A75000ACA4C6 /* TRDefaultStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */; };
 		BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
-		BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */; };
-		BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE20CDD911379B16007BF519 /* AudioToolbox.framework */; };
 		BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DF7711756AE3003ED448 /* libThree20.a */; };
 		BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE41DF7C11756AEF003ED448 /* Three20.bundle */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
@@ -29,6 +27,13 @@
 		BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */; };
 		BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */; };
 		BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C67117575BE008E2AE2 /* TRAccount.m */; };
+		BEE3DEB4117798E100845A1D /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DEB2117798E000845A1D /* libBabTTS.a */; };
+		BEE3DEB5117798E100845A1D /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DEB3117798E100845A1D /* libMobilityStatic.a */; };
+		BEE3DED01177993D00845A1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DECF1177993D00845A1D /* AudioToolbox.framework */; };
+		BEE3DED71177999D00845A1D /* force_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3DED51177999D00845A1D /* force_cpp.cpp */; };
+		BEE3DF9911779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa in Resources */ = {isa = PBXBuildFile; fileRef = BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */; };
+		BEE3E09C1177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura in Resources */ = {isa = PBXBuildFile; fileRef = BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */; };
+		BEE3E0B41177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan in Resources */ = {isa = PBXBuildFile; fileRef = BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */; };
 		BEEAFAA61176AA3E005B4524 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEAFAA51176AA3E005B4524 /* gear.png */; };
 		BEF19226115B34E000556BB6 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19225115B34E000556BB6 /* cellbg.png */; };
 		BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19286115B3F3200556BB6 /* purplegradient.png */; };
@@ -99,10 +104,7 @@
 		BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableItemCell.m; sourceTree = "<group>"; };
 		BE10A5491150A75000ACA4C6 /* TRDefaultStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDefaultStylesheet.h; sourceTree = "<group>"; };
 		BE10A54A1150A75000ACA4C6 /* TRDefaultStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDefaultStylesheet.m; sourceTree = "<group>"; };
-		BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTweetTableDelegate.h; sourceTree = "<group>"; };
-		BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTweetTableDelegate.m; sourceTree = "<group>"; };
 		BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaSpeech.h; sourceTree = "<group>"; };
-		BE20CDD911379B16007BF519 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE20CF621137AC4C007BF519 /* AcapelaLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaLicense.h; sourceTree = "<group>"; };
 		BE41DF7111756AE3003ED448 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BE41DF7C11756AEF003ED448 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
@@ -118,6 +120,14 @@
 		BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableDataSource.m; sourceTree = "<group>"; };
 		BED39C66117575BE008E2AE2 /* TRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAccount.h; sourceTree = "<group>"; };
 		BED39C67117575BE008E2AE2 /* TRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAccount.m; sourceTree = "<group>"; };
+		BEE3DEB2117798E000845A1D /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabTTS.a; sourceTree = "<group>"; };
+		BEE3DEB3117798E100845A1D /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = "<group>"; };
+		BEE3DECF1177993D00845A1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BEE3DED51177999D00845A1D /* force_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = force_cpp.cpp; sourceTree = "<group>"; };
+		BEE3DED61177999D00845A1D /* force_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = force_cpp.h; sourceTree = "<group>"; };
+		BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USSpanish rosa"; sourceTree = "<group>"; };
+		BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USEnglish Laura"; sourceTree = "<group>"; };
+		BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USEnglish Ryan"; sourceTree = "<group>"; };
 		BEEAFAA51176AA3E005B4524 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		BEF19225115B34E000556BB6 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbg.png; sourceTree = "<group>"; };
 		BEF19286115B3F3200556BB6 /* purplegradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplegradient.png; sourceTree = "<group>"; };
@@ -142,9 +152,11 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */,
-				BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */,
 				BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */,
 				BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */,
+				BEE3DEB4117798E100845A1D /* libBabTTS.a in Frameworks */,
+				BEE3DEB5117798E100845A1D /* libMobilityStatic.a in Frameworks */,
+				BEE3DED01177993D00845A1D /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +207,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */,
+				BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */,
+				BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */,
 				BEEAFAA51176AA3E005B4524 /* gear.png */,
 				BEF192A3115B42B300556BB6 /* ltyellowgradient.png */,
 				BEF19299115B419900556BB6 /* ltgreygradient.png */,
@@ -212,13 +227,15 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3DEB2117798E000845A1D /* libBabTTS.a */,
+				BEE3DEB3117798E100845A1D /* libMobilityStatic.a */,
 				BE8EFD061134BFF6002A8F24 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
-				BE20CDD911379B16007BF519 /* AudioToolbox.framework */,
 				BE10A36611507AE600ACA4C6 /* QuartzCore.framework */,
 				BE41E07C11756C1F003ED448 /* libstdc++.dylib */,
+				BEE3DECF1177993D00845A1D /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,6 +285,8 @@
 		BE9DCACF113791ED0081178C /* Acapela */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3DED51177999D00845A1D /* force_cpp.cpp */,
+				BEE3DED61177999D00845A1D /* force_cpp.h */,
 				BE10A1C8114F28C400ACA4C6 /* babdevlopper.lic.h */,
 				BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */,
 				BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */,
@@ -292,8 +311,6 @@
 				BE10A4E611509FCE00ACA4C6 /* TRTweetTableDataSource.m */,
 				28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */,
 				BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */,
-				BE10AD1A11587B6400ACA4C6 /* TRTweetTableDelegate.h */,
-				BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */,
 				BE10A50A1150A13B00ACA4C6 /* TRTweetTableItem.h */,
 				BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */,
 				BE10A5441150A58E00ACA4C6 /* TRTweetTableItemCell.h */,
@@ -412,6 +429,9 @@
 				BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */,
 				BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */,
 				BEEAFAA61176AA3E005B4524 /* gear.png in Resources */,
+				BEE3DF9911779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa in Resources */,
+				BEE3E09C1177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura in Resources */,
+				BEE3E0B41177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +447,6 @@
 				BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */,
 				BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */,
 				BE10A4E711509FCE00ACA4C6 /* TRTweetTableDataSource.m in Sources */,
-				BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				BEF3426E1159CF05004B6F1A /* TRTweetTableViewController.m in Sources */,
 				BEF1938A115E911700556BB6 /* TRTwitterModel.m in Sources */,
@@ -436,6 +455,7 @@
 				BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */,
 				BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */,
 				BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */,
+				BEE3DED71177999D00845A1D /* force_cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

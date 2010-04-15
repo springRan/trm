@@ -3,8 +3,8 @@
 
 @interface TRTweetTableItemCell : TTTableLinkedItemCell {
   TTImageView* _avatar;
-  UILabel* _username;
-  UILabel* _timestamp;
+  TTLabel* _username;
+  TTLabel* _timestamp;
   TTImageView* _playingIndicator;
   TTStyledTextLabel* _label;
 }
