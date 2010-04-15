@@ -5,5 +5,7 @@
   UIBarButtonItem *_playButton;
   UIBarButtonItem *_pauseButton;
 }
+@property (nonatomic,retain) UIBarButtonItem *playButton;
+@property (nonatomic,retain) UIBarButtonItem *pauseButton;
 - (void)statusesReceived;
 @end

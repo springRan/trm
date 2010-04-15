@@ -4,8 +4,6 @@
 #import "TRTwitterModel.h"
 #import "TRTwitterTweet.h"
 
-
-
 @interface TRTweetTableDataSource : TTListDataSource {
   TRTwitterModel* _data;
 }

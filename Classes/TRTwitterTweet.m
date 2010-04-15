@@ -13,7 +13,9 @@
 @synthesize userProfileUrl  = _userProfileUrl;
 
 - (NSString *)speakableText {
+  NSLog(@"text of tweet %@", self.text);
   if (!_speakableText) {
+    NSLog(@"in here");
     NSString *sanitizedText = [self.text stringByReplacingOccurrencesOfRegex:@"http://\\S*" withString:@""];
     sanitizedText = [sanitizedText stringByReplacingOccurrencesOfRegex:@"[_<>-@]" withString:@" "];
     _speakableText = [NSString stringWithFormat:@"%@ said\\Pau=500\\ %@\\Pau=1000\\", 

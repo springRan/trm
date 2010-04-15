@@ -12,7 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */ = {isa = PBXBuildFile; fileRef = BE10A1C9114F28C400ACA4C6 /* babdevlopper.lic.password */; };
 		BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10A36611507AE600ACA4C6 /* QuartzCore.framework */; };
 		BE10A4E711509FCE00ACA4C6 /* TRTweetTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A4E611509FCE00ACA4C6 /* TRTweetTableDataSource.m */; };
 		BE10A50C1150A13B00ACA4C6 /* TRTweetTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A50B1150A13B00ACA4C6 /* TRTweetTableItem.m */; };
@@ -21,11 +20,8 @@
 		BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE10AD1C11587B6400ACA4C6 /* TRTweetTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10AD1B11587B6400ACA4C6 /* TRTweetTableDelegate.m */; };
 		BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE20CDD911379B16007BF519 /* AudioToolbox.framework */; };
-		BE41DE69117565E5003ED448 /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DE67117565E5003ED448 /* libBabTTS.a */; };
-		BE41DE6A117565E5003ED448 /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DE68117565E5003ED448 /* libMobilityStatic.a */; };
 		BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DF7711756AE3003ED448 /* libThree20.a */; };
 		BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE41DF7C11756AEF003ED448 /* Three20.bundle */; };
-		BE41E07D11756C1F003ED448 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41E07C11756C1F003ED448 /* libstdc++.dylib */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
 		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
@@ -39,7 +35,6 @@
 		BEF19293115B410700556BB6 /* greygradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19292115B410700556BB6 /* greygradient.png */; };
 		BEF1929A115B419900556BB6 /* ltgreygradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19299115B419900556BB6 /* ltgreygradient.png */; };
 		BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF192A3115B42B300556BB6 /* ltyellowgradient.png */; };
-		BEF19387115E90E700556BB6 /* Acapela For iPhone HQM British Lucy in Resources */ = {isa = PBXBuildFile; fileRef = BEF19372115E90E700556BB6 /* Acapela For iPhone HQM British Lucy */; };
 		BEF1938A115E911700556BB6 /* TRTwitterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF19389115E911700556BB6 /* TRTwitterModel.m */; };
 		BEF1938D115E919E00556BB6 /* TRTwitterTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF1938C115E919E00556BB6 /* TRTwitterTweet.m */; };
 		BEF195081160119F00556BB6 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF195071160119F00556BB6 /* RegexKitLite.m */; };
@@ -109,14 +104,11 @@
 		BE20CD7D113794D4007BF519 /* AcapelaSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaSpeech.h; sourceTree = "<group>"; };
 		BE20CDD911379B16007BF519 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE20CF621137AC4C007BF519 /* AcapelaLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcapelaLicense.h; sourceTree = "<group>"; };
-		BE41DE67117565E5003ED448 /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabTTS.a; sourceTree = SOURCE_ROOT; };
-		BE41DE68117565E5003ED448 /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = SOURCE_ROOT; };
 		BE41DF7111756AE3003ED448 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BE41DF7C11756AEF003ED448 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		BE41E07C11756C1F003ED448 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/i686-apple-darwin9/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
 		BE7BB5711159B5DA00508431 /* trmRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trmRelease-Info.plist"; sourceTree = "<group>"; };
 		BE8EFD061134BFF6002A8F24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLIPhone.a; path = "/Users/will/Downloads/libYAJLIPhone-0.2.2/libYAJLIPhone.a"; sourceTree = "<absolute>"; };
 		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BECECE90113664CA00CB06B1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -132,7 +124,6 @@
 		BEF19292115B410700556BB6 /* greygradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greygradient.png; sourceTree = "<group>"; };
 		BEF19299115B419900556BB6 /* ltgreygradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ltgreygradient.png; sourceTree = "<group>"; };
 		BEF192A3115B42B300556BB6 /* ltyellowgradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ltyellowgradient.png; sourceTree = "<group>"; };
-		BEF19372115E90E700556BB6 /* Acapela For iPhone HQM British Lucy */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM British Lucy"; path = "../acapela/Acapela for iPhone Voices/Acapela For iPhone HQM British Lucy"; sourceTree = SOURCE_ROOT; };
 		BEF19388115E911700556BB6 /* TRTwitterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTwitterModel.h; sourceTree = "<group>"; };
 		BEF19389115E911700556BB6 /* TRTwitterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTwitterModel.m; sourceTree = "<group>"; };
 		BEF1938B115E919E00556BB6 /* TRTwitterTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTwitterTweet.h; sourceTree = "<group>"; };
@@ -153,10 +144,7 @@
 				BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */,
 				BE20CDDA11379B16007BF519 /* AudioToolbox.framework in Frameworks */,
 				BE10A36711507AE600ACA4C6 /* QuartzCore.framework in Frameworks */,
-				BE41DE69117565E5003ED448 /* libBabTTS.a in Frameworks */,
-				BE41DE6A117565E5003ED448 /* libMobilityStatic.a in Frameworks */,
 				BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */,
-				BE41E07D11756C1F003ED448 /* libstdc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +173,6 @@
 			children = (
 				BE41DF7C11756AEF003ED448 /* Three20.bundle */,
 				BE41DF7111756AE3003ED448 /* Three20.xcodeproj */,
-				BEF19372115E90E700556BB6 /* Acapela For iPhone HQM British Lucy */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -225,13 +212,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE41DE67117565E5003ED448 /* libBabTTS.a */,
-				BE41DE68117565E5003ED448 /* libMobilityStatic.a */,
 				BE8EFD061134BFF6002A8F24 /* libxml2.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
-				BE8EFE341134D5C5002A8F24 /* libYAJLIPhone.a */,
 				BE20CDD911379B16007BF519 /* AudioToolbox.framework */,
 				BE10A36611507AE600ACA4C6 /* QuartzCore.framework */,
 				BE41E07C11756C1F003ED448 /* libstdc++.dylib */,
@@ -420,14 +404,12 @@
 				BECECE871136624000CB06B1 /* Default.png in Resources */,
 				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
 				BE9DC881113766BA0081178C /* Settings.bundle in Resources */,
-				BE10A1CA114F28C400ACA4C6 /* babdevlopper.lic.password in Resources */,
 				BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */,
 				BEF19226115B34E000556BB6 /* cellbg.png in Resources */,
 				BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */,
 				BEF19293115B410700556BB6 /* greygradient.png in Resources */,
 				BEF1929A115B419900556BB6 /* ltgreygradient.png in Resources */,
 				BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */,
-				BEF19387115E90E700556BB6 /* Acapela For iPhone HQM British Lucy in Resources */,
 				BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */,
 				BEEAFAA61176AA3E005B4524 /* gear.png in Resources */,
 			);
@@ -491,6 +473,7 @@
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
 					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
 					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin9/4.0.1\"",
+					"\"$(SDKROOT)/usr/lib/powerpc-apple-darwin9/4.0.1\"",
 				);
 				PRODUCT_NAME = trm;
 			};
@@ -517,6 +500,7 @@
 					"\"$(SRCROOT)/../acapela/iPhone_Demo_1.0.6/iPhone_Customer_1.0.6/Libraries/iPhoneOS\"",
 					"\"$(SRCROOT)/../acapela/iPhoneOS\"",
 					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin9/4.0.1\"",
+					"\"$(SDKROOT)/usr/lib/powerpc-apple-darwin9/4.0.1\"",
 				);
 				PRODUCT_NAME = trm;
 			};

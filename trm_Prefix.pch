@@ -8,10 +8,9 @@
 #warning "This project uses features only available in iPhone SDK 3.0 and later."
 #endif
 
-
 #ifdef __OBJC__
   #import <Foundation/Foundation.h>
   #import <UIKit/UIKit.h>
-  #import <CoreData/CoreData.h>
+  #import <AudioToolbox/AudioToolbox.h>
   #import "Three20/three20.h"
 #endif

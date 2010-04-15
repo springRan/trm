@@ -13,7 +13,7 @@
 }
 
 - (TRTwitterTweet *) tweet {
-  return [self.object tweet];
+  return [[self object] tweet];
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)identifier {
@@ -50,14 +50,17 @@
 }
 
 - (void)setObject:(id)object {
+  if (_item != object) {
+    [_item release];
+    _item = [object retain];
     _label.text = [TTStyledText textFromXHTML:((TRTweetTableItem *)object).tweet.text];
 
     NSString *urlPath = ((TRTweetTableItem *)object).tweet.profileImageUrl;
     _avatar.urlPath = urlPath;
-    
-    NSLog(@"%@", ((TRTweetTableItem *)object).tweet.userRealName);
+      
     _username.text = ((TRTweetTableItem *)object).tweet.userRealName;
     [self setNeedsLayout];
+  }
 }
 
 @end

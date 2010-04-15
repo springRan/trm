@@ -4,6 +4,8 @@
 #import "TRTwitterModel.h"
 
 @implementation TRTweetTableViewController
+@synthesize playButton = _playButton;
+@synthesize pauseButton = _pauseButton;
 
 -(id) init {
 	if (self = [super init]) {
@@ -20,17 +22,17 @@
 		self.navigationItem.leftBarButtonItem = settings;
     
 
-		_playButton = [[UIBarButtonItem alloc] 
+		self.playButton = [[UIBarButtonItem alloc] 
                                  initWithBarButtonSystemItem: UIBarButtonSystemItemPlay
                                  target:self 
                                  action:@selector(playPressed)];
 
-    _pauseButton = [[UIBarButtonItem alloc] 
-                             initWithBarButtonSystemItem: UIBarButtonSystemItemPlay
+    self.pauseButton = [[UIBarButtonItem alloc] 
+                             initWithBarButtonSystemItem: UIBarButtonSystemItemPause
                              target:self 
                              action:@selector(pausePressed)];
 
-		self.navigationItem.rightBarButtonItem = _playButton;
+		self.navigationItem.rightBarButtonItem = self.playButton;
   }
 	return self;
 }
@@ -97,11 +99,11 @@
 }
 
 - (void)playPressed{
-  self.navigationItem.rightBarButtonItem = _pauseButton;
+  NSLog(@"play pressed");
 }
 
 - (void)pausePressed{
-  self.navigationItem.rightBarButtonItem = _playButton;
+  NSLog(@"pause pressed");
 }
 @end
 
