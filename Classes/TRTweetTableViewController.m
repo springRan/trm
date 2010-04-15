@@ -17,9 +17,28 @@
                                    target:self 
                                    action:@selector(settingsClicked)];
 		
-		self.navigationItem.rightBarButtonItem = settings;
-	}
+		self.navigationItem.leftBarButtonItem = settings;
+    
+
+		_playButton = [[UIBarButtonItem alloc] 
+                                 initWithBarButtonSystemItem: UIBarButtonSystemItemPlay
+                                 target:self 
+                                 action:@selector(playPressed)];
+
+    _pauseButton = [[UIBarButtonItem alloc] 
+                             initWithBarButtonSystemItem: UIBarButtonSystemItemPlay
+                             target:self 
+                             action:@selector(pausePressed)];
+
+		self.navigationItem.rightBarButtonItem = _playButton;
+  }
 	return self;
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+  [self reload];
+  [super viewWillAppear:animated];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -27,8 +46,9 @@
 
 - (void)loadView {
   [super loadView];  
+  CGRect tableViewBounds = self.view.bounds;
   
-  self.tableView = [[[UITableView alloc] initWithFrame:self.view.bounds
+  self.tableView = [[[UITableView alloc] initWithFrame:tableViewBounds
                                                  style:UITableViewStylePlain] autorelease];
   self.variableHeightRows = YES;
   self.title = @"tweetrad.io";
@@ -74,6 +94,14 @@
 
 - (void)settingsClicked{
   TTOpenURL(@"tt://settings");
+}
+
+- (void)playPressed{
+  self.navigationItem.rightBarButtonItem = _pauseButton;
+}
+
+- (void)pausePressed{
+  self.navigationItem.rightBarButtonItem = _playButton;
 }
 @end
 

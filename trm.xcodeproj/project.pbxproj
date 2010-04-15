@@ -33,7 +33,7 @@
 		BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */; };
 		BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */; };
 		BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C67117575BE008E2AE2 /* TRAccount.m */; };
-		BED39E371175E6E4008E2AE2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = BED39E361175E6E4008E2AE2 /* gear.png */; };
+		BEEAFAA61176AA3E005B4524 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEAFAA51176AA3E005B4524 /* gear.png */; };
 		BEF19226115B34E000556BB6 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19225115B34E000556BB6 /* cellbg.png */; };
 		BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19286115B3F3200556BB6 /* purplegradient.png */; };
 		BEF19293115B410700556BB6 /* greygradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19292115B410700556BB6 /* greygradient.png */; };
@@ -65,7 +65,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BE41DF7111756AE3003ED448 /* Three20.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 /* End PBXContainerItemProxy section */
@@ -126,7 +126,7 @@
 		BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableDataSource.m; sourceTree = "<group>"; };
 		BED39C66117575BE008E2AE2 /* TRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAccount.h; sourceTree = "<group>"; };
 		BED39C67117575BE008E2AE2 /* TRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAccount.m; sourceTree = "<group>"; };
-		BED39E361175E6E4008E2AE2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		BEEAFAA51176AA3E005B4524 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		BEF19225115B34E000556BB6 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbg.png; sourceTree = "<group>"; };
 		BEF19286115B3F3200556BB6 /* purplegradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplegradient.png; sourceTree = "<group>"; };
 		BEF19292115B410700556BB6 /* greygradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greygradient.png; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BED39E361175E6E4008E2AE2 /* gear.png */,
+				BEEAFAA51176AA3E005B4524 /* gear.png */,
 				BEF192A3115B42B300556BB6 /* ltyellowgradient.png */,
 				BEF19299115B419900556BB6 /* ltgreygradient.png */,
 				BEF19292115B410700556BB6 /* greygradient.png */,
@@ -429,7 +429,7 @@
 				BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */,
 				BEF19387115E90E700556BB6 /* Acapela For iPhone HQM British Lucy in Resources */,
 				BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */,
-				BED39E371175E6E4008E2AE2 /* gear.png in Resources */,
+				BEEAFAA61176AA3E005B4524 /* gear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
