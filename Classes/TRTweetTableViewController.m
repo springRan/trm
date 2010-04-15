@@ -65,11 +65,20 @@
 // PLAYER
 - (void)speakRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  [self setVoice];
   TRTweetTableItemCell *_cell = (TRTweetTableItemCell *)[_tableView cellForRowAtIndexPath:indexPath];
-  self.speaking = YES;
-  [self.speaker startSpeakingString:[_cell.tweet speakableText]];
-  NSLog(@"speaking");
+  if (_cell) {
+    _lastSpokenIndexPath = indexPath;
+    [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
+    [self.speaker stopSpeaking];
+    [self setVoice];
+    
+    self.speaking = YES;
+    [self.tableView selectRowAtIndexPath:indexPath
+                                animated:YES
+                          scrollPosition:UITableViewScrollPositionTop];
+    [self.speaker startSpeakingString:[_cell.tweet speakableText]];
+    NSLog(@"speaking");
+  }
 }
 
 - (void)setVoice
@@ -82,14 +91,30 @@
     _speaking = speaking;
     if (_speaking) {
       self.navigationItem.rightBarButtonItem = self.pauseButton;
+      NSIndexPath *indexPath;
+      if (_lastSpokenIndexPath) {
+        int i = _lastSpokenIndexPath.row;
+        indexPath = [NSIndexPath indexPathForRow:i++ inSection:0];
+      } else {
+        indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+      }
+      [self speakRowAtIndexPath:indexPath];
     } else {
       self.navigationItem.rightBarButtonItem = self.playButton;
+      [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
+      [self.speaker stopSpeaking];
     }
   }
 }
 
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking: (BOOL)finishedSpeaking{
-  NSLog(@"finished");
+  if (![self.speaker isSpeaking] && _speaking) {
+    int i = _lastSpokenIndexPath.row;
+    i += 1;
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+    [self speakRowAtIndexPath:indexPath];
+    NSLog(@"finished");
+  }
 }; 
 
 - (void)speechSynthesizer:(AcapelaSpeech *)sender willSpeakWord: (NSRange)characterRange ofString:(NSString *)string{

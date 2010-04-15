@@ -282,15 +282,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>29</integer>
-									<integer>25</integer>
+									<integer>23</integer>
+									<integer>19</integer>
 									<integer>13</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 7}, {330, 910}}</string>
+							<string>{{0, 222}, {330, 910}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,7 +307,7 @@
 							<real>330</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>67 59 1506 969 0 0 1680 1028 </string>
+						<string>39 55 1506 969 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>BECECB65113600C800CB06B1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TRTweetTableViewController.h</string>
+								<string>TRTweetTableViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>BECECB66113600C800CB06B1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TRTweetTableViewController.h</string>
+										<string>TRTweetTableViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BEE3E15F1177B83800845A1D</string>
+										<string>BEE3E2081177C06600845A1D</string>
 										<key>history</key>
 										<array>
 											<string>BECECBA011361A3200CB06B1</string>
@@ -355,16 +355,16 @@
 											<string>BEE3DFA511779FB100845A1D</string>
 											<string>BEE3DFA911779FC300845A1D</string>
 											<string>BEE3E0031177A35100845A1D</string>
-											<string>BEE3E0401177A76700845A1D</string>
 											<string>BEE3E0421177A76700845A1D</string>
 											<string>BEE3E04A1177A7B400845A1D</string>
-											<string>BEE3E0571177A87400845A1D</string>
 											<string>BEE3E0631177AA2D00845A1D</string>
 											<string>BEE3E0D91177AEBD00845A1D</string>
 											<string>BEE3E0E81177B39100845A1D</string>
 											<string>BEE3E13F1177B58E00845A1D</string>
-											<string>BEE3E15D1177B83800845A1D</string>
-											<string>BEE3E15E1177B83800845A1D</string>
+											<string>BEE3E1991177B8E700845A1D</string>
+											<string>BEE3E1B81177BB0100845A1D</string>
+											<string>BEE3E2071177C06600845A1D</string>
+											<string>BEE3E2001177C00E00845A1D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -380,7 +380,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1154, 589}}</string>
 								<key>RubberWindowFrame</key>
-								<string>67 59 1506 969 0 0 1680 1028 </string>
+								<string>39 55 1506 969 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -403,7 +403,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1154, 180}}</string>
+										<string>{{10, 27}, {1154, 307}}</string>
+										<key>RubberWindowFrame</key>
+										<string>39 55 1506 969 0 0 1680 1028 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -458,8 +460,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1154, 307}}</string>
-										<key>RubberWindowFrame</key>
-										<string>67 59 1506 969 0 0 1680 1028 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -542,12 +542,12 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {1506, 281}}</string>
+						<string>{{0, 0}, {1506, 660}}</string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>281pt</string>
+					<string>660pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -566,8 +566,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {753, 321}}</string>
-									<string>{{753, 0}, {753, 321}}</string>
+									<string>{{0, 0}, {683, 80}}</string>
+									<string>{{683, 0}, {823, 80}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -582,8 +582,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {1506, 321}}</string>
-									<string>{{0, 321}, {1506, 321}}</string>
+									<string>{{0, 0}, {1506, 80}}</string>
+									<string>{{0, 25}, {1506, 238}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -603,7 +603,7 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 286}, {1506, 642}}</string>
+						<string>{{0, 665}, {1506, 263}}</string>
 						<key>PBXDebugSessionStackFrameViewKey</key>
 						<dict>
 							<key>DebugVariablesTableConfiguration</key>
@@ -613,16 +613,16 @@
 								<string>Value</string>
 								<real>85</real>
 								<string>Summary</string>
-								<real>523</real>
+								<real>593</real>
 							</array>
 							<key>Frame</key>
-							<string>{{753, 0}, {753, 321}}</string>
+							<string>{{683, 0}, {823, 80}}</string>
 						</dict>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>642pt</string>
+					<string>263pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -686,7 +686,7 @@
 		<string>/Users/will/workspace/trm/trm.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>67 59 1506 969 0 0 1680 1028 </string>
+	<string>39 55 1506 969 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
