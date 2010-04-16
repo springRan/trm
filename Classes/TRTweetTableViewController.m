@@ -145,7 +145,7 @@
   }
   if (currentItem) {
     i++;
-    if ([items count] < i) {
+    if ([items count] > i) {
       currentItem = [items objectAtIndex:i];
       [self _speakItem:currentItem];
     } else {
