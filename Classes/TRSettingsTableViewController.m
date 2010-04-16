@@ -14,7 +14,7 @@
 	if (self = [super init]) {
 		self.title = @"User Settings";
 		self.tableViewStyle = UITableViewStyleGrouped;
-    self.tableView.backgroundColor = TTSTYLEVAR(darkBackground);
+    self.tableView.backgroundColor = TTSTYLEVAR(darkGrayColor);
     
 		UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] 
                                    initWithTitle:@"done" 

@@ -83,6 +83,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
   return [UIColor whiteColor];
 }
 
+- (UIColor *)darkGrayColor {
+  return UIColorFromRGB(0x444444);
+}
+
 - (UIColor *)darkColor {
   return UIColorFromRGB(0x607734);
 }

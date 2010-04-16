@@ -75,6 +75,16 @@
                              action:@selector(pausePressed)];
 
 		self.navigationItem.rightBarButtonItem = self.playButton;
+    
+    _searchBar = [[TTSearchBar alloc] init];
+    _searchBar.frame = CGRectMake(0,0, self.view.width, 36);
+    [self.view addSubview:_searchBar];
+    _searchBar.delegate = self;
+    _searchBar.dataSource = self.dataSource;
+    
+    self.tableView.frame = CGRectMake(0, 36, self.view.width,self.view.height - 36);
+    self.tableView.backgroundColor = TTSTYLEVAR(darkGrayColor);
+    
   }
 	return self;
 }
@@ -235,8 +245,20 @@
 	[self.speaker setDelegate:self];
 }
 
+#pragma mark -
+#pragma mark search
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// SEARCH  
 
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+  TTAlert(@"time to search");
+}
 
+- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar
+{
+  TTAlert(@"time to search:results");
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIViewController  
 

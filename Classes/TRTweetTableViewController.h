@@ -8,12 +8,13 @@
 @end
 
 
-@interface TRTweetTableViewController : TTTableViewController <UITableViewDelegate> {
+@interface TRTweetTableViewController : TTTableViewController <UITableViewDelegate, UISearchBarDelegate, UITextFieldDelegate> {
   BOOL _speaking;
   AcapelaLicense *_acapelaLicense;
   AcapelaSpeech *_speaker;
   UIBarButtonItem *_playButton;
   UIBarButtonItem *_pauseButton;
+  TTSearchBar *_searchBar;
 }
 @property (nonatomic,retain) UIBarButtonItem *playButton;
 @property (nonatomic,retain) UIBarButtonItem *pauseButton;
@@ -31,4 +32,8 @@
 - (void)speechSynthesizer:(AcapelaSpeech *)sender willSpeakWord: (NSRange)characterRange ofString:(NSString *)string;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender willSpeakPhoneme: (short)phonemeOpcode;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didEncounterSyncMessage: (NSString *)errorMessage;
+
+//UISearchBarDelegate
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar;
+- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar;
 @end

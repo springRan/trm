@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -272,6 +272,7 @@
 								<string>BE8EFBFC11339928002A8F24</string>
 								<string>BECFE70D116D869A0042260B</string>
 								<string>BE8EFC04113399AB002A8F24</string>
+								<string>BED39C3F117572DD008E2AE2</string>
 								<string>BECFE70E116D86B20042260B</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
@@ -283,8 +284,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>29</integer>
-									<integer>25</integer>
+									<integer>34</integer>
+									<integer>31</integer>
 									<integer>13</integer>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -307,6 +308,8 @@
 							<string>MainColumn</string>
 							<real>330</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>414 145 1506 1033 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,6 +320,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -334,7 +339,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE452067117837FC004AF2EC</string>
+										<string>BE4520E411784384004AF2EC</string>
 										<key>history</key>
 										<array>
 											<string>BECECBA011361A3200CB06B1</string>
@@ -351,16 +356,18 @@
 											<string>BE451FAB11781264004AF2EC</string>
 											<string>BE451FB81178133B004AF2EC</string>
 											<string>BE451FC311781496004AF2EC</string>
-											<string>BE4520091178282E004AF2EC</string>
 											<string>BE45200A1178282E004AF2EC</string>
 											<string>BE45200B1178282E004AF2EC</string>
-											<string>BE45200C1178282E004AF2EC</string>
 											<string>BE45200E1178282E004AF2EC</string>
 											<string>BE45202711783136004AF2EC</string>
 											<string>BE45202811783136004AF2EC</string>
 											<string>BE45203711783213004AF2EC</string>
-											<string>BE452055117836C9004AF2EC</string>
-											<string>BE452056117836C9004AF2EC</string>
+											<string>BE45209F11783E13004AF2EC</string>
+											<string>BE4520AD11783EF8004AF2EC</string>
+											<string>BE4520B31178404F004AF2EC</string>
+											<string>BE4520B41178404F004AF2EC</string>
+											<string>BE4520E211784384004AF2EC</string>
+											<string>BE4520E311784384004AF2EC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -375,6 +382,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {1154, 830}}</string>
+								<key>RubberWindowFrame</key>
+								<string>414 145 1506 1033 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -452,6 +461,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1154, 130}}</string>
+										<key>RubberWindowFrame</key>
+										<string>414 145 1506 1033 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -535,8 +546,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1506, 643}}</string>
-						<key>RubberWindowFrame</key>
-						<string>414 145 1506 1033 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -611,11 +620,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{0, 174}, {238, 170}}</string>
-							<key>RubberWindowFrame</key>
-							<string>414 145 1506 1033 0 0 1920 1178 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>414 145 1506 1033 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
