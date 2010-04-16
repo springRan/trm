@@ -334,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE45205F11783742004AF2EC</string>
+										<string>BE452067117837FC004AF2EC</string>
 										<key>history</key>
 										<array>
 											<string>BECECBA011361A3200CB06B1</string>
@@ -679,7 +679,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BE45206011783742004AF2EC</string>
 		<string>BE451F171178095B004AF2EC</string>
 		<string>BE451F181178095B004AF2EC</string>
 		<string>/Users/will/workspace/trm/trm.xcodeproj</string>

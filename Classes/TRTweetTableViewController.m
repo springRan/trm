@@ -135,12 +135,19 @@
   }
   if (currentItem) {
     i++;
-    currentItem = [items objectAtIndex:i];
+    if ([items count] < i) {
+      currentItem = [items objectAtIndex:i];
+      [self _speakItem:currentItem];
+    } else {
+      self.speaking = NO;
+      // hit the end get more tweets!
+    }
+
   } else {
     currentItem = [items objectAtIndex:0];
+    [self _speakItem:currentItem];
   }
 
-  [self _speakItem:currentItem];
 }
 
 - (void)speakItem:(TRTweetTableItem *)currentItem
