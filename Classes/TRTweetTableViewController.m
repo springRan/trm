@@ -16,8 +16,15 @@
 		//	cell.backgroundColor                = backgroundColor;
 		//	cell.backgroundView.backgroundColor = backgroundColor;
 		//	cell.contentView.backgroundColor    = backgroundColor;
-		[[(TRTweetTableItemCell *)cell label] setBackgroundColor:[UIColor clearColor]];
-}
+    if ([cell isKindOfClass:[TRTweetTableItemCell class]]) {
+//      if ([(TRTweetTableViewController *)_controller lastSpokenIndexPath] == indexPath) {
+//        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(highlightedCell);
+//      } else {
+//        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(cell);
+//      }
+      [[(TRTweetTableItemCell *)cell label] setBackgroundColor:[UIColor clearColor]];
+    }
+ }
 @end
 
 
@@ -26,7 +33,6 @@
 @synthesize pauseButton = _pauseButton;
 @synthesize speaker = _speaker;
 @synthesize acapelaLicense = _acapelaLicense;
-@synthesize lastSpokenIndexPath = _lastSpokenIndexPath;
 @synthesize speaking = _speaking;
 
 
@@ -34,7 +40,7 @@
 	if (self = [super init]) {
     [self enableAcapela];
     _speaking = NO;
-    self.lastSpokenIndexPath = nil;
+    _lastSpokenIndexPath = nil;
 		self.title = @"User Settings";
 		self.tableViewStyle = UITableViewStyleGrouped;
     
@@ -73,7 +79,7 @@
 // PLAYER
 - (void)speakRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  if ([_tableView numberOfRowsInSection:0] - 1 > indexPath.row) {
+  if ([self.tableView numberOfRowsInSection:0] - 1 > indexPath.row) {
     _lastSpokenIndexPath = indexPath;
     [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
     [self.speaker stopSpeaking];
@@ -85,6 +91,7 @@
                           scrollPosition:UITableViewScrollPositionTop];
     id item = [((TRTweetTableDataSource *)self.dataSource).items objectAtIndex:indexPath.row];
     if ([item isKindOfClass:[TRTweetTableItem class]]) {
+      ((TRTweetTableItem *)item).speaking = YES;
       [self.speaker startSpeakingString:[((TRTweetTableItem *)item).tweet speakableText]];
     } else {
     }
@@ -93,6 +100,11 @@
     // need more tweets it seems
   }
 
+}
+
+- (NSIndexPath *)lastSpokenIndexPath
+{
+  return _lastSpokenIndexPath;
 }
 
 - (void)setVoice
@@ -121,10 +133,16 @@
   }
 }
 
-- (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking: (BOOL)finishedSpeaking{
+- (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking:(BOOL)finishedSpeaking{
   if (![self.speaker isSpeaking] && _speaking) {
-    int i = _lastSpokenIndexPath.row;
-    i += 1;
+    NSLog(@"speaker just finished speaking");
+    int i;
+    if (_lastSpokenIndexPath) {
+      i = _lastSpokenIndexPath.row;
+      i++;
+    } else {
+      i = 0;
+    }
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
     [self speakRowAtIndexPath:indexPath];
     NSLog(@"finished");

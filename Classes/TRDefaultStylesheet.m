@@ -22,6 +22,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
                                               next:nil];
 }
 
+-(TTStyle *)highlightedCell {
+  return [TTLinearGradientFillStyle styleWithColor1:TTSTYLEVAR(cellbackground3) 
+                                             color2:TTSTYLEVAR(cellbackground4)
+                                               next:nil];
+}
+
 -(TTStyle *)avatar {
 	return [TTShapeStyle styleWithShape:
 			[TTRoundedRectangleShape shapeWithRadius:8] next:
@@ -63,6 +69,14 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 - (UIColor *)cellbackground2{
   return UIColorFromRGB(0xffffff);
+}
+
+- (UIColor *)cellbackground3{
+  return UIColorFromRGB(0x007dff);
+}
+
+- (UIColor *)cellbackground4{
+  return UIColorFromRGB(0x054ac);
 }
 
 - (UIColor *)highlightedTextColor {

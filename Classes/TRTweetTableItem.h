@@ -4,10 +4,12 @@
 @interface TRTweetTableItem : TTTableItem {
   TRTwitterTweet* _tweet;
   TTStyledText* _content;
+  BOOL _speaking;
 }
 
 @property(nonatomic,retain) TRTwitterTweet *tweet;
 @property(nonatomic,retain) TTStyledText *content;
+@property(nonatomic) BOOL speaking;
 
 - (id)initWithTweet:(TRTwitterTweet *)tweet;
 @end

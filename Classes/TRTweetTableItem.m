@@ -5,6 +5,7 @@
 
 @synthesize tweet = _tweet;
 @synthesize content = _content;
+@synthesize speaking = _speaking;
 
 - (id)initWithTweet:(TRTwitterTweet *)tweet 
 {

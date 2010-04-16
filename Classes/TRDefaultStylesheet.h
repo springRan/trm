@@ -9,6 +9,8 @@
 // colors
 - (UIColor *)cellbackground1;
 - (UIColor *)cellbackground2;
+- (UIColor *)cellbackground3;
+- (UIColor *)cellbackground4;
 - (UIColor *)darkColor;
 - (UIColor *)lightColor;
 - (UIColor *)darkBackground;

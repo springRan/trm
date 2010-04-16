@@ -19,10 +19,11 @@
 @property (nonatomic,retain) UIBarButtonItem *pauseButton;
 @property (nonatomic, retain) AcapelaLicense *acapelaLicense;
 @property (nonatomic, retain) AcapelaSpeech *speaker;
-@property (nonatomic, retain) NSIndexPath *lastSpokenIndexPath;
+//@property (nonatomic, retain) NSIndexPath *lastSpokenIndexPath;
 @property (nonatomic) BOOL speaking;
 
 - (void)speakRowAtIndexPath:(NSIndexPath *)indexPath;
+- (NSIndexPath *)lastSpokenIndexPath;
 - (void)enableAcapela;
 - (void)setVoice;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking: (BOOL)finishedSpeaking;
