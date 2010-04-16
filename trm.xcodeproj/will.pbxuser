@@ -30,8 +30,8 @@
 	28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1093, 750}}";
-			sepNavSelRange = "{352, 0}";
-			sepNavVisRange = "{0, 1215}";
+			sepNavSelRange = "{768, 0}";
+			sepNavVisRange = "{0, 1260}";
 			sepNavWindowFrame = "{{130, 210}, {987, 858}}";
 		};
 	};
@@ -72,24 +72,24 @@
 			BEEAFDB21176CBBD005B4524 /* TRTweetTableDelegate.m:14 */,
 			BEEAFEE61176D6BC005B4524 /* TRTweetTableDelegate.m:15 */,
 			BEE3E0661177AADC00845A1D /* TRTweetTableDelegate.h:12 */,
-			BEE3E2091177C28900845A1D /* TRTweetTableViewController.m:185 */,
-			BEEA0058117802CC005B4524 /* TRTweetTableViewController.m:172 */,
+			BEE3E2091177C28900845A1D /* TRTweetTableViewController.m:196 */,
+			BEEA0058117802CC005B4524 /* TRTweetTableViewController.m:183 */,
 			BEEA005C117802E1005B4524 /* TRTweetTableViewController.m:92 */,
-			BEEA0077117803AC005B4524 /* TRTweetTableViewController.m:281 */,
-			BEEA0079117803AE005B4524 /* TRTweetTableViewController.m:285 */,
-			BEEA00951178052B005B4524 /* TRTweetTableViewController.m:170 */,
-			BE451F2811780AC9004AF2EC /* TRTweetTableViewController.m:185 */,
-			BE451F2A11780ACD004AF2EC /* TRTweetTableViewController.m:174 */,
+			BEEA0077117803AC005B4524 /* TRTweetTableViewController.m:292 */,
+			BEEA0079117803AE005B4524 /* TRTweetTableViewController.m:296 */,
+			BEEA00951178052B005B4524 /* TRTweetTableViewController.m:181 */,
+			BE451F2811780AC9004AF2EC /* TRTweetTableViewController.m:196 */,
+			BE451F2A11780ACD004AF2EC /* TRTweetTableViewController.m:185 */,
 			BE451F3111780B21004AF2EC /* TRTweetTableViewController.m:93 */,
-			BE451F4111780BB8004AF2EC /* TRTweetTableViewController.m:174 */,
-			BE451F4311780BBF004AF2EC /* TRTweetTableViewController.m:185 */,
-			BE451F4511780BC1004AF2EC /* TRTweetTableViewController.m:185 */,
-			BE451F4711780BC4004AF2EC /* TRTweetTableViewController.m:185 */,
+			BE451F4111780BB8004AF2EC /* TRTweetTableViewController.m:185 */,
+			BE451F4311780BBF004AF2EC /* TRTweetTableViewController.m:196 */,
+			BE451F4511780BC1004AF2EC /* TRTweetTableViewController.m:196 */,
+			BE451F4711780BC4004AF2EC /* TRTweetTableViewController.m:196 */,
 			BE451F4911780BE1004AF2EC /* TRTweetTableViewController.m:54 */,
 			BE451F5311780C76004AF2EC /* TRTweetTableViewController.m:47 */,
-			BE451F8811780F82004AF2EC /* TRTweetTableViewController.m:184 */,
-			BE451F8A11780F83004AF2EC /* TRTweetTableViewController.m:183 */,
-			BE452033117831D0004AF2EC /* TRTweetTableViewController.m:137 */,
+			BE451F8811780F82004AF2EC /* TRTweetTableViewController.m:195 */,
+			BE451F8A11780F83004AF2EC /* TRTweetTableViewController.m:194 */,
+			BE45205B1178373D004AF2EC /* TRTweetTableViewController.m:138 */,
 		);
 		codeSenseManager = BE8EFBC611339015002A8F24 /* Code sense */;
 		executables = (
@@ -326,6 +326,16 @@
 			BE452047117832D6004AF2EC /* PBXTextBookmark */ = BE452047117832D6004AF2EC /* PBXTextBookmark */;
 			BE45204A11783415004AF2EC /* PBXTextBookmark */ = BE45204A11783415004AF2EC /* PBXTextBookmark */;
 			BE45204B11783415004AF2EC /* PBXTextBookmark */ = BE45204B11783415004AF2EC /* PBXTextBookmark */;
+			BE45204C11783504004AF2EC /* PBXTextBookmark */ = BE45204C11783504004AF2EC /* PBXTextBookmark */;
+			BE45204F11783581004AF2EC /* PBXTextBookmark */ = BE45204F11783581004AF2EC /* PBXTextBookmark */;
+			BE452052117835E1004AF2EC /* PBXTextBookmark */ = BE452052117835E1004AF2EC /* PBXTextBookmark */;
+			BE452055117836C9004AF2EC /* PBXTextBookmark */ = BE452055117836C9004AF2EC /* PBXTextBookmark */;
+			BE452056117836C9004AF2EC /* PBXTextBookmark */ = BE452056117836C9004AF2EC /* PBXTextBookmark */;
+			BE452057117836C9004AF2EC /* PBXTextBookmark */ = BE452057117836C9004AF2EC /* PBXTextBookmark */;
+			BE452058117836FB004AF2EC /* PBXTextBookmark */ = BE452058117836FB004AF2EC /* PBXTextBookmark */;
+			BE4520591178371B004AF2EC /* PBXTextBookmark */ = BE4520591178371B004AF2EC /* PBXTextBookmark */;
+			BE45205A11783724004AF2EC /* PBXTextBookmark */ = BE45205A11783724004AF2EC /* PBXTextBookmark */;
+			BE45205F11783742004AF2EC /* PBXTextBookmark */ = BE45205F11783742004AF2EC /* PBXTextBookmark */;
 			BECECBA011361A3200CB06B1 = BECECBA011361A3200CB06B1 /* PBXTextBookmark */;
 			BEEA003311780150005B4524 = BEEA003311780150005B4524 /* PBXTextBookmark */;
 			BEEA003411780150005B4524 = BEEA003411780150005B4524 /* PBXTextBookmark */;
@@ -502,7 +512,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 228";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1846;
 		vrLoc = 3126;
@@ -512,7 +522,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 228";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1841;
 		vrLoc = 3126;
@@ -522,7 +532,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 228";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1756;
 		vrLoc = 3125;
@@ -532,7 +542,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 2723;
@@ -542,12 +552,12 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1831;
 		vrLoc = 2723;
 	};
-	BE451F2811780AC9004AF2EC /* TRTweetTableViewController.m:185 */ = {
+	BE451F2811780AC9004AF2EC /* TRTweetTableViewController.m:196 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -559,13 +569,13 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 185;
+		lineNumber = 196;
 		location = tweetrad.io;
 		modificationTime = 293089695.189736;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BE451F2A11780ACD004AF2EC /* TRTweetTableViewController.m:174 */ = {
+	BE451F2A11780ACD004AF2EC /* TRTweetTableViewController.m:185 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -577,7 +587,7 @@
 		functionName = "-setSpeaking:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 174;
+		lineNumber = 185;
 		location = tweetrad.io;
 		modificationTime = 293089715.647911;
 		originalNumberOfMultipleMatches = 1;
@@ -588,7 +598,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1831;
 		vrLoc = 2719;
@@ -616,7 +626,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1643;
 		vrLoc = 2719;
@@ -626,12 +636,12 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1831;
 		vrLoc = 2719;
 	};
-	BE451F4111780BB8004AF2EC /* TRTweetTableViewController.m:174 */ = {
+	BE451F4111780BB8004AF2EC /* TRTweetTableViewController.m:185 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -643,13 +653,13 @@
 		functionName = "-setSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 174;
+		lineNumber = 185;
 		location = tweetrad.io;
 		modificationTime = 293089695.190139;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BE451F4311780BBF004AF2EC /* TRTweetTableViewController.m:185 */ = {
+	BE451F4311780BBF004AF2EC /* TRTweetTableViewController.m:196 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -661,13 +671,13 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 185;
+		lineNumber = 196;
 		location = tweetrad.io;
 		modificationTime = 293089695.190286;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BE451F4511780BC1004AF2EC /* TRTweetTableViewController.m:185 */ = {
+	BE451F4511780BC1004AF2EC /* TRTweetTableViewController.m:196 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -679,13 +689,13 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 185;
+		lineNumber = 196;
 		location = tweetrad.io;
 		modificationTime = 293089695.190425;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BE451F4711780BC4004AF2EC /* TRTweetTableViewController.m:185 */ = {
+	BE451F4711780BC4004AF2EC /* TRTweetTableViewController.m:196 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -697,7 +707,7 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 185;
+		lineNumber = 196;
 		location = tweetrad.io;
 		modificationTime = 293089695.190607;
 		originalNumberOfMultipleMatches = 1;
@@ -726,7 +736,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1645;
 		vrLoc = 2717;
@@ -736,7 +746,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1831;
 		vrLoc = 2719;
@@ -755,7 +765,7 @@
 		isa = PBXTextBookmark;
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		rLen = 0;
-		rLoc = 280;
+		rLoc = 291;
 		rType = 1;
 	};
 	BE451F5211780C4E004AF2EC /* PBXTextBookmark */ = {
@@ -763,7 +773,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 233";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 7154;
@@ -792,7 +802,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 240";
 		rLen = 0;
-		rLoc = 9463;
+		rLoc = 9794;
 		rType = 0;
 		vrLen = 1796;
 		vrLoc = 130;
@@ -802,7 +812,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 240";
 		rLen = 0;
-		rLoc = 9463;
+		rLoc = 9794;
 		rType = 0;
 		vrLen = 1796;
 		vrLoc = 130;
@@ -850,7 +860,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 286;
+		rLoc = 297;
 		rType = 1;
 	};
 	BE451F6411780CD5004AF2EC /* PBXTextBookmark */ = {
@@ -858,7 +868,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 239";
 		rLen = 5;
-		rLoc = 9463;
+		rLoc = 9794;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 7017;
@@ -868,7 +878,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 112";
 		rLen = 0;
-		rLoc = 5930;
+		rLoc = 6261;
 		rType = 0;
 		vrLen = 1036;
 		vrLoc = 3263;
@@ -947,7 +957,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 108";
 		rLen = 0;
-		rLoc = 5558;
+		rLoc = 5889;
 		rType = 0;
 		vrLen = 1130;
 		vrLoc = 2888;
@@ -972,7 +982,7 @@
 		vrLen = 1724;
 		vrLoc = 172;
 	};
-	BE451F8811780F82004AF2EC /* TRTweetTableViewController.m:184 */ = {
+	BE451F8811780F82004AF2EC /* TRTweetTableViewController.m:195 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -984,13 +994,13 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 184;
+		lineNumber = 195;
 		location = tweetrad.io;
 		modificationTime = 293089695.191007;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	BE451F8A11780F83004AF2EC /* TRTweetTableViewController.m:183 */ = {
+	BE451F8A11780F83004AF2EC /* TRTweetTableViewController.m:194 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1002,7 +1012,7 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 183;
+		lineNumber = 194;
 		location = tweetrad.io;
 		modificationTime = 293089722.66027;
 		originalNumberOfMultipleMatches = 1;
@@ -1050,7 +1060,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 144";
 		rLen = 0;
-		rLoc = 6314;
+		rLoc = 6645;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 4693;
@@ -1060,7 +1070,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 144";
 		rLen = 0;
-		rLoc = 6314;
+		rLoc = 6645;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 4269;
@@ -1070,7 +1080,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 144";
 		rLen = 0;
-		rLoc = 6314;
+		rLoc = 6645;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 4412;
@@ -1110,7 +1120,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 140";
 		rLen = 0;
-		rLoc = 6314;
+		rLoc = 6645;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 4196;
@@ -1459,7 +1469,7 @@
 		isa = PBXTextBookmark;
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		rLen = 0;
-		rLoc = 280;
+		rLoc = 291;
 		rType = 1;
 	};
 	BE451FD811781828004AF2EC /* PBXTextBookmark */ = {
@@ -1467,7 +1477,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 3454;
@@ -1486,7 +1496,7 @@
 		isa = PBXTextBookmark;
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		rLen = 0;
-		rLoc = 280;
+		rLoc = 291;
 		rType = 1;
 	};
 	BE451FE611781889004AF2EC /* PBXTextBookmark */ = {
@@ -1494,7 +1504,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 3884;
@@ -1504,7 +1514,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 3884;
@@ -1514,7 +1524,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 3927;
@@ -1524,7 +1534,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 1201;
@@ -1551,7 +1561,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 247";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 3927;
@@ -1588,7 +1598,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 125";
 		rLen = 65;
-		rLoc = 5865;
+		rLoc = 6196;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 7463;
@@ -1598,7 +1608,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 137";
 		rLen = 0;
-		rLoc = 6113;
+		rLoc = 6444;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 4074;
@@ -1735,7 +1745,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 132";
 		rLen = 0;
-		rLoc = 6338;
+		rLoc = 6669;
 		rType = 0;
 		vrLen = 1469;
 		vrLoc = 6272;
@@ -1745,7 +1755,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 124";
 		rLen = 0;
-		rLoc = 5229;
+		rLoc = 5161;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 3764;
@@ -1795,7 +1805,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 242";
 		rLen = 0;
-		rLoc = 8738;
+		rLoc = 9069;
 		rType = 0;
 		vrLen = 1466;
 		vrLoc = 7786;
@@ -1835,7 +1845,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 242";
 		rLen = 0;
-		rLoc = 8738;
+		rLoc = 9069;
 		rType = 0;
 		vrLen = 1465;
 		vrLoc = 7786;
@@ -1849,24 +1859,6 @@
 		rType = 0;
 		vrLen = 2576;
 		vrLoc = 28;
-	};
-	BE452033117831D0004AF2EC /* TRTweetTableViewController.m:137 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
-		functionName = "-speakNextTweet";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 137;
-		location = tweetrad.io;
-		modificationTime = 293089746.41114;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	BE45203711783213004AF2EC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1883,7 +1875,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 268";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1778;
 		vrLoc = 3727;
@@ -1913,7 +1905,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 160";
 		rLen = 0;
-		rLoc = 5582;
+		rLoc = 5913;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 4653;
@@ -1923,7 +1915,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */;
 		name = "TRTweetTableViewController.h: 28";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 835;
 		rType = 0;
 		vrLen = 1214;
 		vrLoc = 0;
@@ -1933,7 +1925,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */;
 		name = "TRTweetTableViewController.h: 27";
 		rLen = 0;
-		rLoc = 789;
+		rLoc = 834;
 		rType = 0;
 		vrLen = 1215;
 		vrLoc = 0;
@@ -1953,10 +1945,127 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 165";
 		rLen = 0;
-		rLoc = 5729;
+		rLoc = 6060;
 		rType = 0;
 		vrLen = 1476;
 		vrLoc = 4865;
+	};
+	BE45204C11783504004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 150";
+		rLen = 0;
+		rLoc = 5216;
+		rType = 0;
+		vrLen = 1508;
+		vrLoc = 4661;
+	};
+	BE45204F11783581004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 143";
+		rLen = 0;
+		rLoc = 5128;
+		rType = 0;
+		vrLen = 1604;
+		vrLoc = 4684;
+	};
+	BE452052117835E1004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 148";
+		rLen = 0;
+		rLoc = 5130;
+		rType = 0;
+		vrLen = 1688;
+		vrLoc = 4711;
+	};
+	BE452055117836C9004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* TRTweetTableViewController.h */;
+		name = "TRTweetTableViewController.h: 27";
+		rLen = 0;
+		rLoc = 768;
+		rType = 0;
+		vrLen = 1260;
+		vrLoc = 0;
+	};
+	BE452056117836C9004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 159";
+		rLen = 42;
+		rLoc = 5396;
+		rType = 0;
+		vrLen = 1613;
+		vrLoc = 4661;
+	};
+	BE452057117836C9004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 157";
+		rLen = 0;
+		rLoc = 5394;
+		rType = 0;
+		vrLen = 1687;
+		vrLoc = 4686;
+	};
+	BE452058117836FB004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 144";
+		rLen = 0;
+		rLoc = 5161;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 4653;
+	};
+	BE4520591178371B004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 144";
+		rLen = 0;
+		rLoc = 5161;
+		rType = 0;
+		vrLen = 1414;
+		vrLoc = 4647;
+	};
+	BE45205A11783724004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 144";
+		rLen = 0;
+		rLoc = 5161;
+		rType = 0;
+		vrLen = 1414;
+		vrLoc = 4647;
+	};
+	BE45205B1178373D004AF2EC /* TRTweetTableViewController.m:138 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		functionName = "-speakNextTweet";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 138;
+		modificationTime = 293091133.455131;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	BE45205F11783742004AF2EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
+		name = "TRTweetTableViewController.m: 144";
+		rLen = 0;
+		rLoc = 5161;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 4653;
 	};
 	BE76A4331159A865007164E8 /* TRAppDelegate.m:1 */ = {
 		isa = PBXFileBreakpoint;
@@ -1982,7 +2091,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -2516,7 +2625,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BEE3E2091177C28900845A1D /* TRTweetTableViewController.m:185 */ = {
+	BEE3E2091177C28900845A1D /* TRTweetTableViewController.m:196 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2528,7 +2637,7 @@
 		functionName = "-speechSynthesizer:didFinishSpeaking:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 185;
+		lineNumber = 196;
 		location = tweetrad.io;
 		modificationTime = 293089727.881147;
 		originalNumberOfMultipleMatches = 1;
@@ -2574,7 +2683,7 @@
 		vrLen = 1718;
 		vrLoc = 347;
 	};
-	BEEA0058117802CC005B4524 /* TRTweetTableViewController.m:172 */ = {
+	BEEA0058117802CC005B4524 /* TRTweetTableViewController.m:183 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2586,7 +2695,7 @@
 		functionName = "-setSpeaking:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 172;
+		lineNumber = 183;
 		location = tweetrad.io;
 		modificationTime = 293089714.999654;
 		originalNumberOfMultipleMatches = 1;
@@ -2610,7 +2719,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BEEA0077117803AC005B4524 /* TRTweetTableViewController.m:281 */ = {
+	BEEA0077117803AC005B4524 /* TRTweetTableViewController.m:292 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2622,13 +2731,13 @@
 		functionName = "-playPressed";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 281;
+		lineNumber = 292;
 		location = tweetrad.io;
 		modificationTime = 293089708.996491;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	BEEA0079117803AE005B4524 /* TRTweetTableViewController.m:285 */ = {
+	BEEA0079117803AE005B4524 /* TRTweetTableViewController.m:296 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2640,7 +2749,7 @@
 		functionName = "-pausePressed";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 285;
+		lineNumber = 296;
 		location = tweetrad.io;
 		modificationTime = 293089695.189464;
 		originalNumberOfMultipleMatches = 1;
@@ -2656,7 +2765,7 @@
 		vrLen = 1242;
 		vrLoc = 0;
 	};
-	BEEA00951178052B005B4524 /* TRTweetTableViewController.m:170 */ = {
+	BEEA00951178052B005B4524 /* TRTweetTableViewController.m:181 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2668,7 +2777,7 @@
 		functionName = "-setSpeaking:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 170;
+		lineNumber = 181;
 		location = tweetrad.io;
 		modificationTime = 293089712.550686;
 		originalNumberOfMultipleMatches = 1;
@@ -2688,7 +2797,7 @@
 		isa = PBXTextBookmark;
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		rLen = 0;
-		rLoc = 280;
+		rLoc = 291;
 		rType = 1;
 	};
 	BEEA00C911780724005B4524 /* PBXTextBookmark */ = {
@@ -2696,7 +2805,7 @@
 		fRef = BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */;
 		name = "TRTweetTableViewController.m: 228";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9670;
 		rType = 0;
 		vrLen = 1820;
 		vrLoc = 3151;
@@ -2965,9 +3074,9 @@
 	};
 	BEF3426D1159CF05004B6F1A /* TRTweetTableViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1093, 3952}}";
-			sepNavSelRange = "{5729, 0}";
-			sepNavVisRange = "{4865, 1476}";
+			sepNavIntBoundsRect = "{{0, 0}, {1093, 4017}}";
+			sepNavSelRange = "{5161, 0}";
+			sepNavVisRange = "{4653, 1408}";
 		};
 	};
 	BEF342791159CFF3004B6F1A /* TRTwitter.m:108 */ = {

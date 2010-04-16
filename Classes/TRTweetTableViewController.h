@@ -24,6 +24,7 @@
 - (void)enableAcapela;
 - (void)speakNextTweet;
 - (void)speakItem:(TRTweetTableItem *)currentItem;
+- (void)_speakItem:(TRTweetTableItem *)item;
 - (void)prepareToSpeak;
 - (void)setVoice;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking: (BOOL)finishedSpeaking;

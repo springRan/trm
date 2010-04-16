@@ -139,18 +139,29 @@
   } else {
     currentItem = [items objectAtIndex:0];
   }
-  currentItem.speaking = YES;
-  [self.speaker startSpeakingString:[currentItem.tweet speakableText]];
+
+  [self _speakItem:currentItem];
 }
 
 - (void)speakItem:(TRTweetTableItem *)currentItem
 {
-  [self prepareToSpeak];
   TRTweetTableItem *item = nil;
   NSArray *items = ((TRTweetTableDataSource *)self.dataSource).items;
   for(item in items){item.speaking = NO;}
-  currentItem.speaking = YES;
-  [self.speaker startSpeakingString:[currentItem.tweet speakableText]];
+  [self _speakItem:currentItem];
+}
+
+-(void)_speakItem:(TRTweetTableItem *)item
+{
+  [self prepareToSpeak];
+  NSArray *items = ((TRTweetTableDataSource *)self.dataSource).items;
+  item.speaking = YES;
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[items indexOfObject:item] inSection:0];
+  [self.tableView selectRowAtIndexPath:indexPath
+                              animated:YES
+                        scrollPosition:UITableViewScrollPositionTop];
+  [self.speaker startSpeakingString:[item.tweet speakableText]];
+  
 }
 
 - (void)setVoice
