@@ -8,20 +8,31 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UI Selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  [(TRTweetTableViewController *)_controller speakRowAtIndexPath:indexPath];
+//  if ([cell isKindOfClass:[TRTweetTableItemCell class]]) {
+//    if ([(TRTweetTableViewController *)_controller lastSpokenIndexPath] == indexPath) {
+//      ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(highlightedCell);
+//    } else {
+//      ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(cell);
+//    }
+//    [[(TRTweetTableItemCell *)cell label] setBackgroundColor:[UIColor clearColor]];
+//  }
+  TRTweetTableItemCell *cell = (TRTweetTableItemCell *)[_controller.tableView cellForRowAtIndexPath:indexPath];
+  if ([cell isKindOfClass:[TRTweetTableItemCell class]]) {
+    [(TRTweetTableViewController *)_controller speakItem:cell.object];
+  }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    //		UIColor *backgroundColor = RGBCOLOR(223,241,241);
+    //	UIColor *backgroundColor            = RGBCOLOR(223,241,241);
 		//	cell.backgroundColor                = backgroundColor;
 		//	cell.backgroundView.backgroundColor = backgroundColor;
 		//	cell.contentView.backgroundColor    = backgroundColor;
     if ([cell isKindOfClass:[TRTweetTableItemCell class]]) {
-//      if ([(TRTweetTableViewController *)_controller lastSpokenIndexPath] == indexPath) {
-//        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(highlightedCell);
-//      } else {
-//        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(cell);
-//      }
+    //      if ([(TRTweetTableViewController *)_controller lastSpokenIndexPath] == indexPath) {
+    //        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(highlightedCell);
+    //      } else {
+    //        ((TTView *)((TRTweetTableItemCell *)cell).backgroundView).style = TTSTYLE(cell);
+    //      }
       [[(TRTweetTableItemCell *)cell label] setBackgroundColor:[UIColor clearColor]];
     }
  }
@@ -40,7 +51,6 @@
 	if (self = [super init]) {
     [self enableAcapela];
     _speaking = NO;
-    _lastSpokenIndexPath = nil;
 		self.title = @"User Settings";
 		self.tableViewStyle = UITableViewStyleGrouped;
     
@@ -77,34 +87,70 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // PLAYER
-- (void)speakRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  if ([self.tableView numberOfRowsInSection:0] - 1 > indexPath.row) {
-    _lastSpokenIndexPath = indexPath;
-    [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
-    [self.speaker stopSpeaking];
-    [self setVoice];
-    
-    self.speaking = YES;
-    [self.tableView selectRowAtIndexPath:indexPath
-                                animated:YES
-                          scrollPosition:UITableViewScrollPositionTop];
-    id item = [((TRTweetTableDataSource *)self.dataSource).items objectAtIndex:indexPath.row];
-    if ([item isKindOfClass:[TRTweetTableItem class]]) {
-      ((TRTweetTableItem *)item).speaking = YES;
-      [self.speaker startSpeakingString:[((TRTweetTableItem *)item).tweet speakableText]];
-    } else {
-    }
-    NSLog(@"speaking");
-  } else {
-    // need more tweets it seems
-  }
+//- (void)speakRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//  if ([self.tableView numberOfRowsInSection:0] - 1 > indexPath.row) {
+//    _lastSpokenIndexPath = indexPath;
+//    [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
+//    [self.speaker stopSpeaking];
+//    [self setVoice];
+//    
+//    self.speaking = YES;
+//    [self.tableView selectRowAtIndexPath:indexPath
+//                                animated:YES
+//                          scrollPosition:UITableViewScrollPositionTop];
+//
+//    TRTweetTableDataSource *item;
+//    for(item in ((TRTweetTableDataSource *)self.dataSource).items){
+//      ((TRTweetTableItem *)item).speaking = NO;
+//    }
+//                  
+//    item = [((TRTweetTableDataSource *)self.dataSource).items objectAtIndex:indexPath.row];
+//    if ([item isKindOfClass:[TRTweetTableItem class]]) {
+//      ((TRTweetTableItem *)item).speaking = YES;
+//      [self.speaker startSpeakingString:[((TRTweetTableItem *)item).tweet speakableText]];
+//    } else {
+//    }
+//    NSLog(@"speaking");
+//  } else {
+//    // need more tweets it seems
+//  }
+//
+//}
 
+- (void)speakNextTweet
+{
+  [self prepareToSpeak];
+  NSArray *items = ((TRTweetTableDataSource *)self.dataSource).items;
+  TRTweetTableItem *item = nil;
+  TRTweetTableItem *currentItem = nil;
+  int i = 0;
+  for(item in items){
+    if (item.speaking) {
+      currentItem = item;
+      item.speaking = NO;
+      break;
+    }
+    i++;
+  }
+  if (currentItem) {
+    i++;
+    currentItem = [items objectAtIndex:i];
+  } else {
+    currentItem = [items objectAtIndex:0];
+  }
+  currentItem.speaking = YES;
+  [self.speaker startSpeakingString:[currentItem.tweet speakableText]];
 }
 
-- (NSIndexPath *)lastSpokenIndexPath
+- (void)speakItem:(TRTweetTableItem *)currentItem
 {
-  return _lastSpokenIndexPath;
+  [self prepareToSpeak];
+  TRTweetTableItem *item = nil;
+  NSArray *items = ((TRTweetTableDataSource *)self.dataSource).items;
+  for(item in items){item.speaking = NO;}
+  currentItem.speaking = YES;
+  [self.speaker startSpeakingString:[currentItem.tweet speakableText]];
 }
 
 - (void)setVoice
@@ -112,19 +158,19 @@
   
 }
 
+- (void)prepareToSpeak
+{
+  [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
+  [self.speaker stopSpeaking];
+  self.speaking = YES;
+  [self setVoice];
+}
+
 - (void)setSpeaking:(BOOL)speaking{
   if (_speaking != speaking){
     _speaking = speaking;
     if (_speaking) {
       self.navigationItem.rightBarButtonItem = self.pauseButton;
-      NSIndexPath *indexPath;
-      if (_lastSpokenIndexPath) {
-        int i = _lastSpokenIndexPath.row;
-        indexPath = [NSIndexPath indexPathForRow:i++ inSection:0];
-      } else {
-        indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-      }
-      [self speakRowAtIndexPath:indexPath];
     } else {
       self.navigationItem.rightBarButtonItem = self.playButton;
       [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
@@ -136,15 +182,7 @@
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking:(BOOL)finishedSpeaking{
   if (![self.speaker isSpeaking] && _speaking) {
     NSLog(@"speaker just finished speaking");
-    int i;
-    if (_lastSpokenIndexPath) {
-      i = _lastSpokenIndexPath.row;
-      i++;
-    } else {
-      i = 0;
-    }
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-    [self speakRowAtIndexPath:indexPath];
+    [self speakNextTweet];
     NSLog(@"finished");
   }
 }; 
@@ -239,6 +277,7 @@
 - (void)playPressed{
   NSLog(@"play pressed");
   self.speaking = YES;
+  [self speakNextTweet];
 }
 
 - (void)pausePressed{

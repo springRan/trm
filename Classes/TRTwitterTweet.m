@@ -16,7 +16,6 @@
   NSLog(@"text of tweet %@", self.text);
   if (!_speakableText) {
     NSString *sanitizedText = [self.text stringByReplacingOccurrencesOfRegex:@"http://\\S*" withString:@""];
-    sanitizedText = [sanitizedText stringByReplacingOccurrencesOfRegex:@"[_<>-@]" withString:@" "];
     sanitizedText = [sanitizedText stringByReplacingOccurrencesOfRegex:@"[_<>-@#]" withString:@" "];
     _speakableText = [NSString stringWithFormat:@"%@\\Pau=500\\ %@\\Pau=1000\\", 
                       self.userRealName, sanitizedText];

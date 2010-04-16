@@ -1,5 +1,6 @@
 #import "Three20/Three20.h"
 #import "AcapelaSpeech.h"
+#import "TRTweetTableItem.h"
 
 @interface TRTweetTableViewDelegate : TTTableViewDragRefreshDelegate
 {
@@ -9,7 +10,6 @@
 
 @interface TRTweetTableViewController : TTTableViewController <UITableViewDelegate> {
   BOOL _speaking;
-  NSIndexPath *_lastSpokenIndexPath;
   AcapelaLicense *_acapelaLicense;
   AcapelaSpeech *_speaker;
   UIBarButtonItem *_playButton;
@@ -19,12 +19,12 @@
 @property (nonatomic,retain) UIBarButtonItem *pauseButton;
 @property (nonatomic, retain) AcapelaLicense *acapelaLicense;
 @property (nonatomic, retain) AcapelaSpeech *speaker;
-//@property (nonatomic, retain) NSIndexPath *lastSpokenIndexPath;
 @property (nonatomic) BOOL speaking;
 
-- (void)speakRowAtIndexPath:(NSIndexPath *)indexPath;
-- (NSIndexPath *)lastSpokenIndexPath;
 - (void)enableAcapela;
+- (void)speakNextTweet;
+- (void)speakItem:(TRTweetTableItem *)currentItem;
+- (void)prepareToSpeak;
 - (void)setVoice;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didFinishSpeaking: (BOOL)finishedSpeaking;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender willSpeakWord: (NSRange)characterRange ofString:(NSString *)string;
