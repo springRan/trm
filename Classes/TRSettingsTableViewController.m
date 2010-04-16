@@ -32,6 +32,9 @@
 }
 
 - (void)doneClicked {
+  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+  [prefs setObject:((TRSettingsTableDataSource *)self.dataSource).loginField.text forKey:@"login"];
+  [prefs setObject:((TRSettingsTableDataSource *)self.dataSource).passwordField.text forKey:@"password"];
   [self dismissModalViewController];
 }
 

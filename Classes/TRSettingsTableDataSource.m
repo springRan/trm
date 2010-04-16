@@ -10,28 +10,31 @@
 
 
 @implementation TRSettingsTableDataSource
+@synthesize loginField = _loginField;
+@synthesize passwordField = _passwordField;
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
-	NSMutableArray* sections = [[NSMutableArray alloc] init];
-	NSMutableArray* items = [[NSMutableArray alloc] init];
-	
+	NSMutableArray *sections = [[NSMutableArray alloc] init];
+	NSMutableArray *items = [[NSMutableArray alloc] init];
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+  
 	[sections addObject:@""];
 	NSMutableArray* itemRows = [[NSMutableArray alloc] init];
 	
-	UITextField *_loginField = [[UITextField alloc] init];
+	_loginField = [[UITextField alloc] init];
 	_loginField.placeholder = @"login";
 	_loginField.delegate = self;
 	_loginField.autocorrectionType = UITextAutocorrectionTypeNo;
 	_loginField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-//	_loginField.text = [[SFAccount instance] login];
+	_loginField.text = [prefs objectForKey:@"login"];
 	[itemRows addObject:[TTTableControlItem itemWithCaption:@"" control:_loginField]];
   
-	UITextField *_passwordField = [[UITextField alloc] init];
+	_passwordField = [[UITextField alloc] init];
 	_passwordField.placeholder = @"password";
 	_passwordField.secureTextEntry = YES;
 	_passwordField.delegate = self;
 	_passwordField.autocorrectionType = UITextAutocorrectionTypeNo;
-//	_passwordField.text = [[SFAccount instance] password];
+	_passwordField.text = [prefs objectForKey:@"password"];
 	_passwordField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 	[itemRows addObject:[TTTableControlItem itemWithCaption:@"" control:_passwordField]];
   

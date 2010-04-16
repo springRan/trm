@@ -10,7 +10,10 @@
 
 
 @interface TRSettingsTableDataSource : TTSectionedDataSource <UITextFieldDelegate> {
-
+  UITextField *_loginField;
+  UITextField *_passwordField;
 }
+@property (readonly, nonatomic) UITextField *loginField;
+@property (readonly, nonatomic) UITextField *passwordField;
 
 @end

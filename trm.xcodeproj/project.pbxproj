@@ -21,12 +21,10 @@
 		BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DF7711756AE3003ED448 /* libThree20.a */; };
 		BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE41DF7C11756AEF003ED448 /* Three20.bundle */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
-		BE9DC881113766BA0081178C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE9DC880113766BA0081178C /* Settings.bundle */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
 		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
 		BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */; };
 		BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */; };
-		BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BED39C67117575BE008E2AE2 /* TRAccount.m */; };
 		BEE3DEB4117798E100845A1D /* libBabTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DEB2117798E000845A1D /* libBabTTS.a */; };
 		BEE3DEB5117798E100845A1D /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DEB3117798E100845A1D /* libMobilityStatic.a */; };
 		BEE3DED01177993D00845A1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DECF1177993D00845A1D /* AudioToolbox.framework */; };
@@ -111,15 +109,12 @@
 		BE41E07C11756C1F003ED448 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/i686-apple-darwin9/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
 		BE7BB5711159B5DA00508431 /* trmRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trmRelease-Info.plist"; sourceTree = "<group>"; };
 		BE8EFD061134BFF6002A8F24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		BE9DC880113766BA0081178C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BECECE90113664CA00CB06B1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		BED39C4511757394008E2AE2 /* TRSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingsTableViewController.h; sourceTree = "<group>"; };
 		BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableViewController.m; sourceTree = "<group>"; };
 		BED39C48117573B1008E2AE2 /* TRSettingsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingsTableDataSource.h; sourceTree = "<group>"; };
 		BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsTableDataSource.m; sourceTree = "<group>"; };
-		BED39C66117575BE008E2AE2 /* TRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAccount.h; sourceTree = "<group>"; };
-		BED39C67117575BE008E2AE2 /* TRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAccount.m; sourceTree = "<group>"; };
 		BEE3DEB2117798E000845A1D /* libBabTTS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabTTS.a; sourceTree = "<group>"; };
 		BEE3DEB3117798E100845A1D /* libMobilityStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilityStatic.a; sourceTree = "<group>"; };
 		BEE3DECF1177993D00845A1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -216,7 +211,6 @@
 				BEF19292115B410700556BB6 /* greygradient.png */,
 				BEF19286115B3F3200556BB6 /* purplegradient.png */,
 				BEF19225115B34E000556BB6 /* cellbg.png */,
-				BE9DC880113766BA0081178C /* Settings.bundle */,
 				BECECE90113664CA00CB06B1 /* icon.png */,
 				BECECE861136624000CB06B1 /* Default.png */,
 				8D1107310486CEB800E47090 /* trm-Info.plist */,
@@ -326,8 +320,6 @@
 				BED39C4611757394008E2AE2 /* TRSettingsTableViewController.m */,
 				BED39C48117573B1008E2AE2 /* TRSettingsTableDataSource.h */,
 				BED39C49117573B1008E2AE2 /* TRSettingsTableDataSource.m */,
-				BED39C66117575BE008E2AE2 /* TRAccount.h */,
-				BED39C67117575BE008E2AE2 /* TRAccount.m */,
 			);
 			name = SettingsTable;
 			sourceTree = "<group>";
@@ -420,7 +412,6 @@
 			files = (
 				BECECE871136624000CB06B1 /* Default.png in Resources */,
 				BECECE91113664CA00CB06B1 /* icon.png in Resources */,
-				BE9DC881113766BA0081178C /* Settings.bundle in Resources */,
 				BE10A5461150A58E00ACA4C6 /* TRTweetTableItemCell.m in Resources */,
 				BEF19226115B34E000556BB6 /* cellbg.png in Resources */,
 				BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */,
@@ -454,7 +445,6 @@
 				BEF195081160119F00556BB6 /* RegexKitLite.m in Sources */,
 				BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */,
 				BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */,
-				BED39C68117575BE008E2AE2 /* TRAccount.m in Sources */,
 				BEE3DED71177999D00845A1D /* force_cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
