@@ -1,0 +1,14 @@
+PATH =	""
+PHO	"NLP212/eng.trr"			PHONETISATION TREE
+BNX	"NLP212/eng.bnx"			BNF Definitions in ROM
+DIC	"NLP212/eng.dca"			DICO
+LDI     "NLP212/eng.ldi"                   LOCUTIONS
+PRO	"NLP212/eng.oso"			PROSODY 
+GRI     "NLP212/eng_iv.gra"			POS Tagger IV words
+GRO     "NLP212/eng_oov.gra"			POS Tagger OOV words
+PST	"NLP212/eng.pst"			Post phonet 'n'
+END	""
+SLV	"PETER212/peter_22k_ns.cvcu"	[FILE]
+SLL	"PETER212/peter_22k_ns.cvcu.nuul216vqfp"	[FILE]
+END	""
+

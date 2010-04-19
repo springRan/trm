@@ -1,4 +1,5 @@
 #import "Three20/Three20.h"
+#import "TRDefaultStylesheet.h"
 #import "TRTweetTableDataSource.h"
 #import "TRTweetTableViewController.h"
 #import "TRTwitterModel.h"
@@ -46,24 +47,59 @@
 @synthesize acapelaLicense = _acapelaLicense;
 @synthesize speaking = _speaking;
 
+-(id)initWithMode:(NSString *)mode
+{
+  self = [self init];
+  _mode = mode;
+  if ([mode isEqualToString:@"account"]) {
+    
+    UIImage *userImage = [UIImage imageNamed:@"user.png"];
+    self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"my account" image:userImage tag:0] autorelease];
+    
+    // table tweaks
+    self.tableView.frame = CGRectMake(0,0,self.view.width,369);
+
+  } else if ([mode isEqualToString:@"search"]) {
+    
+    UIImage *searchImage = [UIImage imageNamed:@"magnifying-glass.png"];
+    self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"search twitter" image:searchImage tag:0] autorelease];
+
+    // search bar
+    _searchBar = [[UISearchBar alloc] init];
+    _searchBar.delegate = self;
+    _searchBar.frame = CGRectMake(0,0, self.view.width, 44);
+    _searchBar.tintColor = TTSTYLEVAR(barColor);
+    _searchBar.placeholder = @"search twitter";
+    [self.view addSubview:_searchBar];
+    
+    // table tweaks
+    self.tableView.frame = CGRectMake(0,44,320,325);
+    
+  }
+  return self;
+}
 
 -(id) init {
 	if (self = [super init]) {
+    self.title = @"tweetradio";
     [self enableAcapela];
     _speaking = NO;
-		self.title = @"User Settings";
 		self.tableViewStyle = UITableViewStyleGrouped;
-    
+      
+    // settings button
     UIImage *image = [UIImage imageNamed:@"gear.png"];
 		UIBarButtonItem *settings = [[UIBarButtonItem alloc] 
                                    initWithImage:image 
                                    style:UIBarButtonItemStyleBordered 
                                    target:self 
                                    action:@selector(settingsClicked)];
-		
-		self.navigationItem.leftBarButtonItem = settings;
+    self.navigationItem.leftBarButtonItem = settings;
     
-
+//    UISegmentedControl *_searchSettingsButtons = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:image, nil]];
+//    [self.view addSubview:_searchSettingsButtons];
+//    self.navigationItem.titleView = _searchSettingsButtons;
+    
+    // play pause controls
 		self.playButton = [[UIBarButtonItem alloc] 
                                  initWithBarButtonSystemItem: UIBarButtonSystemItemPlay
                                  target:self 
@@ -76,15 +112,13 @@
 
 		self.navigationItem.rightBarButtonItem = self.playButton;
     
-    _searchBar = [[TTSearchBar alloc] init];
-    _searchBar.frame = CGRectMake(0,0, self.view.width, 36);
-    [self.view addSubview:_searchBar];
-    _searchBar.delegate = self;
-    _searchBar.dataSource = self.dataSource;
-    
-    self.tableView.frame = CGRectMake(0, 36, self.view.width,self.view.height - 36);
-    self.tableView.backgroundColor = TTSTYLEVAR(darkGrayColor);
-    
+//    _toolbar = [[TTButtonBar alloc] initWithFrame:CGRectMake(0,374,320,44)];
+//    _toolbar.style = TTSTYLE(bar);
+//    [self.view addSubview:_toolbar];
+//    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,374,320,44)];
+//    [self.view addSubview:toolbar];
+//    toolbar.tintColor = TTSTYLEVAR(barColor);
+//    self.tableView.frame = CGRectMake(0,0,320,374);
   }
 	return self;
 }
@@ -92,6 +126,9 @@
 - (void) viewWillAppear:(BOOL)animated
 {
   [self reload];
+//  [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
+//                              animated:YES
+//                        scrollPosition:UITableViewScrollPositionTop];
   [super viewWillAppear:animated];
 }
 
@@ -183,7 +220,10 @@
 
 - (void)setVoice
 {
-  
+  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+  int voiceId = [prefs integerForKey:@"voice_id"];
+  NSString *voiceIdentifier = [[AcapelaSpeech availableVoices] objectAtIndex:voiceId];
+  [self.speaker setVoice:voiceIdentifier];
 }
 
 - (void)prepareToSpeak
@@ -250,15 +290,26 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // SEARCH  
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-  TTAlert(@"time to search");
+  [searchBar setShowsCancelButton:YES animated:YES];
 }
 
-- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-  TTAlert(@"time to search:results");
+  [searchBar setShowsCancelButton:NO animated:YES];
+  [searchBar resignFirstResponder];
+  [self.dataSource search:searchBar.text];
+  self.speaking = YES;
 }
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+  searchBar.text = @"";
+  [searchBar setShowsCancelButton:NO animated:YES];
+  [searchBar resignFirstResponder];
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIViewController  
 
@@ -269,7 +320,6 @@
   self.tableView = [[[UITableView alloc] initWithFrame:tableViewBounds
                                                  style:UITableViewStylePlain] autorelease];
   self.variableHeightRows = YES;
-  self.title = @"tweetrad.io";
   [self.view addSubview:self.tableView];
 }  
 
@@ -278,17 +328,6 @@
 
 - (void)createModel {
   self.dataSource = [[[TRTweetTableDataSource alloc] init] autorelease];
-}
-
-- (void)statusesReceived {
-  NSLog(@"status received invoked on table view controller");
-  [self.dataSource tableViewDidLoadModel:_tableView];
-}
-
-- (void)modelDidFinishLoad:(id)model
-{
-  NSLog(@"model did load %@", model); 
-  [super modelDidFinishLoad:model];
 }
 
 - (id<UITableViewDelegate>)createDelegate {
@@ -307,10 +346,12 @@
 }
 
 - (void)dealloc {
+  TT_RELEASE_SAFELY(_mode);
     [super dealloc];
 }
 
 - (void)settingsClicked{
+  self.speaking = NO;
   TTOpenURL(@"tt://settings");
 }
 
@@ -323,6 +364,11 @@
 - (void)pausePressed{
   NSLog(@"pause pressed");
   self.speaking = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+  self.speaking = NO;
+  [super viewWillDisappear:animated];
 }
 @end
 

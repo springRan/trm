@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface TRSettingsTableViewController : TTTableViewController {
-
+@interface TRSettingsTableViewController : TTTableViewController <UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+  UIPickerView *_voicePicker;
+  CGRect _voicePickerOffScreen;
+  CGRect _voicePickerOnScreen;
 }
-
+//- (void)setVoicePicker:(BOOL)visibility;
 @end

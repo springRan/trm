@@ -7,11 +7,13 @@
 //
 
 #import "TRSettingsTableDataSource.h"
+#import "AcapelaSpeech.h"
 
 
 @implementation TRSettingsTableDataSource
 @synthesize loginField = _loginField;
 @synthesize passwordField = _passwordField;
+//@synthesize voiceField = _voiceField;
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray *sections = [[NSMutableArray alloc] init];
@@ -38,13 +40,22 @@
 	_passwordField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 	[itemRows addObject:[TTTableControlItem itemWithCaption:@"" control:_passwordField]];
   
-	[_loginField becomeFirstResponder];
-	
+//  _voiceField = [[UITextField alloc] init];
+//  _voiceField.enabled = NO;
+//  
+//  NSString *voiceName = [[AcapelaSpeech availableVoices] objectAtIndex:(int)[prefs integerForKey:@"voice_id"]];
+//  NSDictionary* voiceAttributes = [AcapelaSpeech attributesForVoice:voiceName];
+//  _voiceField.text = [voiceAttributes objectForKey:@"AcapelaVoiceName"];
+//	[itemRows addObject:[TTTableControlItem itemWithCaption:@"voice" control:_voiceField]];
+  
+  
 	[items addObject:itemRows];
 	self.sections = sections;
 	self.items = items;
 	TT_RELEASE_SAFELY(sections);
 }
+
+
 
 
 @end

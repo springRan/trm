@@ -16,6 +16,31 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // styles
 
+-(TTStyle *)instructions {
+  TTTextStyle *textStyle = [TTTextStyle 
+                              styleWithFont:TTSTYLEVAR(mediumBoldFont)
+                                      color:TTSTYLEVAR(darkColor) 
+                              textAlignment:UITextAlignmentLeft
+                                       next:nil];
+	return [TTSolidFillStyle styleWithColor:[UIColor clearColor] 
+                                     next:textStyle];
+}
+
+-(TTStyle *)silverGradient {
+  TTStyle *style = [TTLinearGradientFillStyle styleWithColor1:TTSTYLEVAR(cellbackground1)
+                                             color2:TTSTYLEVAR(cellbackground2)
+                                               next:nil];
+  return style;
+}
+
+
+-(TTStyle *)metalGradient {
+  return [TTLinearGradientFillStyle styleWithColor1:UIColorFromRGB(0xdddddd)
+                                             color2:UIColorFromRGB(0xcccccc)
+                                               next:nil];
+}
+
+
 -(TTStyle *)cell {
   return [TTLinearGradientFillStyle styleWithColor1:TTSTYLEVAR(cellbackground1) 
                                             color2:TTSTYLEVAR(cellbackground2)
@@ -50,6 +75,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 											 color:TTSTYLEVAR(lightColor) 
 											 textAlignment:UITextAlignmentRight
 											 next:nil]];
+}
+
+-(TTStyle *)bar {
+  return [TTReflectiveFillStyle styleWithColor:TTSTYLEVAR(barColor) next:nil];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,16 +120,30 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
   return UIColorFromRGB(0x607734);
 }
 
+
+- (UIColor *)darkColorShadowColor {
+  return UIColorFromRGB(0x3a4820);
+}
+
 - (UIColor *)lightColor {
 	return [UIColor grayColor];
 }
 
-- (UIColor*)navigationBarTintColor {
+- (UIColor*)barColor{
   return RGBCOLOR(140,63,31);
 }
 
+- (UIColor*)navigationBarTintColor {
+  return TTSTYLEVAR(barColor);
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public fonts
+
+- (UIFont*)mediumBoldFont {
+  return [UIFont boldSystemFontOfSize:16];
+}
 
 - (UIFont*)smallItalicFont {
   return [UIFont italicSystemFontOfSize:13];

@@ -33,6 +33,11 @@
   TT_RELEASE_SAFELY(items);
 }
 
+- (void)search:(NSString *)text
+{
+  [(TRTwitterModel *)self.model searchWithQuery:text];
+}
+
 - (id)model {
   return _data;
 }

@@ -10,11 +10,12 @@
 
 @interface TRTweetTableViewController : TTTableViewController <UITableViewDelegate, UISearchBarDelegate, UITextFieldDelegate> {
   BOOL _speaking;
+  NSString *_mode;
   AcapelaLicense *_acapelaLicense;
   AcapelaSpeech *_speaker;
   UIBarButtonItem *_playButton;
   UIBarButtonItem *_pauseButton;
-  TTSearchBar *_searchBar;
+  UISearchBar *_searchBar;
 }
 @property (nonatomic,retain) UIBarButtonItem *playButton;
 @property (nonatomic,retain) UIBarButtonItem *pauseButton;
@@ -22,6 +23,7 @@
 @property (nonatomic, retain) AcapelaSpeech *speaker;
 @property (nonatomic) BOOL speaking;
 
+- (id)initWithMode:(NSString *)mode;
 - (void)enableAcapela;
 - (void)speakNextTweet;
 - (void)speakItem:(TRTweetTableItem *)currentItem;
@@ -33,7 +35,4 @@
 - (void)speechSynthesizer:(AcapelaSpeech *)sender willSpeakPhoneme: (short)phonemeOpcode;
 - (void)speechSynthesizer:(AcapelaSpeech *)sender didEncounterSyncMessage: (NSString *)errorMessage;
 
-//UISearchBarDelegate
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar;
-- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar;
 @end

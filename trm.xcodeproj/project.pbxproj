@@ -20,6 +20,14 @@
 		BE10AA6A11584C4C00ACA4C6 /* TRTweetTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10A5451150A58E00ACA4C6 /* TRTweetTableItemCell.m */; };
 		BE41DF7A11756AE6003ED448 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41DF7711756AE3003ED448 /* libThree20.a */; };
 		BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE41DF7C11756AEF003ED448 /* Three20.bundle */; };
+		BE5C04AE117BB533002C36B0 /* TRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5C04AD117BB533002C36B0 /* TRTabBarController.m */; };
+		BE5C0540117BBF2B002C36B0 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5C053F117BBF2B002C36B0 /* tab.png */; };
+		BE5C0545117BBF70002C36B0 /* magnifying-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5C0543117BBF70002C36B0 /* magnifying-glass.png */; };
+		BE5C0546117BBF70002C36B0 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5C0544117BBF70002C36B0 /* user.png */; };
+		BE5C0651117BCCD1002C36B0 /* Acapela For iPhone HQM French Bruno in Resources */ = {isa = PBXBuildFile; fileRef = BE5C0614117BCCD0002C36B0 /* Acapela For iPhone HQM French Bruno */; };
+		BE5C0652117BCCD1002C36B0 /* Acapela For iPhone HQM USEnglish Ryan in Resources */ = {isa = PBXBuildFile; fileRef = BE5C0629117BCCD1002C36B0 /* Acapela For iPhone HQM USEnglish Ryan */; };
+		BE5C0653117BCCD1002C36B0 /* Acapela For iPhone HQM USSpanish Rosa in Resources */ = {isa = PBXBuildFile; fileRef = BE5C063D117BCCD1002C36B0 /* Acapela For iPhone HQM USSpanish Rosa */; };
+		BE6F82A5117A6F9E006AC06B /* Acapela For iPhone HQM British Peter in Resources */ = {isa = PBXBuildFile; fileRef = BE6F8254117A6F94006AC06B /* Acapela For iPhone HQM British Peter */; };
 		BE8EFD071134BFF6002A8F24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8EFD061134BFF6002A8F24 /* libxml2.dylib */; };
 		BECECE871136624000CB06B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE861136624000CB06B1 /* Default.png */; };
 		BECECE91113664CA00CB06B1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BECECE90113664CA00CB06B1 /* icon.png */; };
@@ -29,9 +37,6 @@
 		BEE3DEB5117798E100845A1D /* libMobilityStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DEB3117798E100845A1D /* libMobilityStatic.a */; };
 		BEE3DED01177993D00845A1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3DECF1177993D00845A1D /* AudioToolbox.framework */; };
 		BEE3DED71177999D00845A1D /* force_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEE3DED51177999D00845A1D /* force_cpp.cpp */; };
-		BEE3DF9911779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa in Resources */ = {isa = PBXBuildFile; fileRef = BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */; };
-		BEE3E09C1177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura in Resources */ = {isa = PBXBuildFile; fileRef = BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */; };
-		BEE3E0B41177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan in Resources */ = {isa = PBXBuildFile; fileRef = BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */; };
 		BEEAFAA61176AA3E005B4524 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEAFAA51176AA3E005B4524 /* gear.png */; };
 		BEF19226115B34E000556BB6 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19225115B34E000556BB6 /* cellbg.png */; };
 		BEF19287115B3F3200556BB6 /* purplegradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF19286115B3F3200556BB6 /* purplegradient.png */; };
@@ -107,6 +112,15 @@
 		BE41DF7111756AE3003ED448 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BE41DF7C11756AEF003ED448 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		BE41E07C11756C1F003ED448 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/i686-apple-darwin9/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
+		BE5C04AC117BB533002C36B0 /* TRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTabBarController.h; sourceTree = "<group>"; };
+		BE5C04AD117BB533002C36B0 /* TRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTabBarController.m; sourceTree = "<group>"; };
+		BE5C053F117BBF2B002C36B0 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
+		BE5C0543117BBF70002C36B0 /* magnifying-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass.png"; sourceTree = "<group>"; };
+		BE5C0544117BBF70002C36B0 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		BE5C0614117BCCD0002C36B0 /* Acapela For iPhone HQM French Bruno */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM French Bruno"; path = "../acapela/Acapela for iPhone Voices/Acapela For iPhone HQM French Bruno"; sourceTree = SOURCE_ROOT; };
+		BE5C0629117BCCD1002C36B0 /* Acapela For iPhone HQM USEnglish Ryan */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM USEnglish Ryan"; path = "../acapela/Acapela for iPhone Voices/Acapela For iPhone HQM USEnglish Ryan"; sourceTree = SOURCE_ROOT; };
+		BE5C063D117BCCD1002C36B0 /* Acapela For iPhone HQM USSpanish Rosa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Acapela For iPhone HQM USSpanish Rosa"; path = "../acapela/Acapela for iPhone Voices/Acapela For iPhone HQM USSpanish Rosa"; sourceTree = SOURCE_ROOT; };
+		BE6F8254117A6F94006AC06B /* Acapela For iPhone HQM British Peter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone HQM British Peter"; sourceTree = "<group>"; };
 		BE7BB5711159B5DA00508431 /* trmRelease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trmRelease-Info.plist"; sourceTree = "<group>"; };
 		BE8EFD061134BFF6002A8F24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BECECE861136624000CB06B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -120,9 +134,6 @@
 		BEE3DECF1177993D00845A1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BEE3DED51177999D00845A1D /* force_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = force_cpp.cpp; sourceTree = "<group>"; };
 		BEE3DED61177999D00845A1D /* force_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = force_cpp.h; sourceTree = "<group>"; };
-		BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USSpanish rosa"; sourceTree = "<group>"; };
-		BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USEnglish Laura"; sourceTree = "<group>"; };
-		BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Acapela For iPhone LF USEnglish Ryan"; sourceTree = "<group>"; };
 		BEEAFAA51176AA3E005B4524 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		BEF19225115B34E000556BB6 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbg.png; sourceTree = "<group>"; };
 		BEF19286115B3F3200556BB6 /* purplegradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplegradient.png; sourceTree = "<group>"; };
@@ -202,9 +213,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BEE3E09D1177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan */,
-				BEE3E0851177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura */,
-				BEE3DF8211779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa */,
+				BE5C0614117BCCD0002C36B0 /* Acapela For iPhone HQM French Bruno */,
+				BE5C0629117BCCD1002C36B0 /* Acapela For iPhone HQM USEnglish Ryan */,
+				BE5C063D117BCCD1002C36B0 /* Acapela For iPhone HQM USSpanish Rosa */,
+				BE5C0543117BBF70002C36B0 /* magnifying-glass.png */,
+				BE5C0544117BBF70002C36B0 /* user.png */,
+				BE5C053F117BBF2B002C36B0 /* tab.png */,
+				BE6F8254117A6F94006AC06B /* Acapela For iPhone HQM British Peter */,
 				BEEAFAA51176AA3E005B4524 /* gear.png */,
 				BEF192A3115B42B300556BB6 /* ltyellowgradient.png */,
 				BEF19299115B419900556BB6 /* ltgreygradient.png */,
@@ -248,9 +263,11 @@
 			children = (
 				1D3623240D0F684500981E51 /* TRAppDelegate.h */,
 				1D3623250D0F684500981E51 /* TRAppDelegate.m */,
+				BE5C04AC117BB533002C36B0 /* TRTabBarController.h */,
+				BE5C04AD117BB533002C36B0 /* TRTabBarController.m */,
 				BECFE70D116D869A0042260B /* stylesheets */,
-				BE8EFC04113399AB002A8F24 /* models */,
 				BED39C3F117572DD008E2AE2 /* SettingsTable */,
+				BE8EFC04113399AB002A8F24 /* models */,
 				BECFE70E116D86B20042260B /* TweetTable */,
 			);
 			name = application;
@@ -420,9 +437,13 @@
 				BEF192A4115B42B300556BB6 /* ltyellowgradient.png in Resources */,
 				BE41DF7D11756AEF003ED448 /* Three20.bundle in Resources */,
 				BEEAFAA61176AA3E005B4524 /* gear.png in Resources */,
-				BEE3DF9911779E8E00845A1D /* Acapela For iPhone LF USSpanish rosa in Resources */,
-				BEE3E09C1177ACCF00845A1D /* Acapela For iPhone LF USEnglish Laura in Resources */,
-				BEE3E0B41177ACE100845A1D /* Acapela For iPhone LF USEnglish Ryan in Resources */,
+				BE6F82A5117A6F9E006AC06B /* Acapela For iPhone HQM British Peter in Resources */,
+				BE5C0540117BBF2B002C36B0 /* tab.png in Resources */,
+				BE5C0545117BBF70002C36B0 /* magnifying-glass.png in Resources */,
+				BE5C0546117BBF70002C36B0 /* user.png in Resources */,
+				BE5C0651117BCCD1002C36B0 /* Acapela For iPhone HQM French Bruno in Resources */,
+				BE5C0652117BCCD1002C36B0 /* Acapela For iPhone HQM USEnglish Ryan in Resources */,
+				BE5C0653117BCCD1002C36B0 /* Acapela For iPhone HQM USSpanish Rosa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +467,7 @@
 				BED39C4711757394008E2AE2 /* TRSettingsTableViewController.m in Sources */,
 				BED39C4A117573B1008E2AE2 /* TRSettingsTableDataSource.m in Sources */,
 				BEE3DED71177999D00845A1D /* force_cpp.cpp in Sources */,
+				BE5C04AE117BB533002C36B0 /* TRTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,8 +575,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/src;
 				OTHER_LDFLAGS = (
-					"-libMobility",
-					"-libBabTTS",
+					"-lMobilityStatic",
+					"-lBabTTS",
 					"-all_load",
 					"-ObjC",
 					"-licucore",

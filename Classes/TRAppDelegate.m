@@ -2,6 +2,7 @@
 #import "TRTwitterTweet.h"
 #import "TRTweetTableItemCell.h"
 #import "TRSettingsTableViewController.h"
+#import "TRTabBarController.h"
 
 @implementation TRAppDelegate
 
@@ -33,10 +34,14 @@
   [map from:@"tt://settings" toModalViewController:[TRSettingsTableViewController class]];
 
   // user settings route
-  [map from:@"tt://tweets" toSharedViewController:[TRTweetTableViewController class]];
+  [map from:@"tt://tweets/(initWithMode:)"  toViewController:[TRTweetTableViewController class]];
 
-  TTOpenURL(@"tt://tweets");
-
+  // tab bar
+  [map from:@"tt://tabBar" toSharedViewController:[TRTabBarController class]];
+  
+  // TTOpenURL(@"tt://tweets");
+  TTOpenURL(@"tt://tabBar");
+  
   // load up the app or ask for credentials
   [window makeKeyAndVisible];
 }

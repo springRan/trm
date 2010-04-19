@@ -8,15 +8,14 @@ static NSString* kTwitterSearchFeedFormat = @"http://search.twitter.com/search.a
 @implementation TRTwitterModel
 
 @synthesize searchQuery = _searchQuery;
+@synthesize queryMode   = _queryMode;
 @synthesize tweets      = _tweets;
-@synthesize username    = _username;
-@synthesize password    = _password;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id) init {
   self = [super init];
-  self.searchQuery = @"chirp";
+  self.searchQuery = nil;
   return self;
 }
 
@@ -25,6 +24,13 @@ static NSString* kTwitterSearchFeedFormat = @"http://search.twitter.com/search.a
   TT_RELEASE_SAFELY(_searchQuery);
   TT_RELEASE_SAFELY(_tweets);
   [super dealloc];
+}
+
+
+- (void)searchWithQuery:(NSString *)query {
+  TT_RELEASE_SAFELY(self.searchQuery);
+  self.searchQuery = query;
+  [self load:TTURLRequestCachePolicyDefault more:NO];
 }
 
 
