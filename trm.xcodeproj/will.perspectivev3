@@ -282,7 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>32</integer>
+									<integer>35</integer>
 									<integer>29</integer>
 									<integer>13</integer>
 									<integer>3</integer>
@@ -325,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>BECECB65113600C800CB06B1</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TRTweetTableViewController.m</string>
+								<string>TRTweetTableItem.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>BECECB66113600C800CB06B1</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TRTweetTableViewController.m</string>
+										<string>TRTweetTableItem.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE5C06E6117DD29C002C36B0</string>
+										<string>BE5C0700117DD386002C36B0</string>
 										<key>history</key>
 										<array>
 											<string>BECECBA011361A3200CB06B1</string>
@@ -348,7 +348,6 @@
 											<string>BEEAFE861176D101005B4524</string>
 											<string>BE273C34117A56B700D44FAD</string>
 											<string>BE273C55117A595D00D44FAD</string>
-											<string>BE273C82117A5DD600D44FAD</string>
 											<string>BE6F8319117B8CD6006AC06B</string>
 											<string>BE6F8361117B90AE006AC06B</string>
 											<string>BE6F83DB117B9A08006AC06B</string>
@@ -373,7 +372,9 @@
 											<string>BE5C06B3117D4E29002C36B0</string>
 											<string>BE5C06B4117D4E29002C36B0</string>
 											<string>BE5C06E4117DD29C002C36B0</string>
-											<string>BE5C06E5117DD29C002C36B0</string>
+											<string>BE5C06FD117DD386002C36B0</string>
+											<string>BE5C06FE117DD386002C36B0</string>
+											<string>BE5C06FF117DD386002C36B0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -575,8 +576,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {222, 406}}</string>
-									<string>{{0, 406}, {222, 393}}</string>
+									<string>{{0, 0}, {330, 401}}</string>
+									<string>{{0, 401}, {330, 398}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -591,8 +592,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {222, 799}}</string>
-									<string>{{222, 0}, {1181, 799}}</string>
+									<string>{{0, 0}, {330, 799}}</string>
+									<string>{{330, 0}, {1073, 799}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -622,10 +623,10 @@
 								<string>Value</string>
 								<real>85</real>
 								<string>Summary</string>
-								<real>80</real>
+								<real>100</real>
 							</array>
 							<key>Frame</key>
-							<string>{{0, 406}, {222, 393}}</string>
+							<string>{{0, 401}, {330, 398}}</string>
 						</dict>
 					</dict>
 					<key>Module</key>
@@ -690,6 +691,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>BE5C06EE117DD348002C36B0</string>
 		<string>BE5C06B7117D4E29002C36B0</string>
 		<string>BE5C06B9117D4E29002C36B0</string>
 		<string>/Users/will/workspace/trm/trm.xcodeproj</string>
@@ -1295,8 +1297,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>BEF195B5116020BD00556BB6</string>
-				<string>BEF195B6116020BD00556BB6</string>
+				<string>BE5C06EE117DD348002C36B0</string>
+				<string>BE5C06EF117DD348002C36B0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1305,9 +1307,9 @@
 			<key>WindowString</key>
 			<string>686 450 744 409 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
-			<string>BEF195B5116020BD00556BB6</string>
+			<string>BE5C06EE117DD348002C36B0</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

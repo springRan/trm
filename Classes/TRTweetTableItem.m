@@ -20,6 +20,7 @@
 	if (!_content) {
 		_content = [TTStyledText textFromXHTML:_tweet.text];
 		_content.font = TTSTYLEVAR(font);
+    [_content retain];
 	}
 	return _content;
 }
