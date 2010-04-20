@@ -10,12 +10,14 @@
 
 @interface TRTweetTableViewController : TTTableViewController <UITableViewDelegate, UISearchBarDelegate, UITextFieldDelegate> {
   BOOL _speaking;
+  BOOL _acapelaEnabled;
   NSString *_mode;
   AcapelaLicense *_acapelaLicense;
   AcapelaSpeech *_speaker;
   UIBarButtonItem *_playButton;
   UIBarButtonItem *_pauseButton;
   UISearchBar *_searchBar;
+  
 }
 @property (nonatomic,retain) UIBarButtonItem *playButton;
 @property (nonatomic,retain) UIBarButtonItem *pauseButton;

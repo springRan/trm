@@ -82,7 +82,6 @@
 -(id) init {
 	if (self = [super init]) {
     self.title = @"tweetradio";
-    [self enableAcapela];
     _speaking = NO;
 		self.tableViewStyle = UITableViewStyleGrouped;
       
@@ -228,6 +227,7 @@
 
 - (void)prepareToSpeak
 {
+  [self enableAcapela];
   [self.speaker pauseSpeakingAtBoundary:AcapelaSpeechWordBoundary];
   [self.speaker stopSpeaking];
   self.speaking = YES;
@@ -269,20 +269,23 @@
 #pragma mark acapela setup
 - (void)enableAcapela 
 {
-  NSLog(@"enabling acapela");
-  char babLicense[]="\"5526 0 NSCA #EVALUATION#NSCAPI Acapela-group\"\nV26UONwcfvic6afGbd7I4HNp@%c6$2izATv3eewbWWeizdgNUtTmJra!PWN@\nY2JQ!X5RzKm$jkMBJKEZnHo3NvvRSYtDbaaGtQ##\nXGHCxjY%ZnKXmxxXeViL\n";
-	struct Uid { BB_U32 userId;BB_U32 passwd;} uid={0x01c7b439,0x00004427};
-  
-  
-  NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
-                                                      encoding:NSASCIIStringEncoding]; 
-  self.acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
-                                                       user:uid.userId 
-                                                     passwd:uid.passwd];
-  [aLicenseString release];
-  NSLog(@"number of voices:%d", [[AcapelaSpeech availableVoices] count]);
-  self.speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:self.acapelaLicense];
-	[self.speaker setDelegate:self];
+  if (!_acapelaEnabled) {
+    NSLog(@"enabling acapela");
+    char babLicense[]="\"5526 0 NSCA #EVALUATION#NSCAPI Acapela-group\"\nV26UONwcfvic6afGbd7I4HNp@%c6$2izATv3eewbWWeizdgNUtTmJra!PWN@\nY2JQ!X5RzKm$jkMBJKEZnHo3NvvRSYtDbaaGtQ##\nXGHCxjY%ZnKXmxxXeViL\n";
+    struct Uid { BB_U32 userId;BB_U32 passwd;} uid={0x01c7b439,0x00004427};
+    
+    
+    NSString* aLicenseString = [[NSString alloc] initWithCString:babLicense 
+                                                        encoding:NSASCIIStringEncoding]; 
+    self.acapelaLicense = [[AcapelaLicense alloc] initLicense:aLicenseString 
+                                                         user:uid.userId 
+                                                       passwd:uid.passwd];
+    [aLicenseString release];
+    NSLog(@"number of voices:%d", [[AcapelaSpeech availableVoices] count]);
+    self.speaker = [[AcapelaSpeech alloc] initWithVoice:[[AcapelaSpeech availableVoices] objectAtIndex:0] license:self.acapelaLicense];
+    [self.speaker setDelegate:self];
+    _acapelaEnabled = YES;
+  }
 }
 
 #pragma mark -
